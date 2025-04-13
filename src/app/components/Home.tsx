@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 
@@ -9,20 +10,18 @@ import {
 	useTransform,
 	useMotionValue,
 	useSpring,
-	// Removed useAnimationControls as it's no longer needed here
 } from "framer-motion";
 import {
 	FiSearch,
 	FiChevronRight,
 	FiChevronLeft,
-	FiMap, // Keeping for map button
 	FiBookOpen,
 	FiCompass,
 	FiInfo,
 	FiGlobe,
 } from "react-icons/fi";
 import {
-	Quicksand, // Keep if used elsewhere, otherwise removable
+	Quicksand,
 	Inter,
 	Space_Grotesk,
 } from "next/font/google";

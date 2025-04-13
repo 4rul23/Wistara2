@@ -10,15 +10,14 @@ import {
     FiEye,
     FiEyeOff
 } from 'react-icons/fi';
-import { Quicksand, Inter, Space_Grotesk } from 'next/font/google';
+import {  Inter, Space_Grotesk } from 'next/font/google';
 import Link from 'next/link';
 
-// --- Font Config ---
-const quicksand = Quicksand({ subsets: ["latin"] });
+
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"] });
 
-// --- Animation Variants ---
+
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 0.8, ease: "easeOut" } },
@@ -48,7 +47,6 @@ const iconVariant = {
     exit: { scale: 0.5, opacity: 0 }
 };
 
-// --- Placeholder Image URL (GANTI DENGAN URL GAMBAR ANDA) ---
 const backgroundImageUrl = '/images/bali.jpg'; // Contoh: Pemandangan Bromo
 
 const WistaraLogin: React.FC = () => {
