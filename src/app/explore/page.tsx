@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring, useMotionValue, AnimatePresence } from "framer-motion";
-import { useInView } from "framer-motion";
 import { Quicksand, Inter, Space_Grotesk } from "next/font/google";
 import { FiSearch, FiFilter, FiMapPin, FiHeart, FiBookmark, FiChevronDown, FiX, FiCornerDownRight, FiCompass } from "react-icons/fi";
+import { useAuth } from '@/app/context/AuthContext'; // Add this import
 
 // Import destination data
 import {
@@ -14,7 +14,10 @@ import {
   categories as categoryData,
   regions as regionData,
   allDestinations
-} from "../data/destinations";
+} from "@/app/data/destinations";
+
+// Import navbar component
+import Navbar from "@/app/components/Navbar";
 
 // Font configuration
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -43,7 +46,10 @@ const categories = categoryData.map(cat => ({
 const regions = regionData;
 
 export default function ExplorePage() {
-  // State variables
+  // Get auth from context instead of local state
+  const { isLoggedIn, login, logout } = useAuth();
+
+  // Your existing state variables
   const [activeCategory, setActiveCategory] = useState("All");
   const [activeRegion, setActiveRegion] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -104,6 +110,18 @@ export default function ExplorePage() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
+  // Demo toggle function that uses the actual auth context
+  const toggleLogin = () => {
+    if (isLoggedIn) {
+      logout();
+    } else {
+      // For demo purposes, login with dummy data
+      login("demo@example.com", "demopassword").catch(err =>
+        console.error("Demo login failed:", err)
+      );
+    }
+  };
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -146,54 +164,20 @@ export default function ExplorePage() {
         transition={{ duration: 120, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
       />
 
-      {/* Header Navigation */}
-      <motion.header
-        style={{ opacity: headerOpacity, y: springHeaderY }}
-        className="fixed top-0 left-0 right-0 z-50"
-      >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="my-4 md:my-6 bg-black/10 backdrop-blur-lg rounded-lg p-3 md:p-4 shadow-md border border-white/10 hover:border-teal-400/40 transition-colors duration-300"
-            whileHover={{ boxShadow: "0 8px 25px -10px rgba(0, 0, 0, 0.2)", y: -2, borderColor: "rgba(45, 212, 191, 0.4)" }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          >
-            <div className="flex items-center justify-between">
-              {/* Logo */}
-              <motion.div
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
-                <Link href="/" className="flex items-center space-x-2 group">
-                  <motion.div className="relative overflow-hidden" animate={{ rotate: [0, 5, -5, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}>
-                    <FiCompass className="text-teal-400 text-2xl" />
-                  </motion.div>
-                  <motion.div className={`text-xl md:text-2xl font-bold text-white ${spaceGrotesk.className} tracking-wide uppercase`}>Wistara</motion.div>
-                </Link>
-              </motion.div>
+      {/* Navigation Header */}
+      <Navbar />
 
-              {/* Desktop Navigation */}
-              <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-                {["Explore", "About", "Map"].map((item, i) => (
-                  <Link
-                    href={`/${item.toLowerCase()}`}
-                    key={item}
-                    className={`relative py-1.5 px-1 text-sm font-medium transition-colors duration-200 ease-out ${item === "Explore" ? "text-teal-300" : "text-white/80 hover:text-white"}`}
-                  >
-                    <span className={`${inter.className} tracking-wide`}>{item}</span>
-                    {item === "Explore" && (
-                      <motion.span
-                        className="absolute inset-x-0 -bottom-0.5 h-0.5 bg-teal-400"
-                        layoutId="navIndicator"
-                      />
-                    )}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </motion.div>
-        </div>
-      </motion.header>
+      {/* Demo login toggle - add this near the top of your main content */}
+      <div className="absolute top-4 right-4 z-50">
+        <motion.button
+          onClick={toggleLogin}
+          className="bg-white/10 hover:bg-white/20 text-white/70 hover:text-white text-xs px-3 py-1.5 rounded-md border border-white/10"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Demo: {isLoggedIn ? "Logout" : "Login"}
+        </motion.button>
+      </div>
 
       {/* Main Content */}
       <main className="relative pt-28 md:pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10">
@@ -208,7 +192,7 @@ export default function ExplorePage() {
             <span className="text-teal-400">Explore</span> Nusantara
           </h1>
           <p className={`${inter.className} text-lg md:text-xl text-white/70 max-w-3xl`}>
-            Discover the breathtaking diversity of Indonesia's landscapes, cultures, and hidden treasures
+            Discover the breathtaking diversity of Indonesias landscapes, cultures, and hidden treasures
           </p>
         </motion.div>
 
@@ -357,6 +341,7 @@ export default function ExplorePage() {
                 transition={{ type: "spring", stiffness: 100, damping: 15 }}
                 className="group relative bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-teal-400/30 transition-colors duration-300"
               >
+                <Link href={`/explore/${destination.id}`}>
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
                     src={destination.image}
@@ -394,9 +379,9 @@ export default function ExplorePage() {
                     </motion.button>
                   </div>
                 </div>
-
+                </Link>
                 <motion.div className="p-4">
-                  <Link href={`/destination/${destination.id}`}>
+                  <Link href={`/explore/${destination.id}`}>
                     <h3 className={`${spaceGrotesk.className} text-lg font-semibold mb-2 group-hover:text-teal-300 transition-colors`}>
                       {destination.name}
                     </h3>
