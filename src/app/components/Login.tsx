@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fi';
 import {  Inter, Space_Grotesk } from 'next/font/google';
 import Link from 'next/link';
-
+import { useAuth } from '@/app/context/AuthContext';
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"] });
@@ -53,30 +53,24 @@ const WistaraLogin: React.FC = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+
+    // Gunakan context auth
+    const { login, isLoading } = useAuth();
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (isLoading) return;
-        setIsLoading(true);
         setError(null);
 
-        // --- SIMULASI PANGGILAN API LOGIN ---
-        console.log('Attempting login with:', { email, password });
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        const loginSuccess = Math.random() > 0.4;
-
-        if (loginSuccess) {
-            console.log('Login successful!');
-            setError(null);
-        } else {
-            console.error('Login failed');
-            setError('Email atau password tidak cocok. Periksa kembali.');
+        try {
+            // Gunakan function login dari context
+            await login(email, password);
+            // Tidak perlu manual redirect, sudah ditangani di context
+        } catch (err) {
+            console.error('Login error:', err);
+            setError(err instanceof Error ? err.message : 'Email atau password tidak cocok');
         }
-        // ---------------------------------------
-
-        setIsLoading(false);
     };
 
     return (

@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  Int       @id @default(autoincrement())
+  email               String    @unique
+  password            String
+  name                String
+  username            String?   @unique
+  fullName            String?
+  avatar              String?
+  bio                 String?
+  role                String    @default("user")
+  joinDate            DateTime  @default(now())
+
+  // Lokasi dan preferensi
+  location            String?
+  city                String?
+  coordinates         Json?     // Akan menyimpan {latitude, longitude}
+
+  visitedPlaces       String[]  @default([])
+  priceRange          String?   // Nilai standard: "budget", "midRange", "luxury"
+
+  // Kategori dan tag sesuai standar aplikasi
+  interestTags        String[]  @default([])  // Harus dalam nilai dari popularInterestTags
+  preferredCategories String[]  @default([])  // Harus dalam nilai dari travelCategories
+  minRating           Float?    @default(0)
+
+  travelStyle         String[]  @default([])
+  travelSeason        String[]  @default([])
+  accommodation       String[]  @default([])
+  activities          String[]  @default([])
+
+  comments            Comment[]
+
+  createdAt           DateTime  @default(now()) @map("created_at")
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Session {
+  sid       String   @id
+  sess      Json     @map("sess")
+  expire    DateTime @map("expire")
+
+  @@map("sessions")
+  @@index([expire], name: "IDX_sessions_expire")
+}
+
+// Model untuk komentar
+model Comment {
+  id              Int       @id @default(autoincrement())
+  text            String    @db.Text
+  rating          Float
+  date            DateTime  @default(now())
+
+  // Relasi dengan user dan destinasi
+  userId          Int
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  destinationId   String
+  // Optional: Jika Anda juga menyimpan destinasi dalam database
+  // destination    Destination @relation(fields: [destinationId], references: [id])
+
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  @@map("comments")
+  @@index([userId])
+  @@index([destinationId])
+}

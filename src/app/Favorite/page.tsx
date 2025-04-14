@@ -8,7 +8,8 @@ import { useAuth } from '@/app/context/AuthContext';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiMapPin, FiHeart, FiChevronRight, FiStar } from 'react-icons/fi';
+import { FiMapPin, FiHeart, FiChevronRight, FiStar, FiArrowLeft } from 'react-icons/fi';
+import { useRouter } from 'next/navigation';
 
 // Font configuration
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -18,8 +19,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 const isClient = typeof window !== "undefined";
 
 export default function FavoritePage() {
+  const router = useRouter();
   const { favoriteDestinations } = useFavorite();
-  const { isLoggedIn } = useAuth();
+  const { user, isAuthenticated } = useAuth(); // Ganti isLoggedIn dengan isAuthenticated
   const [favoriteDestinationDetails, setFavoriteDestinationDetails] = useState<Destination[]>([]);
 
   // Animation values
@@ -56,7 +58,13 @@ export default function FavoritePage() {
     setFavoriteDestinationDetails(favoriteDetails);
   }, [favoriteDestinations]);
 
-  if (!isLoggedIn) {
+  // Handle navigation back to explore
+  const handleBackToExplore = () => {
+    router.push('/explore');
+  };
+
+  // Ganti pengecekan isLoggedIn menjadi isAuthenticated
+  if (!isAuthenticated) {
     return (
       <div className={`relative bg-[#0a0a0a] min-h-screen text-white ${quicksand.className} overflow-x-hidden`}>
         {/* Background Elements */}
@@ -70,6 +78,20 @@ export default function FavoritePage() {
           animate={{ backgroundPosition: ['0% 0%', '100% 100%'] }}
           transition={{ duration: 120, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
         />
+
+        {/* Back to Explore Button */}
+        <motion.button
+          onClick={handleBackToExplore}
+          className="fixed top-6 left-6 z-50 flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/15 border border-white/10 rounded-full text-sm text-white/80 hover:text-white transition-all"
+          whileHover={{ x: -3, backgroundColor: "rgba(255, 255, 255, 0.15)" }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          <FiArrowLeft size={16} />
+          <span className={spaceGrotesk.className}>Kembali ke Explore</span>
+        </motion.button>
 
         {/* Content */}
         <div className="min-h-screen pt-32 px-4 sm:px-8 relative z-10">
@@ -91,7 +113,7 @@ export default function FavoritePage() {
                 Silakan login untuk melihat destinasi favorit Anda.
               </p>
               <motion.button
-                onClick={() => window.location.href = '/login'}
+                onClick={() => router.push('/login')} // Gunakan router.push untuk navigasi client-side
                 className="mt-6 bg-rose-500/20 hover:bg-rose-500/30 border border-rose-500/30 rounded-lg px-6 py-3 text-rose-300"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -118,6 +140,20 @@ export default function FavoritePage() {
         animate={{ backgroundPosition: ['0% 0%', '100% 100%'] }}
         transition={{ duration: 120, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
       />
+
+      {/* Back to Explore Button */}
+      <motion.button
+        onClick={handleBackToExplore}
+        className="fixed top-6 left-6 z-50 flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/15 border border-white/10 rounded-full text-sm text-white/80 hover:text-white transition-all"
+        whileHover={{ x: -3, backgroundColor: "rgba(255, 255, 255, 0.15)" }}
+        whileTap={{ scale: 0.95 }}
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        <FiArrowLeft size={16} />
+        <span className={spaceGrotesk.className}>Kembali ke Explore</span>
+      </motion.button>
 
       {/* Content */}
       <div className="relative z-10 min-h-screen pt-32 px-4 sm:px-8">
@@ -175,8 +211,18 @@ export default function FavoritePage() {
         className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-md z-40 py-4 px-6"
         style={{ opacity: headerOpacity }}
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
           <h3 className={`${spaceGrotesk.className} font-medium text-xl`}>Destinasi Favorit</h3>
+
+          <motion.button
+            onClick={handleBackToExplore}
+            className="flex items-center gap-2 text-sm text-white/70 hover:text-white"
+            whileHover={{ x: -3 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FiArrowLeft size={14} />
+            <span>Explore</span>
+          </motion.button>
         </div>
       </motion.div>
     </div>

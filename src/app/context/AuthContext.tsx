@@ -1,68 +1,165 @@
 "use client";
 
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
+import { useRouter } from 'next/navigation';
 
-interface AuthContextType {
-  isLoggedIn: boolean;
-  user: any | null;
+// Tipe data user
+type User = {
+  id: string;
+  name: string;
+  email: string;
+  role: 'user' | 'admin';
+  city?: string;
+  priceRange?: string;
+  interestTags?: string[];
+  preferredCategories?: string[];
+  minRating?: number;
+};
+
+// Tipe data context
+type AuthContextType = {
+  user: User | null;
+  isLoading: boolean;
+  isAuthenticated: boolean;
+  isAdmin: boolean;
   login: (email: string, password: string) => Promise<void>;
-  logout: () => void;
-}
+  logout: () => Promise<void>;
+  refreshUser: () => Promise<void>;
+};
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [user, setUser] = useState<any | null>(null);
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [user, setUser] = useState<User | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
 
-  // Check local storage on initial load
+  // Load user saat komponen mount
   useEffect(() => {
-    const storedUser = localStorage.getItem('user');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-      setIsLoggedIn(true);
-    }
+    const loadUser = async () => {
+      try {
+        // Cek apakah user sudah login dengan memanggil endpoint me
+        // Cookie akan terkirim otomatis dengan credentials: 'include'
+        const response = await fetch('http://localhost:5000/api/auth/me', {
+          method: 'GET',
+          credentials: 'include', // Penting! Ini membuat cookies dikirim
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          setUser(data.user);
+        }
+      } catch (error) {
+        console.error('Failed to load user:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadUser();
   }, []);
 
+  // Login function
   const login = async (email: string, password: string) => {
-    // In a real app, you'd call your authentication API
-    // This is just a demo implementation
+    setIsLoading(true);
+
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 500));
+      const response = await fetch('http://localhost:5000/api/auth/login', {
+        method: 'POST',
+        credentials: 'include', // Penting! Ini membuat cookies disimpan
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password })
+      });
 
-      // Mock user data
-      const userData = { id: '1', name: 'Demo User', email };
+      const data = await response.json();
 
-      // Save to localStorage
-      localStorage.setItem('user', JSON.stringify(userData));
+      if (!response.ok) {
+        throw new Error(data.message || 'Login failed');
+      }
 
-      // Update state
-      setUser(userData);
-      setIsLoggedIn(true);
+      // Set user data dari response
+      setUser(data.user);
+
+      // Redirect berdasarkan role
+      if (data.user.role === 'admin') {
+        router.push('/admin/dashboard');
+      } else {
+        router.push('/explore');
+      }
+
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error('Login error:', error);
       throw error;
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const logout = () => {
-    localStorage.removeItem('user');
-    setUser(null);
-    setIsLoggedIn(false);
+  // Logout function
+  const logout = async () => {
+    setIsLoading(true);
+
+    try {
+      await fetch('http://localhost:5000/api/auth/logout', {
+        method: 'POST',
+        credentials: 'include',
+      });
+
+      // Clear user data
+      setUser(null);
+      router.push('/login');
+
+    } catch (error) {
+      console.error('Logout error:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Refresh user data
+  const refreshUser = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/api/auth/me', {
+        credentials: 'include',
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setUser(data.user);
+      }
+    } catch (error) {
+      console.error('Failed to refresh user:', error);
+    }
   };
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, user, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        isLoading,
+        isAuthenticated: !!user,
+        isAdmin: user?.role === 'admin' || false,
+        login,
+        logout,
+        refreshUser
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
-}
+};
 
-export function useAuth() {
+export const useAuth = () => {
   const context = useContext(AuthContext);
+
   if (context === undefined) {
     throw new Error('useAuth must be used within an AuthProvider');
   }
+
   return context;
-}
+};

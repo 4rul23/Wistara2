@@ -91,9 +91,9 @@ const AuthModal = ({ onClose }: { onClose: () => void }) => {
         exit={{ scale: 0.9, y: 20 }}
         onClick={e => e.stopPropagation()}
       >
-        <h3 className={`${spaceGrotesk.className} text-xl font-semibold mb-2`}>Sign in required</h3>
+        <h3 className={`${spaceGrotesk.className} text-xl font-semibold mb-2`}>Silakan masuk</h3>
         <p className={`${inter.className} text-white/70 mb-6`}>
-          Please sign in to save destinations to your favorites
+          Anda perlu login untuk menyimpan destinasi favorit
         </p>
 
         <div className="flex flex-col space-y-3">
@@ -103,7 +103,7 @@ const AuthModal = ({ onClose }: { onClose: () => void }) => {
             whileTap={{ scale: 0.98 }}
             onClick={() => router.push('/login')}
           >
-            Sign in
+            Masuk
           </motion.button>
 
           <motion.button
@@ -112,7 +112,7 @@ const AuthModal = ({ onClose }: { onClose: () => void }) => {
             whileTap={{ scale: 0.98 }}
             onClick={onClose}
           >
-            Continue as guest
+            Lanjutkan sebagai tamu
           </motion.button>
         </div>
       </motion.div>
@@ -124,7 +124,8 @@ export default function DestinationPage() {
 
   const params = useParams();
   const destinationId = params.id as string;
-  const { isLoggedIn } = useAuth();
+  const { user, isAuthenticated } = useAuth();
+  const isLoggedIn = isAuthenticated; // untuk kompatibilitas dengan kode lainnya
   const { isVisited, addVisitedDestination, removeVisitedDestination } = useVisited();
   const hasVisited = isVisited(destinationId);
   const { isFavorite, addFavoriteDestination, removeFavoriteDestination } = useFavorite();

@@ -9,6 +9,7 @@ import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'fram
 import Image from 'next/image';
 import Link from 'next/link';
 import { FiMapPin, FiCalendar, FiChevronRight, FiCheck } from 'react-icons/fi';
+import { useRouter } from 'next/navigation';
 
 // Font configuration
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -18,8 +19,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 const isClient = typeof window !== "undefined";
 
 export default function VisitedPage() {
+  const router = useRouter();
   const { visitedDestinations } = useVisited();
-  const { isLoggedIn } = useAuth();
+  const { user, isAuthenticated } = useAuth(); // Ganti isLoggedIn dengan isAuthenticated
   const [visitedDestinationDetails, setVisitedDestinationDetails] = useState<Destination[]>([]);
 
   // Animation values
@@ -56,7 +58,8 @@ export default function VisitedPage() {
     setVisitedDestinationDetails(visitedDetails);
   }, [visitedDestinations]);
 
-  if (!isLoggedIn) {
+  // Ganti pengecekan isLoggedIn menjadi isAuthenticated
+  if (!isAuthenticated) {
     return (
       <div className={`relative bg-[#0a0a0a] min-h-screen text-white ${quicksand.className} overflow-x-hidden`}>
         {/* Background Elements */}
@@ -91,13 +94,13 @@ export default function VisitedPage() {
                 Silakan login untuk melihat destinasi yang sudah Anda kunjungi.
               </p>
               <motion.button
-                onClick={() => window.location.href = '/login'}
-                className="mt-6 bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/30 rounded-lg px-6 py-3 text-teal-300"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                Login
-              </motion.button>
+  onClick={() => router.push('/login')}
+  className="mt-6 bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/30 rounded-lg px-6 py-3 text-teal-300"
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.97 }}
+>
+  Login
+</motion.button>
             </motion.div>
           </motion.div>
         </div>
@@ -143,7 +146,7 @@ export default function VisitedPage() {
                 Anda belum menandai destinasi yang sudah dikunjungi.
               </p>
               <motion.button
-                onClick={() => window.location.href = '/explore'}
+                onClick={() => router.push('/explore')}
                 className="mt-6 bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/30 rounded-lg px-6 py-3 text-teal-300"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

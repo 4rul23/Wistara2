@@ -6,7 +6,8 @@ import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring, useMotionValue, AnimatePresence } from "framer-motion";
 import { Quicksand, Inter, Space_Grotesk } from "next/font/google";
 import { FiSearch, FiFilter, FiMapPin, FiHeart, FiBookmark, FiChevronDown, FiX, FiCornerDownRight, FiCompass } from "react-icons/fi";
-import { useAuth } from '@/app/context/AuthContext'; // Add this import
+import { useAuth } from '@/app/context/AuthContext';
+import { useRouter } from 'next/router';
 
 // Import destination data
 import {
@@ -47,7 +48,8 @@ const regions = regionData;
 
 export default function ExplorePage() {
   // Get auth from context instead of local state
-  const { isLoggedIn, login, logout } = useAuth();
+  const { user, isAuthenticated } = useAuth();
+  const isLoggedIn = isAuthenticated; // untuk kompatibilitas dengan kode yang sudah ada
 
   // Your existing state variables
   const [activeCategory, setActiveCategory] = useState("All");
@@ -57,6 +59,11 @@ export default function ExplorePage() {
   const [showRegionDropdown, setShowRegionDropdown] = useState(false);
   const [liked, setLiked] = useState<{[key: string]: boolean}>({});
   const [saved, setSaved] = useState<{[key: string]: boolean}>({});
+
+  // Tambahkan state untuk auth modal
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [authAction, setAuthAction] = useState<'favorite'|'save'|null>(null);
+  const [pendingDestination, setPendingDestination] = useState<string|null>(null);
 
   // Refs and animations
   const searchRef = useRef<HTMLDivElement>(null);
@@ -110,18 +117,6 @@ export default function ExplorePage() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
-  // Demo toggle function that uses the actual auth context
-  const toggleLogin = () => {
-    if (isLoggedIn) {
-      logout();
-    } else {
-      // For demo purposes, login with dummy data
-      login("demo@example.com", "demopassword").catch(err =>
-        console.error("Demo login failed:", err)
-      );
-    }
-  };
-
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -147,6 +142,91 @@ export default function ExplorePage() {
     }
   };
 
+  // Modifikasi event handler untuk like dan save
+  const handleLike = (e: React.MouseEvent, destinationId: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (!isAuthenticated) {
+      // Simpan informasi tentang aksi yang ingin dilakukan
+      setAuthAction('favorite');
+      setPendingDestination(destinationId);
+      setShowAuthModal(true);
+      return;
+    }
+
+    // Jika sudah login, lakukan aksi like
+    setLiked({...liked, [destinationId]: !liked[destinationId]});
+  };
+
+  const handleSave = (e: React.MouseEvent, destinationId: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (!isAuthenticated) {
+      // Simpan informasi tentang aksi yang ingin dilakukan
+      setAuthAction('save');
+      setPendingDestination(destinationId);
+      setShowAuthModal(true);
+      return;
+    }
+
+    // Jika sudah login, lakukan aksi save
+    setSaved({...saved, [destinationId]: !saved[destinationId]});
+  };
+
+  // Tambahkan Auth Modal component
+  const AuthModal = ({ onClose }: { onClose: () => void }) => {
+    const router = useRouter();
+
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+        onClick={onClose}
+      >
+        <motion.div
+          className="bg-[#151515] border border-white/10 rounded-xl p-6 max-w-md w-full"
+          initial={{ scale: 0.9, y: 20 }}
+          animate={{ scale: 1, y: 0 }}
+          exit={{ scale: 0.9, y: 20 }}
+          onClick={e => e.stopPropagation()}
+        >
+          <h3 className={`${spaceGrotesk.className} text-xl font-semibold mb-2`}>
+            {authAction === 'favorite' ? 'Suka destinasi ini?' : 'Simpan ke koleksi Anda?'}
+          </h3>
+          <p className={`${inter.className} text-white/70 mb-6`}>
+            {authAction === 'favorite'
+              ? 'Anda perlu login untuk menyukai destinasi'
+              : 'Anda perlu login untuk menyimpan destinasi'}
+          </p>
+
+          <div className="flex flex-col space-y-3">
+            <motion.button
+              className="bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/30 py-2.5 rounded-lg text-teal-300"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => router.push('/login')}
+            >
+              Masuk
+            </motion.button>
+
+            <motion.button
+              className="bg-white/5 hover:bg-white/10 border border-white/10 py-2.5 rounded-lg text-white/70"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={onClose}
+            >
+              Lanjutkan sebagai tamu
+            </motion.button>
+          </div>
+        </motion.div>
+      </motion.div>
+    );
+  };
+
   return (
     <div className={`relative bg-[#0a0a0a] min-h-screen text-white ${quicksand.className} overflow-x-hidden`}>
       {/* Background Elements */}
@@ -167,18 +247,6 @@ export default function ExplorePage() {
       {/* Navigation Header */}
       <Navbar />
 
-      {/* Demo login toggle - add this near the top of your main content */}
-      <div className="absolute top-4 right-4 z-50">
-        <motion.button
-          onClick={toggleLogin}
-          className="bg-white/10 hover:bg-white/20 text-white/70 hover:text-white text-xs px-3 py-1.5 rounded-md border border-white/10"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Demo: {isLoggedIn ? "Logout" : "Login"}
-        </motion.button>
-      </div>
-
       {/* Main Content */}
       <main className="relative pt-28 md:pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10">
         {/* Page Title */}
@@ -195,6 +263,27 @@ export default function ExplorePage() {
             Discover the breathtaking diversity of Indonesias landscapes, cultures, and hidden treasures
           </p>
         </motion.div>
+
+        {user && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mb-6 bg-gradient-to-r from-teal-900/30 to-emerald-900/20 rounded-lg p-4 border border-teal-500/20"
+          >
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-teal-500/30 flex items-center justify-center text-teal-300 font-medium">
+                {user.name.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <h3 className={`${spaceGrotesk.className} text-lg`}>Selamat datang, {user.name}!</h3>
+                <p className={`${inter.className} text-sm text-white/70`}>
+                  Temukan destinasi baru yang sesuai dengan minat Anda
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
 
         {/* Search and Filters */}
         <div className="mb-10 md:mb-14">
@@ -361,7 +450,7 @@ export default function ExplorePage() {
                   {/* Actions */}
                   <div className="absolute top-3 right-3 flex space-x-2">
                     <motion.button
-                      onClick={() => setLiked({...liked, [destination.id]: !liked[destination.id]})}
+                      onClick={(e) => handleLike(e, destination.id)}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${liked[destination.id] ? 'bg-rose-500/30 text-rose-400' : 'bg-black/40 text-white/70 hover:text-white'}`}
@@ -370,7 +459,7 @@ export default function ExplorePage() {
                     </motion.button>
 
                     <motion.button
-                      onClick={() => setSaved({...saved, [destination.id]: !saved[destination.id]})}
+                      onClick={(e) => handleSave(e, destination.id)}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${saved[destination.id] ? 'bg-teal-500/30 text-teal-300' : 'bg-black/40 text-white/70 hover:text-white'}`}
@@ -424,6 +513,16 @@ export default function ExplorePage() {
           </motion.div>
         )}
       </main>
+
+      <AnimatePresence>
+        {showAuthModal && (
+          <AuthModal onClose={() => {
+            setShowAuthModal(false);
+            setAuthAction(null);
+            setPendingDestination(null);
+          }} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
