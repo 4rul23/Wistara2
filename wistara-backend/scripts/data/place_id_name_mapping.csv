@@ -1,0 +1,438 @@
+Place_Id,Place_Name
+1,Monumen Nasional
+2,Kota Tua
+3,Dunia Fantasi
+4,Taman Mini Indonesia Indah (TMII)
+5,Atlantis Water Adventure
+6,Taman Impian Jaya Ancol
+7,Kebun Binatang Ragunan
+8,Ocean Ecopark
+9,Pelabuhan Marina
+10,Pulau Tidung
+11,Pulau Bidadari
+12,Pulau Pari
+13,Pulau Pramuka
+14,Pulau Pelangi
+15,Pasar Seni
+16,Jembatan Kota Intan
+17,Museum Fatahillah
+18,Museum Bank Indonesia
+19,Kidzania
+20,Museum Taman Prasasti
+21,Museum Wayang
+22,Masjid Istiqlal
+23,Gereja Katedral
+24,Museum Nasional
+25,Pasar Tanah Abang
+26,Pecinan Glodok
+27,Sea World
+28,Wisata Agro Edukatif Istana Susu Cibugary
+29,Wisata Kuliner Pecenongan
+30,Taman Menteng
+31,Wisata Alam Mangrove Angke
+32,Setu Babakan
+33,Taman Suropati
+34,Pasar Taman Puring
+35,Grand Indonesia Mall
+36,Skyrink - Mall Taman Anggrek
+37,Bumi Perkemahan Cibubur
+38,Istana Negara Republik Indonesia
+39,Museum Macan (Modern and Contemporary Art in Nusantara)
+40,Galeri Nasional Indonesia
+41,Museum Bahari Jakarta
+42,Museum Seni Rupa dan Kramik
+43,The Escape Hunt
+44,Monumen Selamat Datang
+45,Jakarta Aquarium dan Safari
+46,Pulau Semak Daun
+47,Taman Situ Lembang
+48,Taman Ismail Marzuki
+49,Galeri Indonesia Kaya
+50,Museum Joang 45
+51,Jakarta Planetarium
+52,Kampung Cina
+53,Rumah Sipitung
+54,Taman Agrowisata Cilangkap
+55,Klenteng Jin De Yuan
+56,Pantai Ancol
+57,Taman Lapangan Banteng
+58,Taman Ayodya
+59,Museum Sumpah Pemuda
+60,Museum Tekstil
+61,Tugu Proklamasi
+62,Taman Legenda Keong Emas
+63,Museum Kebangkitan Nasional
+64,Museum Sasmita Loka Ahmad Yani
+65,Museum Basoeki Abdullah
+66,Museum Layang-layang
+67,Margasatwa Muara Angke
+68,Pasar Petak Sembilan
+69,Freedom Library
+70,Perpustakaan Nasional
+71,Cibubur Garden Diary (Cibugary)
+72,Waterboom PIK (Pantai Indah Kapuk)
+73,Museum Perangko
+74,Museum Tengah Kebun
+75,SnowBay Waterpark
+76,Taman Cattleya
+77,Taman Hutan Tebet
+78,Hutan Kota Srengseng
+79,Taman Spathodea
+80,Plaza Indonesia
+81,Mall Thamrin City
+82,Museum Satria Mandala
+83,Alive Museum Ancol
+84,Kawasan Kuliner BSM
+85,Taman Pintar Yogyakarta
+86,Keraton Yogyakarta
+87,Sindu Kusuma Edupark (SKE)
+88,Museum Benteng Vredeburg Yogyakarta
+89,De Mata Museum Jogja
+90,Kampung Wisata Taman Sari
+91,Situs Warungboto
+92,Nol Kilometer Jl.Malioboro
+93,Gembira Loka Zoo
+94,Sumur Gumuling
+95,Desa Wisata Sungai Code Jogja Kota
+96,Alun Alun Selatan Yogyakarta
+97,Monumen Yogya Kembali
+98,Taman Pelangi Yogyakarta
+99,Kampung Wisata Kadipaten
+100,Taman Budaya Yogyakarta
+101,Kampung Wisata Sosro Menduran
+102,Monumen Batik Yogyakarta
+103,Tugu Pal Putih Jogja
+104,Tebing Breksi
+105,Candi Donotirto
+106,Kawasan Malioboro
+107,Bangsal Pagelaran
+108,Embung Tambakboyo
+109,Hutan Pinus Pengger
+110,Monumen Serangan Umum 1 Maret
+111,Puncak Pinus Becici
+112,Bukit Bintang Yogyakarta
+113,Gedung Agung Yogyakarta
+114,The Lost World Castle
+115,Monumen Sanapati
+116,Jurang Tembelan Kanigoro
+117,The World Landmarks - Merapi Park Yogyakarta
+118,Museum Sonobudoyo Unit I
+119,Lava Bantal
+120,Bukit Panguk Kediwung
+121,Candi Prambanan
+122,Watu Goyang
+123,Kampung Wisata Rejowinangun
+124,Kauman Pakualaman Yogyakarta
+125,Alun-alun Utara Keraton Yogyakarta
+126,Pantai Goa Cemara
+127,Blue Lagoon Jogja
+128,Gumuk Pasir Parangkusumo
+129,Bukit Lintang Sewu
+130,Studio Alam Gamplong
+131,Watu Lumbung
+132,Air Terjun Kedung Pedut
+133,Puncak Kebun Buah Mangunan
+134,Desa Wisata Gamplong
+135,Kawasan Wisata Sosrowijayan
+136,Grojogan Watu Purbo Bangunrejo
+137,Wisata Alam Kalibiru
+138,Jogja Exotarium
+139,Puncak Gunung Api Purba - Nglanggeran
+140,Bendung Lepen
+141,Bunker Kaliadem Merapi
+142,Ledok Sambi
+143,Seribu Batu Songgo Langit
+144,Goa Jomblang
+145,Desa Wisata Rumah Domes/Teletubbies
+146,Bukit Wisata Pulepayung
+147,Bentara Budaya Yogyakarta (BBY)
+148,Goa Rancang Kencono
+149,Goa Cerme
+150,Wisata Kraton Jogja
+151,Desa Wisata Kelor
+152,Pantai Patihan
+153,Pantai Kukup
+154,Pantai Ngrawe (Mesra)
+155,Pantai Ngobaran
+156,Pantai Pulang Sawal
+157,Pantai Baron
+158,Pantai Pok Tunggal
+159,Hutan Pinus Asri
+160,Pasar Kebon Empring Bintaran
+161,"Bukit Paralayang, Watugupit"
+162,Kampung Wisata Dipowinatan
+163,Watu Mabur Mangunan
+164,Pintoe Langit Dahromo
+165,Green Village Gedangsari
+166,Kebun Teh Nglinggo
+167,Geoforest Watu Payung Turunan
+168,Pantai Timang
+169,Puncak Segoro
+170,Candi Borobudur
+171,Candi Ijo
+172,Pantai Indrayanti
+173,Pantai Nglambor
+174,Pasar Beringharjo
+175,Museum Ullen Sentalu
+176,Museum Gunung Merapi
+177,Pantai Parangtritis
+178,Goa Pindul
+179,Candi Ratu Boko
+180,Pantai Depok Jogja
+181,Pantai Sundak
+182,Hutan Mangrove Kulon Progo
+183,Jogja Bay Pirates Adventure Waterpark
+184,Pantai Sepanjang
+185,Pantai Krakal
+186,Pantai Glagah
+187,Pantai Siung
+188,Pantai Sadranan
+189,Pantai Nguluran
+190,Pantai Samas
+191,Pantai Drini
+192,Air Terjun Sri Gethuk
+193,Candi Sewu
+194,Pantai Wediombo
+195,Pantai Jogan
+196,Pantai Ngrenehan
+197,Pantai Jungwok
+198,Pantai Greweng
+199,Pantai Sedahan
+200,Pantai Watu Kodok
+201,Pantai Kesirat
+202,Pantai Ngandong
+203,Galaxy Waterpark Jogja
+204,Desa Wisata Pulesari
+205,Desa Wisata Tembi
+206,Wisata Kaliurang
+207,Heha Sky View
+208,Taman Sungai Mudal
+209,Pantai Sanglen
+210,Pantai Congot
+211,GunungTangkuban perahu
+212,Jalan Braga
+213,Gedung Sate
+214,Trans Studio Bandung
+215,Taman Hutan Raya Ir. H. Djuanda
+216,Farm House Susu Lembang
+217,Kebun Binatang Bandung
+218,Kawah Putih
+219,Tebing Karaton
+220,Dusun Bambu
+221,Museum Geologi Bandung
+222,Museum Konferensi Asia Afrika
+223,Masjid Raya Bandung
+224,Dago Dreampark
+225,Orchid Forest Cikole
+226,Kawasan Punclut
+227,Alun-Alun Kota Bandung
+228,Museum Sri Baduga
+229,Rabbit Town
+230,Stone Garden Citatah
+231,The Great Asia Africa
+232,Bukit Moko
+233,Gunung Papandayan
+234,Amazing Art World
+235,Gua Belanda
+236,Taman Balai Kota Bandung
+237,Panghegar Waterboom Bandung
+238,Gunung Manglayang
+239,Lembang Park & Zoo
+240,Taman Lalu Lintas Ade Irma Suryani Nasution
+241,Lawangwangi Creative Space
+242,Curug Dago
+243,Kampung Korea Bandung
+244,Kampung Batu Malakasari
+245,Jendela Alam
+246,Curug Tilu Leuwi Opat
+247,Kiara Artha Park
+248,NuArt Sculpture Park
+249,Upside Down World Bandung
+250,Pesona Nirwana Waterpark & Cottages
+251,Taman Lansia
+252,Kampoeng Tulip
+253,Selasar Sunaryo Art Space
+254,Teras Cikapundung BBWS
+255,Museum Barli
+256,Wisata Batu Kuda
+257,Monumen Bandung Lautan Api
+258,Museum Gedung Sate
+259,Monumen Perjuangan Rakyat Jawa Barat
+260,Museum Pos Indonesia
+261,Ciwangun Indah Camp Official
+262,Wot Batu
+263,Curug Batu Templek
+264,Gereja Katedral Santo Petrus Bandung
+265,Museum Mandala Wangsit Siliwangi
+266,Caringin Tilu
+267,Panama Park 825
+268,Sudut Pandang Bandung
+269,Bumi Perkemahan Batu Kuda
+270,Bukit Bintang
+271,Taman Vanda
+272,Taman Budaya Jawa Barat
+273,Curug Bugbrug
+274,Babakan Siliwangi City Forest Path Bandung
+275,Curug Cipanas
+276,Taman Jomblo
+277,Peta Park
+278,Masjid Daarut Tauhiid Bandung
+279,Masjid Agung Trans Studio Bandung
+280,Gereja Tiberias Indonesia Bandung
+281,Tektona Waterpark
+282,Curug Cilengkrang
+283,Jembatan Pasupati
+284,Pasar Baru
+285,Taman Sejarah Bandung
+286,Roemah Seni Sarasvati
+287,Puspa Iptek Sundial
+288,Masjid Salman ITB
+289,Curug Aseupan
+290,Museum Pendidikan Nasional
+291,Water Park Bandung Indah
+292,Curug Anom
+293,Taman Badak
+294,Taman Film
+295,Museum Nike Ardilla
+296,Batununggal Indah Club
+297,Mountain View Golf Club
+298,Gunung Lalakon
+299,Sendang Geulis Kahuripan
+300,Sanghyang Heuleut
+301,Lereng Anteng Panoramic Coffee Place
+302,Masjid Pusdai
+303,Masjid Al-Imtizaj
+304,Situ Cileunca
+305,Sunrise Point Cukul
+306,Sungai Palayangan
+307,Perkebunan Teh Malabar
+308,Pemandian Air Panas Ciater
+309,Observatorium Bosscha
+310,Taman Bunga Cihideung
+311,The Lodge Maribaya
+312,Taman Hutan Raya Ir. H. Juanda
+313,Taman Begonia
+314,Tafso Barn
+315,Curug Luhur Waterfall
+316,Curug Malela
+317,Curug Cimahi
+318,Situ Patenggang
+319,Kawah Rengganis Cibuni
+320,Pemandian Air Panas Cimanggu
+321,Glamping Lakeside Rancabali
+322,Bukit Jamur
+323,Kebun Tanaman Obat Sari Alam
+324,Happyfarm Ciwidey
+325,Saung Angklung Mang Udjo
+326,Taman Kupu-Kupu Cihanjuang
+327,Taman Miniatur Kereta Api
+328,Gua Pawon
+329,Bukit Gantole Cililin
+330,Bandros City Tour
+331,Kyotoku Floating Market
+332,Rainbow Garden
+333,Kota Mini
+334,Chingu Cafe Little Seoul
+335,Candi Gedong Songo
+336,Grand Maerakaca
+337,Kampung Pelangi
+338,Lawang Sewu
+339,Sam Poo Kong Temple
+340,Desa Wisata Lembah Kalipancur
+341,Hutan Wisata Tinjomoyo Semarang
+342,Taman Kasmaran
+343,Pantai Baruna
+344,Pantai Marina
+345,Kampoeng Djadhoel Semarang
+346,Indonesia Kaya Park
+347,Taman Pandanaran
+348,Pura Giri Natha
+349,Wisata Mangrove Tapak
+350,Pantai Cipta
+351,Old City 3D Trick Art Museum
+352,GPIB Immanuel Semarang (Gereja Blenduk)
+353,Taman Srigunting
+354,Semarang Contemporary Art Gallery
+355,Umbul Sidomukti
+356,Saloka Theme Park
+357,Wisata Alam Wana Wisata Penggaron
+358,Masjid Kapal Semarang
+359,Taman Bunga Celosia
+360,Air Terjun Kali Pancur
+361,Wisata Kampung Krisan Clapar
+362,Danau Rawa Pening
+363,Pantai Maron
+364,Water Blaster Bukit Candi Golf
+365,Waduk Jatibarang
+366,Tirto Argo Siwarak
+367,Wisata Lereng Kelir
+368,Kampoeng Rawa
+369,Monumen Palagan Ambarawa
+370,Benteng Pendem
+371,Wisata Eling Bening
+372,Gua Maria Kerep Ambarawa
+373,Museum Kereta Ambarawa
+374,Hutan Pinus Kayon
+375,Kota Lama Semarang
+376,Semarang Chinatown
+377,La Kana Chapel
+378,Jembatan Biru Ambarawa
+379,Goa Rong
+380,Masjid Agung Ungaran
+381,Tugu Muda Semarang
+382,Kampoeng Kopi Banaran
+383,Taman Tabanas
+384,Kampung Tematik Jawi
+385,Kampung Batik Gedong Semarang
+386,Air Terjun Semirang
+387,Obyek Wisata Goa Kreo
+388,Watu Gunung Ungaran
+389,Brown Canyon
+390,Durian Gardens and Tourism Education Watu Simbar
+391,Flower Farm Setiya Aji
+392,Ekowisata Mangrove Wonorejo
+393,Taman Harmoni Keputih
+394,Air Mancur Menari
+395,Taman Prestasi
+396,Monumen Kapal Selam
+397,Taman Kunang-Kunang
+398,Taman Buah Surabaya
+399,Taman Pelangi
+400,Hutan Bambu Keputih
+401,Taman Keputran
+402,Food Junction Grand Pakuwon
+403,Taman Barunawati
+404,Kenjeran Park
+405,Surabaya North Quay
+406,Kebun Bibit Wonorejo
+407,Taman Ekspresi Dan Perpustakaan
+408,Kebun Binatang Surabaya
+409,Rumah Batik
+410,Ciputra Waterpark
+411,Masjid Muhammad Cheng Hoo
+412,Masjid Nasional Al-Akbar
+413,Museum TNI AL Loka Jala Crana
+414,Jembatan Merah
+415,Museum De Javasche Bank
+416,Keraton Surabaya
+417,Klenteng Sanggar Agung
+418,Museum Sepuluh Nopember Kota Surabaya
+419,Monumen Tugu Pahlawan
+420,Surabaya Museum (Gedung Siola)
+421,Museum Kesehatan Dr. Adhyatma
+422,Monumen Jalesveva Jayamahe
+423,Patung Sura dan Buaya
+424,Pantai Ria Kenjeran
+425,Waterpark Kenjeran Surabaya
+426,Balai Kota Surabaya
+427,Patung Buddha Empat Rupa
+428,Monumen Bambu Runcing Surabaya
+429,House of Sampoerna
+430,Atlantis Land Surabaya
+431,Taman Hiburan Rakyat
+432,Taman Mundu
+433,Museum Mpu Tantular
+434,Taman Bungkul
+435,Taman Air Mancur Menari Kenjeran
+436,Taman Flora Bratang Surabaya
+437,Gereja Perawan Maria Tak Berdosa Surabaya

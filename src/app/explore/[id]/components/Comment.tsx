@@ -16,41 +16,93 @@ import {
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
+// URL backend
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 interface UserCommentsProps {
   destinationId: string;
   destinationName: string;
 }
 
+// Format tanggal ke format yang lebih manusiawi
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('id-ID', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+};
+
 const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => {
-  const { isLoggedIn, user } = useAuth();
+  const { isAuthenticated, user } = useAuth();
   const [comments, setComments] = useState<CommentType[]>([]);
   const [newComment, setNewComment] = useState("");
   const [newRating, setNewRating] = useState(5);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [authState, setAuthState] = useState({ isLoggedIn: false, user: null });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  // Number of comments per page
   const COMMENTS_PER_PAGE = 3;
 
-  // Fetch komentar dari API
+  useEffect(() => {
+    setAuthState({ isLoggedIn: isAuthenticated, user });
+    console.log("Auth state updated:", { isLoggedIn: isAuthenticated, user });
+  }, [isAuthenticated, user]);
+
+  // Fetch comments dari backend
   useEffect(() => {
     if (!destinationId) return;
 
     const fetchComments = async () => {
+      setIsLoading(true);
+      setError(null);
+
       try {
-        const response = await fetch(`/api/comments/destination/${destinationId}`);
-        if (!response.ok) throw new Error('Failed to fetch comments');
+        console.log(`Fetching comments for: ${destinationId}`);
+
+        // URL backend langsung, tanpa prefix /api LAGI
+        const response = await fetch(`${API_URL}/api/comments/destination/${destinationId}`, {
+          method: 'GET',
+          credentials: 'include', // Penting untuk mengirim cookies otentikasi
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          console.error(`Error response: ${response.status}`);
+          const errorText = await response.text();
+          throw new Error(`Failed to fetch comments: ${errorText}`);
+        }
 
         const data = await response.json();
-        setComments(data.comments);
+        console.log('Comments data received:', data);
+
+        // Sesuaikan dengan format respons API
+        // Backend mungkin mengembalikan data.comments atau data langsung
+        const commentsData = data.comments || data;
+
+        // Format tanggal untuk tampilan
+        const formattedComments = commentsData.map((comment: any) => ({
+          ...comment,
+          date: formatDate(comment.date || comment.createdAt)
+        }));
+
+        setComments(formattedComments);
       } catch (error) {
         console.error('Error fetching comments:', error);
-        // Fallback ke mock data jika API gagal
+        setError('Failed to load comments');
+
+        // Fallback ke mock data
         const mockComments = getCommentsByDestinationId(destinationId);
         setComments(mockComments.length > 0
           ? mockComments
           : generateCommentsForDestination(destinationId, destinationName)
         );
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -59,32 +111,49 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
 
   // Handle submitting a new comment
   const handleSubmitComment = async () => {
-    if (!isLoggedIn) {
+    if (!authState.isLoggedIn) {
       setShowAuthModal(true);
       return;
     }
 
-    if (!user || !newComment.trim()) return;
+    if (!authState.user || !newComment.trim()) return;
+
+    setIsLoading(true);
+    setError(null);
 
     try {
-      const response = await fetch('/api/comments', {
+      // URL backend langsung, tanpa prefix /api
+      const response = await fetch(`${API_URL}/api/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
+        credentials: 'include', // Penting untuk mengirim cookies otentikasi
         body: JSON.stringify({
           destinationId,
           text: newComment,
-          rating: newRating
+          rating: newRating,
+          // Backend mungkin memerlukan destinationName juga
+          destinationName
         })
       });
 
-      if (!response.ok) throw new Error('Failed to submit comment');
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Failed to submit comment: ${errorText}`);
+      }
 
       const data = await response.json();
+      console.log('Comment created:', data);
+
+      // Format tanggal untuk tampilan
+      const newCommentData = {
+        ...data.comment,
+        date: formatDate(data.comment.date || data.comment.createdAt)
+      };
 
       // Update local state
-      setComments(prevComments => [data.comment, ...prevComments]);
+      setComments(prevComments => [newCommentData, ...prevComments]);
 
       // Reset form
       setNewComment("");
@@ -92,7 +161,9 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
       setCurrentPage(1);
     } catch (error) {
       console.error('Error submitting comment:', error);
-      alert('Failed to submit comment. Please try again.');
+      setError('Failed to post your comment. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -123,7 +194,7 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
   const displayedComments = getCurrentPageComments();
 
   return (
-    <div className="mb-16">
+    <div className="mb-16 overflow-visible">
       <h2 className={`${spaceGrotesk.className} text-2xl font-bold mb-6`}>
         Visitor Reviews ({comments.length})
       </h2>
@@ -145,13 +216,13 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
                 <button
                   key={star}
                   type="button"
-                  onClick={() => isLoggedIn && setNewRating(star)}
+                  onClick={() => authState.isLoggedIn && setNewRating(star)}
                   className={`text-lg ${
                     star <= newRating ? 'text-teal-400' : 'text-white/20'
                   } ${
-                    isLoggedIn ? 'cursor-pointer' : 'cursor-default'
+                    authState.isLoggedIn ? 'cursor-pointer' : 'cursor-default'
                   } focus:outline-none mr-1 transition-colors`}
-                  disabled={!isLoggedIn}
+                  disabled={!authState.isLoggedIn}
                 >
                   ★
                 </button>
@@ -163,40 +234,52 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
           <textarea
             className="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white/90 placeholder-white/50 focus:outline-none focus:border-teal-500/50 transition-colors"
             placeholder={
-              isLoggedIn
+              authState.isLoggedIn
                 ? "Share your thoughts about this destination..."
                 : "Sign in to leave a review"
             }
             rows={3}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            disabled={!isLoggedIn}
+            disabled={!authState.isLoggedIn}
           />
         </div>
+
+        {error && (
+          <div className="mb-4 p-3 bg-red-900/20 border border-red-500/30 rounded-lg text-red-300 text-sm">
+            {error}
+          </div>
+        )}
 
         <div className="flex justify-end">
           <button
             className="bg-teal-500/20 hover:bg-teal-500/30 border border-teal-500/30 rounded-lg px-5 py-2 text-teal-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             onClick={handleSubmitComment}
-            disabled={!isLoggedIn || !newComment.trim()}
+            disabled={!authState.isLoggedIn || !newComment.trim() || isLoading}
           >
-            Post Comment
+            {isLoading ? 'Posting...' : 'Post Comment'}
           </button>
         </div>
       </div>
 
-      {/* Comments list */}
-      {comments.length === 0 ? (
+      {/* Loading indicator */}
+      {isLoading && comments.length === 0 && (
+        <div className="flex justify-center py-8">
+          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-teal-500"></div>
+        </div>
+      )}
+
+      {/* Comments list - rest of the component remains mostly the same */}
+      {!isLoading && comments.length === 0 ? (
         <p className={`${inter.className} text-white/60 text-center py-8`}>
           Be the first to leave a review!
         </p>
       ) : (
         <div>
-          {/* Comment cards */}
           <div className="space-y-4">
             {displayedComments.map((comment) => {
-              // Get user data for this comment
-              const author = getCommentAuthor(comment.userId);
+              // Coba gunakan user dari backend jika ada, jika tidak gunakan fallback
+              const author = comment.user || getCommentAuthor(comment.userId);
 
               return (
                 <div
@@ -206,8 +289,8 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
                   <div className="flex items-start mb-3">
                     <div className="w-10 h-10 rounded-full mr-3 border border-white/10 flex-shrink-0">
                       <Image
-                        src={author.avatar}
-                        alt={author.username}
+                        src={author.avatar || '/images/default-avatar.png'}
+                        alt={author.username || author.name || 'User'}
                         width={40}
                         height={40}
                         className="rounded-full object-cover"
@@ -215,7 +298,7 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
                     </div>
                     <div>
                       <div className={`${spaceGrotesk.className} font-medium text-white/95`}>
-                        {author.username}
+                        {author.username || author.name || 'Anonymous'}
                       </div>
                       <div className="flex items-center flex-wrap">
                         <div className="flex mr-2">
@@ -244,7 +327,6 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
             })}
           </div>
 
-          {/* Pagination controls */}
           {totalPages > 1 && (
             <div className="mt-6 flex items-center justify-center gap-3">
               <button
@@ -277,7 +359,7 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
         </div>
       )}
 
-      {/* Auth Modal */}
+      {/* Auth Modal - unchanged */}
       {showAuthModal && (
         <div
           className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"

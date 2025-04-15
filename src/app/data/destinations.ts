@@ -1855,7 +1855,7 @@ export const featuredDestinations: Destination[] = [
             "category": "Taman Hiburan",
             "image": "/images/bandung/dago-dreampark.jpg",
             "likes": 20,
-            "rating": 4.0, // Adjusted from 10.2
+            "rating": 4.0, 
             "bestTimeToVisit": "Weekends for full range of activities, weekdays for less crowding. Dry season.",
             "entranceFee": "IDR 40,000 (Entrance fee, individual rides/photo spots require separate tickets).",
             "activities": [
@@ -1868,7 +1868,7 @@ export const featuredDestinations: Destination[] = [
             ],
             "coordinates": {
               "latitude": -6.8486423,
-              "longitude": 107.624 
+              "longitude": 107.624
             },
             "transportation": [
               "Private vehicle or chartered car",

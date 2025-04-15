@@ -28,20 +28,17 @@ model User {
   // Lokasi dan preferensi
   location            String?
   city                String?
+  age                 Int?
   coordinates         Json?     // Akan menyimpan {latitude, longitude}
 
   visitedPlaces       String[]  @default([])
   priceRange          String?   // Nilai standard: "budget", "midRange", "luxury"
 
-  // Kategori dan tag sesuai standar aplikasi
-  interestTags        String[]  @default([])  // Harus dalam nilai dari popularInterestTags
-  preferredCategories String[]  @default([])  // Harus dalam nilai dari travelCategories
+  interestTags        String[]  @default([])
+  preferredCategories String[]  @default([])
   minRating           Float?    @default(0)
 
-  travelStyle         String[]  @default([])
-  travelSeason        String[]  @default([])
-  accommodation       String[]  @default([])
-  activities          String[]  @default([])
+  needsProfileUpdate  Boolean   @default(true)
 
   comments            Comment[]
 

@@ -1,42 +1,65 @@
 import * as commentService from '../services/commentService.js';
-// Import destinationService
 import * as destinationService from '../services/destinationService.js';
+import { PrismaClient } from '@prisma/client'; // Tambahkan ini
 
+const prisma = new PrismaClient(); // Tambahkan ini
+
+// Fungsi untuk mendapatkan komentar dari destinasi tertentu
 export const getComments = async (req, res, next) => {
   try {
     const { destinationId } = req.params;
-    const comments = await commentService.getCommentsByDestinationId(destinationId);
+    console.log(`Fetching comments for destination: ${destinationId}`);
+
+    const comments = await commentService.getComments(destinationId);
 
     res.json({ comments });
   } catch (error) {
+    console.error('Error fetching comments:', error);
     next(error);
   }
 };
 
-export const createComment = async (req, res, next) => {
+// Fungsi untuk membuat komentar baru
+export const createComment = async (req, res) => {
   try {
-    const { text, rating, destinationId } = req.body;
+    const { text, rating, destinationId, destinationName } = req.body;
     const userId = req.session.userId;
 
-    if (!userId) {
-      return res.status(401).json({ message: 'Unauthorized' });
+    console.log(`Creating comment for destination ${destinationId} by user ${userId}`);
+
+    // Validasi input
+    if (!text || rating === undefined || !destinationId) {
+      return res.status(400).json({
+        message: 'Text, rating and destinationId are required'
+      });
     }
 
-    const commentData = {
+    // Buat komentar
+    const comment = await commentService.createComment({
       text,
       rating: parseFloat(rating),
       userId,
-      destinationId
-    };
+      destinationId,
+      destinationName
+    });
 
-    const comment = await commentService.addComment(commentData);
+    // Update rating destinasi - sementara matikan dulu untuk troubleshooting
+    // try {
+    //   await destinationService.updateDestinationRating(destinationId);
+    // } catch (ratingError) {
+    //   console.error('Error updating destination rating:', ratingError);
+    // }
 
-    // Update destination rating
-    await destinationService.updateDestinationRating(destinationId);
-
-    res.status(201).json({ comment });
+    res.status(201).json({
+      message: 'Comment created successfully',
+      comment
+    });
   } catch (error) {
-    next(error);
+    console.error('Error creating comment:', error);
+    res.status(500).json({
+      message: 'Failed to create comment',
+      error: error.message
+    });
   }
 };
 
@@ -51,7 +74,7 @@ export const getUserComments = async (req, res, next) => {
   }
 };
 
-export const updateComment = async (req, res, next) => {
+export const updateComment = async (req, res) => {
   try {
     const { id } = req.params;
     const { text, rating } = req.body;
@@ -73,15 +96,23 @@ export const updateComment = async (req, res, next) => {
     );
 
     // Update destination rating
-    await destinationService.updateDestinationRating(comment.destinationId);
+    try {
+      await destinationService.updateDestinationRating(comment.destinationId);
+    } catch (ratingError) {
+      console.error('Error updating destination rating:', ratingError);
+    }
 
     res.json({ comment: updatedComment });
   } catch (error) {
-    next(error);
+    console.error('Error updating comment:', error);
+    res.status(500).json({
+      message: 'Failed to update comment',
+      error: error.message
+    });
   }
 };
 
-export const deleteComment = async (req, res, next) => {
+export const deleteComment = async (req, res) => {
   try {
     const { id } = req.params;
     const userId = req.session.userId;
@@ -95,14 +126,24 @@ export const deleteComment = async (req, res, next) => {
       return res.status(403).json({ message: 'Forbidden' });
     }
 
-    const destinationId = comment.destinationId;
+    const destinationId = comment.destinationId; // Simpan sebelum menghapus
+
+    // Hapus komentar
     await commentService.deleteComment(parseInt(id));
 
-    // Update destination rating
-    await destinationService.updateDestinationRating(destinationId);
+    // Update rating setelah hapus komentar
+    try {
+      await destinationService.updateDestinationRating(destinationId);
+    } catch (ratingError) {
+      console.error('Error updating destination rating:', ratingError);
+    }
 
     res.json({ message: 'Comment deleted successfully' });
   } catch (error) {
-    next(error);
+    console.error('Error deleting comment:', error);
+    res.status(500).json({
+      message: 'Failed to delete comment',
+      error: error.message
+    });
   }
 };

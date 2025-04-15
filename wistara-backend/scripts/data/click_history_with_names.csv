@@ -1,0 +1,1653 @@
+User_Id,Place_Id,Click_Timestamp,Source
+1,Masjid Kapal Semarang,2025-02-24 14:46:29,recommendations
+1,Kampung Batik Gedong Semarang,2025-02-23 23:23:29,recommendations
+1,Waduk Jatibarang,2024-11-14 12:33:29,search
+2,Candi Prambanan,2025-02-23 20:38:29,homepage
+2,Museum Sonobudoyo Unit I,2024-10-17 14:39:29,recommendations
+2,Pesona Nirwana Waterpark & Cottages,2025-03-29 23:24:29,recommendations
+3,Masjid Al-Imtizaj,2025-04-06 3:39:29,external_ad
+3,Pasar Tanah Abang,2025-03-01 19:51:29,recommendations
+3,Kampung Tematik Jawi,2024-11-27 21:41:29,search
+3,Bumi Perkemahan Batu Kuda,2024-10-17 19:39:29,external_ad
+3,Taman Srigunting,2025-04-10 7:38:29,recommendations
+4,Food Junction Grand Pakuwon,2024-11-27 13:57:29,homepage
+4,Kampoeng Tulip,2024-11-05 10:44:29,search
+4,Puncak Gunung Api Purba - Nglanggeran,2025-01-11 8:49:29,recommendations
+4,Chingu Cafe Little Seoul,2024-12-02 6:42:30,search
+4,Keraton Surabaya,2025-01-16 20:56:30,external_ad
+4,Kawasan Kuliner BSM,2025-02-07 11:13:30,recommendations
+5,Masjid Salman ITB,2024-11-13 20:06:30,external_ad
+5,Jembatan Pasupati,2025-01-28 10:33:30,external_ad
+5,Taman Mini Indonesia Indah (TMII),2025-04-09 4:14:30,homepage
+5,Pasar Kebon Empring Bintaran,2025-03-26 13:02:30,homepage
+6,Candi Donotirto,2024-12-23 17:14:30,recommendations
+6,The Lost World Castle,2025-02-21 3:55:30,recommendations
+6,Curug Tilu Leuwi Opat,2025-01-05 2:13:30,homepage
+6,The Great Asia Africa,2025-01-30 5:13:30,homepage
+7,Taman Vanda,2025-01-04 19:38:30,homepage
+7,Masjid Salman ITB,2024-11-09 19:42:30,homepage
+7,Monumen Bambu Runcing Surabaya,2024-11-30 14:36:30,recommendations
+7,Taman Sungai Mudal,2025-03-14 14:02:30,recommendations
+8,Sunrise Point Cukul,2025-01-07 20:53:30,homepage
+8,Orchid Forest Cikole,2025-01-06 12:25:30,external_ad
+8,Gedung Sate,2024-12-20 5:32:30,homepage
+8,The Great Asia Africa,2024-10-21 11:22:30,recommendations
+8,Pasar Baru,2025-03-11 23:16:30,recommendations
+8,Situ Cileunca,2025-03-09 15:26:30,search
+9,Museum Kesehatan Dr. Adhyatma,2025-02-26 4:54:30,homepage
+9,Surabaya North Quay,2024-11-29 6:31:30,recommendations
+9,Pantai Ria Kenjeran,2025-03-17 16:54:30,search
+9,Taman Kunang-Kunang,2024-12-29 19:58:30,recommendations
+9,Kenjeran Park,2024-12-30 7:10:30,external_ad
+9,Patung Sura dan Buaya,2024-12-02 10:37:30,recommendations
+9,Museum Mpu Tantular,2025-02-22 2:46:30,homepage
+10,Perpustakaan Nasional,2024-12-03 16:13:30,external_ad
+10,Old City 3D Trick Art Museum,2024-11-03 10:55:30,homepage
+10,Observatorium Bosscha,2024-10-22 2:22:30,search
+10,Balai Kota Surabaya,2025-04-04 18:29:30,recommendations
+10,Bukit Jamur,2025-03-06 4:52:30,recommendations
+10,Alun-Alun Kota Bandung,2025-04-09 16:59:30,homepage
+10,Gunung Papandayan,2024-11-03 19:01:30,homepage
+10,Taman Pelangi Yogyakarta,2024-12-26 12:15:30,recommendations
+10,Rumah Batik,2024-12-21 17:13:30,homepage
+11,Bukit Wisata Pulepayung,2025-01-15 3:04:30,homepage
+11,Gedung Agung Yogyakarta,2024-10-21 21:24:30,external_ad
+12,Obyek Wisata Goa Kreo,2025-02-09 11:40:30,homepage
+12,Curug Malela,2025-01-27 2:58:30,recommendations
+12,Monumen Bandung Lautan Api,2025-03-16 0:40:30,search
+12,Tebing Breksi,2024-10-25 11:57:30,homepage
+13,NuArt Sculpture Park,2024-12-30 15:51:30,search
+13,Pintoe Langit Dahromo,2024-10-31 19:00:30,recommendations
+13,Candi Ratu Boko,2024-12-04 7:20:30,external_ad
+13,Taman Hutan Raya Ir. H. Djuanda,2025-01-15 6:15:30,recommendations
+14,Dusun Bambu,2025-03-14 15:12:30,search
+14,Batununggal Indah Club,2024-12-16 17:34:30,homepage
+14,Pantai Pok Tunggal,2024-11-05 9:29:30,recommendations
+14,Pantai Sadranan,2025-01-31 19:35:30,search
+15,Sungai Palayangan,2025-04-08 23:09:30,homepage
+15,Taman Balai Kota Bandung,2024-12-19 15:40:30,recommendations
+15,Atlantis Land Surabaya,2025-02-20 10:50:30,homepage
+15,Masjid Raya Bandung,2025-02-11 17:19:30,search
+15,Bentara Budaya Yogyakarta (BBY),2024-12-01 2:23:30,recommendations
+15,Taman Flora Bratang Surabaya,2025-03-24 16:45:30,recommendations
+15,Monumen Kapal Selam,2025-02-13 13:34:30,homepage
+15,Kampung Wisata Taman Sari,2024-11-18 8:47:30,recommendations
+16,Kampung Wisata Taman Sari,2024-12-27 18:41:30,external_ad
+16,Museum Gedung Sate,2025-01-24 16:41:30,search
+16,Museum Joang 45,2024-12-18 16:12:30,recommendations
+16,Taman Begonia,2025-02-21 22:20:30,homepage
+16,Gereja Perawan Maria Tak Berdosa Surabaya,2025-02-28 15:13:30,recommendations
+16,Monumen Yogya Kembali,2025-01-01 11:14:30,recommendations
+16,Pasar Kebon Empring Bintaran,2024-10-24 5:57:30,recommendations
+16,Kawasan Kuliner BSM,2024-12-31 1:24:30,homepage
+16,Mall Thamrin City,2024-11-25 3:53:30,external_ad
+17,Flower Farm Setiya Aji,2025-04-09 18:14:30,external_ad
+17,Museum TNI AL Loka Jala Crana,2024-11-24 11:39:30,homepage
+17,Taman Sejarah Bandung,2025-03-17 17:16:30,external_ad
+17,Taman Barunawati,2024-12-24 17:34:30,homepage
+18,Kawasan Malioboro,2024-10-18 2:18:30,external_ad
+18,Jogja Bay Pirates Adventure Waterpark,2025-01-29 1:21:30,external_ad
+18,Bukit Wisata Pulepayung,2024-11-24 2:59:30,homepage
+18,Pasar Kebon Empring Bintaran,2025-01-23 19:54:30,external_ad
+19,Kota Tua,2024-11-29 0:10:30,homepage
+19,Wisata Kaliurang,2024-12-28 8:56:30,recommendations
+19,Galeri Nasional Indonesia,2025-02-03 23:15:30,search
+20,Kawah Putih,2025-04-08 5:34:30,recommendations
+20,Puncak Pinus Becici,2025-02-25 17:20:30,external_ad
+20,Taman Sejarah Bandung,2024-11-02 10:00:30,homepage
+20,Gereja Katedral,2025-02-28 17:13:30,recommendations
+20,Ciputra Waterpark,2024-10-31 14:21:30,recommendations
+20,Museum Pendidikan Nasional,2024-10-19 6:09:30,homepage
+20,Curug Anom,2025-03-11 16:54:30,external_ad
+21,Wisata Lereng Kelir,2025-02-22 0:02:30,homepage
+21,Watu Gunung Ungaran,2025-03-08 14:21:30,homepage
+21,Taman Kasmaran,2024-12-08 16:32:30,recommendations
+21,Lawang Sewu,2024-10-18 23:31:30,recommendations
+21,Obyek Wisata Goa Kreo,2024-12-08 1:50:30,external_ad
+21,Jembatan Biru Ambarawa,2025-01-03 4:06:30,recommendations
+21,Water Blaster Bukit Candi Golf,2024-11-28 17:30:30,homepage
+21,GPIB Immanuel Semarang (Gereja Blenduk),2024-10-31 5:14:30,recommendations
+22,Pantai Ngrenehan,2025-01-15 21:28:30,homepage
+22,Curug Anom,2025-03-17 16:51:30,recommendations
+22,Bendung Lepen,2025-03-02 18:28:30,recommendations
+22,Curug Tilu Leuwi Opat,2025-03-01 21:24:30,homepage
+22,Air Terjun Semirang,2025-02-06 21:02:30,external_ad
+22,Lawang Sewu,2024-11-25 1:38:30,search
+23,Sea World,2024-12-28 11:48:30,external_ad
+23,Museum Ullen Sentalu,2025-01-11 4:01:30,homepage
+23,Desa Wisata Rumah Domes/Teletubbies,2025-04-06 15:59:30,homepage
+23,Taman Pintar Yogyakarta,2025-01-14 17:28:30,recommendations
+23,Kampung Batik Gedong Semarang,2024-12-31 2:06:30,search
+23,Kawasan Punclut,2025-02-07 9:49:30,recommendations
+24,Pantai Ria Kenjeran,2025-02-24 9:11:30,external_ad
+24,Kampung Tematik Jawi,2024-11-25 17:21:30,search
+24,Sunrise Point Cukul,2025-01-04 10:33:30,recommendations
+24,Museum Bahari Jakarta,2025-03-19 7:14:30,recommendations
+24,Stone Garden Citatah,2024-11-26 1:53:30,recommendations
+24,Patung Buddha Empat Rupa,2025-03-22 6:46:30,homepage
+24,Dusun Bambu,2025-02-16 8:56:30,external_ad
+24,Museum Kebangkitan Nasional,2024-10-22 1:42:30,recommendations
+24,Keraton Surabaya,2024-11-25 2:11:30,search
+24,Kebun Tanaman Obat Sari Alam,2024-10-26 5:07:30,homepage
+25,Green Village Gedangsari,2025-03-23 3:43:30,external_ad
+25,Ciwangun Indah Camp Official,2025-03-20 6:59:30,homepage
+25,Taman Lalu Lintas Ade Irma Suryani Nasution,2025-03-27 5:57:30,external_ad
+25,Gunung Lalakon,2024-10-23 0:09:30,recommendations
+25,Taman Legenda Keong Emas,2024-12-04 2:07:30,homepage
+25,Waterboom PIK (Pantai Indah Kapuk),2024-12-27 3:52:30,recommendations
+25,Bukit Moko,2024-11-11 4:19:30,recommendations
+25,Patung Sura dan Buaya,2025-02-17 0:59:30,recommendations
+25,Atlantis Land Surabaya,2025-03-04 22:33:30,homepage
+26,Candi Ratu Boko,2024-11-02 16:17:30,homepage
+26,Gua Pawon,2025-01-01 16:06:30,homepage
+26,Jurang Tembelan Kanigoro,2025-02-24 3:44:30,homepage
+26,Curug Cimahi,2024-12-22 1:10:30,homepage
+26,Pasar Baru,2024-10-16 3:15:30,recommendations
+26,Benteng Pendem,2025-03-15 22:35:30,external_ad
+26,Taman Lalu Lintas Ade Irma Suryani Nasution,2025-03-19 2:46:30,homepage
+26,Bumi Perkemahan Cibubur,2024-10-28 9:45:30,recommendations
+27,Pantai Kesirat,2025-02-07 0:32:30,recommendations
+27,Pantai Ngrawe (Mesra),2025-02-04 9:34:30,external_ad
+27,Bumi Perkemahan Batu Kuda,2025-01-25 13:25:30,search
+27,Taman Srigunting,2025-04-09 17:36:30,external_ad
+27,Glamping Lakeside Rancabali,2024-11-01 17:10:30,homepage
+27,Wisata Eling Bening,2024-10-24 16:12:30,recommendations
+28,Desa Wisata Lembah Kalipancur,2024-10-25 21:01:30,homepage
+28,Pantai Ngandong,2025-01-03 15:26:30,search
+28,Wisata Lereng Kelir,2024-11-15 17:32:30,recommendations
+28,La Kana Chapel,2025-03-21 10:38:30,recommendations
+28,Museum Sri Baduga,2025-02-16 10:57:30,external_ad
+28,Pelabuhan Marina,2024-11-03 23:15:30,homepage
+28,Museum Layang-layang,2025-01-04 17:54:30,homepage
+28,Masjid Pusdai,2025-03-01 9:45:30,recommendations
+29,Heha Sky View,2025-03-16 18:16:30,recommendations
+29,Museum Benteng Vredeburg Yogyakarta,2024-11-05 17:13:30,search
+29,Bukit Bintang,2024-10-31 11:10:30,external_ad
+29,Pantai Sepanjang,2025-02-08 1:34:30,recommendations
+29,Masjid Pusdai,2025-03-17 17:12:30,recommendations
+30,Galaxy Waterpark Jogja,2025-02-16 12:21:30,homepage
+30,Taman Lalu Lintas Ade Irma Suryani Nasution,2024-12-06 22:27:30,external_ad
+30,Indonesia Kaya Park,2025-03-16 4:40:30,recommendations
+30,Jembatan Kota Intan,2025-01-11 1:57:30,recommendations
+30,Babakan Siliwangi City Forest Path Bandung,2024-12-20 7:03:30,recommendations
+30,Candi Borobudur,2024-10-24 5:37:30,homepage
+30,Pantai Greweng,2025-02-17 20:31:30,homepage
+31,Lava Bantal,2025-03-27 2:19:30,recommendations
+31,Museum Bahari Jakarta,2024-12-24 19:49:30,external_ad
+31,Tugu Muda Semarang,2025-03-20 19:16:30,recommendations
+31,Kebun Bibit Wonorejo,2025-03-30 22:08:30,external_ad
+31,Perpustakaan Nasional,2024-12-01 20:54:30,homepage
+31,Tebing Breksi,2024-11-13 16:14:30,search
+31,Roemah Seni Sarasvati,2024-11-05 17:12:30,homepage
+32,Masjid Raya Bandung,2025-03-21 23:22:30,recommendations
+32,Kampung Batu Malakasari,2024-12-05 7:59:30,external_ad
+32,Grojogan Watu Purbo Bangunrejo,2024-12-20 2:29:30,recommendations
+33,Pantai Congot,2025-01-08 1:35:30,recommendations
+33,Sumur Gumuling,2025-03-14 20:04:30,recommendations
+33,Pasar Taman Puring,2024-11-23 12:42:30,recommendations
+33,Pantai Sanglen,2024-12-15 9:10:30,external_ad
+34,Kampung Tematik Jawi,2025-03-13 7:17:30,recommendations
+34,Jembatan Kota Intan,2025-04-02 5:46:30,homepage
+34,Puncak Kebun Buah Mangunan,2024-11-18 17:11:30,recommendations
+35,Museum Pos Indonesia,2025-03-03 20:52:30,external_ad
+35,Saloka Theme Park,2025-01-10 1:33:30,homepage
+35,Gua Maria Kerep Ambarawa,2024-12-26 0:07:30,recommendations
+35,Taman Ismail Marzuki,2025-01-05 1:33:30,homepage
+35,Kawasan Kuliner BSM,2025-01-27 21:17:30,external_ad
+35,Taman Badak,2025-02-05 6:18:30,homepage
+35,Masjid Raya Bandung,2024-11-01 9:19:30,homepage
+36,Gunung Lalakon,2025-03-20 5:49:30,homepage
+36,Farm House Susu Lembang,2025-01-27 6:15:30,recommendations
+37,Desa Wisata Sungai Code Jogja Kota,2025-02-05 13:53:30,external_ad
+37,Kampoeng Rawa,2024-12-25 16:30:30,recommendations
+37,Lawang Sewu,2025-01-04 7:01:30,homepage
+37,"Bukit Paralayang, Watugupit",2024-11-29 17:27:30,recommendations
+38,Museum Kereta Ambarawa,2025-03-03 15:35:30,recommendations
+38,Museum Bank Indonesia,2025-03-30 21:50:30,recommendations
+38,Museum Pendidikan Nasional,2024-12-20 23:35:30,recommendations
+38,Wisata Kraton Jogja,2025-02-23 22:28:30,recommendations
+39,Pantai Congot,2025-01-24 13:42:30,external_ad
+39,Situ Patenggang,2025-03-11 9:34:30,recommendations
+39,Tebing Karaton,2025-03-05 14:10:30,search
+39,Pasar Taman Puring,2025-02-16 7:58:30,recommendations
+39,Pantai Nglambor,2025-02-08 1:10:30,external_ad
+39,Pantai Sundak,2025-02-26 14:52:30,external_ad
+39,Museum Barli,2024-12-24 12:48:30,external_ad
+39,Grand Indonesia Mall,2025-02-16 5:04:30,recommendations
+39,House of Sampoerna,2024-11-30 13:15:30,homepage
+40,Watu Gunung Ungaran,2024-12-08 14:26:30,homepage
+40,La Kana Chapel,2025-01-04 6:44:30,recommendations
+40,Old City 3D Trick Art Museum,2025-03-25 7:03:30,recommendations
+40,Hutan Wisata Tinjomoyo Semarang,2025-02-21 10:27:30,recommendations
+40,Air Terjun Kali Pancur,2024-12-16 20:56:30,external_ad
+40,Masjid Agung Ungaran,2025-02-14 19:10:30,search
+40,Candi Gedong Songo,2024-12-16 2:54:30,homepage
+40,Kampoeng Djadhoel Semarang,2025-02-13 22:12:30,search
+41,Kampung Wisata Rejowinangun,2025-03-24 23:21:30,homepage
+41,Desa Wisata Kelor,2025-04-01 6:04:30,external_ad
+41,Hutan Pinus Pengger,2025-01-26 2:51:30,recommendations
+41,Pantai Ngrawe (Mesra),2025-03-12 2:39:30,recommendations
+41,Gedung Agung Yogyakarta,2024-10-17 23:14:30,homepage
+41,Keraton Yogyakarta,2024-12-11 1:34:30,external_ad
+41,Tebing Breksi,2025-02-09 15:32:30,recommendations
+42,Candi Borobudur,2025-03-28 12:41:30,external_ad
+42,Desa Wisata Sungai Code Jogja Kota,2024-10-30 8:46:30,external_ad
+42,Jembatan Biru Ambarawa,2025-03-31 20:01:30,external_ad
+42,Taman Miniatur Kereta Api,2025-04-04 7:50:30,recommendations
+42,Hutan Pinus Kayon,2025-03-30 21:47:30,recommendations
+42,Pantai Watu Kodok,2025-01-07 5:00:30,recommendations
+42,Wisata Mangrove Tapak,2025-01-29 7:29:30,recommendations
+43,Perpustakaan Nasional,2024-12-14 12:17:30,recommendations
+43,GPIB Immanuel Semarang (Gereja Blenduk),2024-11-09 8:05:30,external_ad
+43,Museum Tengah Kebun,2024-11-19 7:14:30,recommendations
+43,Curug Anom,2024-10-25 6:53:30,homepage
+43,Air Terjun Kedung Pedut,2025-02-14 4:43:30,homepage
+43,Museum Tengah Kebun,2025-01-08 1:19:30,external_ad
+44,Tugu Muda Semarang,2024-12-01 23:05:30,homepage
+44,Old City 3D Trick Art Museum,2024-12-05 18:42:30,recommendations
+45,Bandros City Tour,2024-12-10 22:53:30,recommendations
+45,Selasar Sunaryo Art Space,2024-12-24 3:27:30,homepage
+45,SnowBay Waterpark,2024-12-08 12:18:30,recommendations
+46,Museum Gedung Sate,2024-11-30 23:44:30,recommendations
+46,Masjid Agung Trans Studio Bandung,2024-11-08 17:12:30,external_ad
+46,Masjid Nasional Al-Akbar,2025-01-20 5:56:30,recommendations
+46,Taman Hutan Raya Ir. H. Juanda,2025-02-16 19:18:30,recommendations
+46,Kidzania,2025-01-03 2:04:30,recommendations
+46,Sea World,2025-02-13 9:39:30,recommendations
+47,Obyek Wisata Goa Kreo,2024-12-20 8:56:30,external_ad
+47,Taman Miniatur Kereta Api,2025-01-23 8:58:30,recommendations
+47,Pantai Sanglen,2024-11-28 5:39:30,recommendations
+47,Curug Aseupan,2025-03-17 8:01:30,homepage
+47,Pantai Pulang Sawal,2025-01-07 6:17:30,homepage
+48,Museum Sumpah Pemuda,2025-03-12 1:32:30,homepage
+48,Taman Harmoni Keputih,2024-12-18 5:32:30,external_ad
+48,Taman Flora Bratang Surabaya,2025-02-16 8:20:30,recommendations
+48,Museum Barli,2024-11-30 14:28:30,homepage
+48,Hutan Bambu Keputih,2024-12-17 10:24:30,search
+48,Museum Benteng Vredeburg Yogyakarta,2024-12-06 13:31:30,external_ad
+48,Museum Kereta Ambarawa,2025-03-06 11:33:30,homepage
+49,Taman Pelangi,2025-01-27 9:48:30,homepage
+49,Taman Flora Bratang Surabaya,2024-12-17 7:16:30,homepage
+49,Museum Satria Mandala,2024-12-19 1:19:30,external_ad
+50,Pantai Sedahan,2024-10-23 18:23:30,recommendations
+50,Pantai Wediombo,2025-03-02 22:17:30,recommendations
+50,The World Landmarks - Merapi Park Yogyakarta,2025-04-08 17:52:30,homepage
+50,Amazing Art World,2024-12-14 0:20:30,search
+50,Bumi Perkemahan Cibubur,2025-03-01 16:45:30,recommendations
+50,Gembira Loka Zoo,2024-11-20 11:28:30,homepage
+50,Taman Budaya Jawa Barat,2024-11-28 11:50:30,recommendations
+51,Goa Jomblang,2024-11-02 15:56:30,homepage
+51,Taman Harmoni Keputih,2025-04-11 18:56:30,homepage
+52,Kampung Tematik Jawi,2025-03-27 21:57:30,homepage
+52,Candi Gedong Songo,2025-01-06 1:57:30,recommendations
+53,Monumen Bambu Runcing Surabaya,2025-03-06 1:10:30,recommendations
+53,Sumur Gumuling,2024-11-13 4:35:30,recommendations
+53,Goa Rong,2024-11-10 5:27:30,homepage
+53,Taman Balai Kota Bandung,2024-11-12 19:51:30,homepage
+53,GunungTangkuban perahu,2025-01-18 2:52:30,recommendations
+53,Rabbit Town,2025-02-05 16:02:30,external_ad
+54,Monumen Bambu Runcing Surabaya,2024-12-20 2:53:30,external_ad
+54,Sunrise Point Cukul,2025-02-04 15:05:30,external_ad
+54,Kota Mini,2025-01-30 22:13:30,external_ad
+55,Watu Lumbung,2024-12-20 4:34:30,recommendations
+55,Hutan Pinus Pengger,2024-11-25 2:15:30,recommendations
+56,Bukit Gantole Cililin,2024-10-24 14:25:30,recommendations
+56,Gunung Papandayan,2025-03-25 21:21:30,recommendations
+57,Hutan Bambu Keputih,2024-12-12 1:47:30,homepage
+57,Masjid Nasional Al-Akbar,2025-03-07 23:55:30,recommendations
+57,Pasar Seni,2025-01-27 14:49:30,recommendations
+57,Sam Poo Kong Temple,2024-11-05 16:25:30,external_ad
+57,Monumen Kapal Selam,2024-12-14 9:27:30,homepage
+57,Stone Garden Citatah,2025-02-12 22:19:30,recommendations
+58,Grand Indonesia Mall,2024-11-15 19:00:30,homepage
+58,Kauman Pakualaman Yogyakarta,2024-11-12 1:32:30,search
+58,Jurang Tembelan Kanigoro,2024-11-08 22:01:30,homepage
+59,Gembira Loka Zoo,2025-01-11 13:34:30,search
+59,House of Sampoerna,2024-11-14 7:41:30,search
+59,Pantai Sundak,2024-12-02 21:50:30,recommendations
+59,Pasar Beringharjo,2024-11-29 14:39:30,external_ad
+59,Perkebunan Teh Malabar,2025-04-04 21:29:30,recommendations
+59,Old City 3D Trick Art Museum,2025-02-20 16:37:30,recommendations
+59,Taman Lalu Lintas Ade Irma Suryani Nasution,2025-01-09 1:20:30,recommendations
+59,Tirto Argo Siwarak,2025-01-30 20:38:30,external_ad
+60,Museum De Javasche Bank,2024-12-02 15:47:30,recommendations
+60,Masjid Nasional Al-Akbar,2024-12-28 19:06:30,recommendations
+60,House of Sampoerna,2024-10-27 1:26:30,recommendations
+60,Patung Buddha Empat Rupa,2025-04-04 18:43:30,recommendations
+60,Kebun Binatang Surabaya,2025-01-17 20:47:30,recommendations
+61,Museum Sepuluh Nopember Kota Surabaya,2025-02-27 12:44:30,recommendations
+61,Durian Gardens and Tourism Education Watu Simbar,2024-11-09 1:47:30,external_ad
+61,Kampung Tematik Jawi,2025-03-21 2:37:30,recommendations
+62,Museum Bahari Jakarta,2024-11-03 5:09:30,homepage
+62,Pantai Baron,2025-02-02 8:59:30,external_ad
+62,Lembang Park & Zoo,2025-03-31 18:33:30,homepage
+62,Pantai Watu Kodok,2024-12-11 4:12:30,homepage
+62,Gedung Agung Yogyakarta,2024-10-21 13:07:30,recommendations
+62,Trans Studio Bandung,2025-02-21 20:15:30,homepage
+62,Taman Menteng,2025-01-20 9:53:30,external_ad
+62,Kampung Wisata Kadipaten,2025-01-04 16:22:30,homepage
+63,Gua Maria Kerep Ambarawa,2025-03-04 4:54:30,homepage
+63,Umbul Sidomukti,2025-04-01 14:23:30,search
+63,Indonesia Kaya Park,2025-02-16 8:20:30,search
+63,Taman Tabanas,2025-01-11 14:56:30,recommendations
+64,Masjid Agung Trans Studio Bandung,2024-12-26 1:14:30,homepage
+64,Masjid Raya Bandung,2024-10-18 11:15:30,homepage
+64,Kebun Tanaman Obat Sari Alam,2025-03-03 1:19:30,homepage
+64,Taman Badak,2025-02-08 5:38:30,external_ad
+64,Selasar Sunaryo Art Space,2025-03-02 6:40:30,search
+64,Monumen Perjuangan Rakyat Jawa Barat,2025-01-31 6:02:30,homepage
+65,Bangsal Pagelaran,2024-10-17 14:45:30,homepage
+65,Taman Pelangi Yogyakarta,2024-10-22 23:18:30,recommendations
+65,Bendung Lepen,2024-10-17 5:46:30,external_ad
+65,Pantai Ngrenehan,2024-12-12 21:15:30,external_ad
+65,Bentara Budaya Yogyakarta (BBY),2024-12-29 15:03:30,recommendations
+65,Pantai Jungwok,2024-11-20 15:54:30,homepage
+65,Ledok Sambi,2025-03-06 7:57:30,recommendations
+65,Jogja Exotarium,2024-10-29 14:39:30,external_ad
+66,Taman Budaya Jawa Barat,2025-02-08 1:40:30,external_ad
+66,Bukit Gantole Cililin,2024-11-04 10:04:30,homepage
+66,Pintoe Langit Dahromo,2024-11-14 7:42:30,homepage
+66,Waterpark Kenjeran Surabaya,2024-12-22 0:26:30,external_ad
+66,Museum Kesehatan Dr. Adhyatma,2024-10-28 9:03:30,external_ad
+66,Kebun Teh Nglinggo,2024-11-30 16:34:30,recommendations
+66,Gedung Sate,2025-02-23 13:20:30,homepage
+66,Pantai Jogan,2024-12-07 14:34:30,recommendations
+66,Taman Pintar Yogyakarta,2024-11-29 9:50:30,homepage
+67,Museum Sri Baduga,2025-02-06 16:06:30,homepage
+67,Museum Satria Mandala,2025-04-06 17:46:30,recommendations
+67,Grand Indonesia Mall,2024-10-17 15:47:30,external_ad
+68,Museum Pos Indonesia,2025-03-21 6:10:30,homepage
+68,Gembira Loka Zoo,2025-01-19 10:44:30,recommendations
+68,Patung Buddha Empat Rupa,2024-11-06 18:06:30,search
+68,Gunung Lalakon,2025-04-10 7:31:30,external_ad
+68,Patung Sura dan Buaya,2024-10-30 3:31:30,external_ad
+68,Masjid Al-Imtizaj,2025-03-24 1:49:30,external_ad
+68,Ciputra Waterpark,2025-03-16 3:55:30,recommendations
+68,Tugu Muda Semarang,2025-02-12 0:25:30,recommendations
+69,Museum Bank Indonesia,2025-02-14 23:56:30,homepage
+69,Brown Canyon,2025-02-28 19:32:30,recommendations
+69,Lawang Sewu,2025-04-06 1:39:30,search
+69,Curug Batu Templek,2025-01-18 8:19:30,recommendations
+70,Caringin Tilu,2024-12-20 18:51:30,recommendations
+70,Seribu Batu Songgo Langit,2025-02-16 10:01:30,homepage
+70,Pantai Sadranan,2024-12-24 10:09:30,homepage
+71,Puncak Pinus Becici,2024-12-30 23:03:30,homepage
+71,Taman Balai Kota Bandung,2024-12-29 20:32:30,search
+71,Gereja Perawan Maria Tak Berdosa Surabaya,2025-01-17 14:55:30,recommendations
+71,Pantai Greweng,2024-11-17 21:40:30,search
+71,Museum Macan (Modern and Contemporary Art in Nusantara),2025-01-29 5:00:30,external_ad
+71,Gereja Katedral,2025-01-24 14:10:30,external_ad
+71,Bangsal Pagelaran,2025-01-04 11:13:30,recommendations
+71,Pantai Ngrenehan,2024-11-11 22:41:30,recommendations
+72,Pantai Ngrawe (Mesra),2024-10-16 10:53:30,recommendations
+72,Taman Budaya Yogyakarta,2024-11-11 22:45:30,external_ad
+72,Amazing Art World,2025-02-19 21:14:30,recommendations
+73,Taman Air Mancur Menari Kenjeran,2024-12-23 7:24:30,homepage
+73,Pasar Seni,2025-03-23 20:30:30,recommendations
+73,Kota Tua,2025-03-01 20:24:30,external_ad
+73,Jendela Alam,2025-01-09 22:01:30,recommendations
+74,Indonesia Kaya Park,2025-01-19 21:27:30,search
+74,Tirto Argo Siwarak,2025-03-29 18:41:30,external_ad
+74,La Kana Chapel,2024-10-28 1:39:30,external_ad
+74,Wisata Lereng Kelir,2025-01-31 0:25:30,search
+74,Obyek Wisata Goa Kreo,2024-12-04 2:51:30,homepage
+75,Patung Sura dan Buaya,2025-02-22 2:35:30,recommendations
+75,Selasar Sunaryo Art Space,2025-01-04 16:30:30,homepage
+75,Galeri Indonesia Kaya,2024-11-11 11:05:30,recommendations
+75,Pasar Taman Puring,2024-12-17 23:15:30,recommendations
+75,Kiara Artha Park,2024-11-02 6:36:30,homepage
+75,Bunker Kaliadem Merapi,2025-02-07 0:37:30,recommendations
+76,Keraton Yogyakarta,2024-12-30 23:52:30,external_ad
+76,Kebun Binatang Surabaya,2024-12-09 13:36:30,recommendations
+76,Jurang Tembelan Kanigoro,2025-02-17 0:50:30,homepage
+76,Alive Museum Ancol,2024-12-28 17:35:30,recommendations
+76,Museum TNI AL Loka Jala Crana,2025-02-09 12:50:30,recommendations
+76,Galeri Indonesia Kaya,2025-04-09 7:38:30,search
+76,Tebing Karaton,2024-10-31 7:47:30,recommendations
+76,Kawah Rengganis Cibuni,2025-02-19 15:31:30,recommendations
+77,Tugu Pal Putih Jogja,2024-11-06 19:15:30,external_ad
+77,Museum Barli,2025-02-01 16:20:30,recommendations
+77,Masjid Pusdai,2025-02-23 7:38:30,external_ad
+77,Blue Lagoon Jogja,2024-11-27 22:04:30,homepage
+77,Geoforest Watu Payung Turunan,2025-01-12 18:30:30,external_ad
+77,Pantai Siung,2025-03-09 2:18:30,homepage
+77,Sendang Geulis Kahuripan,2024-10-22 13:55:30,external_ad
+78,Alun-alun Utara Keraton Yogyakarta,2025-01-16 13:06:30,external_ad
+78,Museum Kesehatan Dr. Adhyatma,2025-01-21 21:17:30,homepage
+78,Alun-Alun Kota Bandung,2024-12-02 12:59:30,homepage
+78,Alive Museum Ancol,2025-02-28 1:49:30,search
+78,Saung Angklung Mang Udjo,2025-03-08 13:12:30,homepage
+78,Masjid Daarut Tauhiid Bandung,2025-03-04 11:57:30,homepage
+78,Heha Sky View,2024-12-18 13:38:30,recommendations
+79,Masjid Agung Trans Studio Bandung,2024-12-30 16:36:30,homepage
+79,Kebun Teh Nglinggo,2024-10-28 0:10:30,external_ad
+79,Food Junction Grand Pakuwon,2025-03-25 16:27:30,external_ad
+79,Sudut Pandang Bandung,2025-02-11 0:09:30,recommendations
+79,Studio Alam Gamplong,2024-12-26 17:47:30,recommendations
+79,Museum Satria Mandala,2025-01-14 11:49:30,recommendations
+80,Taman Mini Indonesia Indah (TMII),2025-01-19 4:16:30,homepage
+80,Candi Gedong Songo,2024-12-23 8:00:30,homepage
+80,Babakan Siliwangi City Forest Path Bandung,2024-10-20 19:03:30,external_ad
+81,Taman Sejarah Bandung,2025-04-01 23:31:30,homepage
+81,Wisata Batu Kuda,2024-11-03 2:26:30,recommendations
+81,Curug Anom,2025-03-17 2:05:30,recommendations
+81,Kampung Korea Bandung,2025-02-16 17:18:30,external_ad
+81,Taman Balai Kota Bandung,2024-12-30 9:24:30,recommendations
+81,Bukit Bintang,2024-11-05 8:20:30,recommendations
+81,Selasar Sunaryo Art Space,2024-11-12 11:56:30,external_ad
+81,Gereja Katedral Santo Petrus Bandung,2025-01-30 23:52:30,external_ad
+82,Surabaya Museum (Gedung Siola),2024-11-29 5:21:30,homepage
+82,Museum Kesehatan Dr. Adhyatma,2025-01-13 7:54:30,search
+82,Taman Pelangi,2025-01-10 15:39:30,homepage
+82,Surabaya Museum (Gedung Siola),2025-02-06 23:10:30,homepage
+82,Museum De Javasche Bank,2025-03-02 18:19:30,homepage
+82,Taman Hiburan Rakyat,2025-02-03 2:17:30,recommendations
+82,Taman Bungkul,2024-12-24 2:40:30,external_ad
+83,Curug Luhur Waterfall,2024-11-28 7:48:30,search
+83,Masjid Al-Imtizaj,2025-04-11 9:29:30,recommendations
+83,Masjid Nasional Al-Akbar,2024-10-21 11:46:30,homepage
+83,Wisata Eling Bening,2025-03-13 0:39:30,external_ad
+83,Perpustakaan Nasional,2024-10-27 15:17:30,homepage
+83,Museum Tekstil,2024-12-18 11:07:30,search
+83,Candi Sewu,2025-03-06 16:47:30,homepage
+84,Candi Prambanan,2025-01-23 12:54:30,recommendations
+84,Puncak Pinus Becici,2025-02-24 7:32:30,recommendations
+84,Wisata Alam Kalibiru,2025-01-04 21:22:30,external_ad
+84,Bentara Budaya Yogyakarta (BBY),2024-12-20 12:26:30,external_ad
+84,Hutan Pinus Pengger,2025-03-09 18:33:30,recommendations
+84,Goa Pindul,2025-03-11 2:40:30,homepage
+84,Bukit Bintang Yogyakarta,2024-10-16 16:50:30,homepage
+84,Museum Ullen Sentalu,2024-12-08 9:11:30,recommendations
+85,Hutan Pinus Pengger,2024-11-15 0:51:30,homepage
+85,Masjid Pusdai,2024-11-24 6:50:30,homepage
+85,Wisata Kaliurang,2025-03-13 21:41:30,external_ad
+85,Kampung Wisata Taman Sari,2025-02-06 20:21:30,homepage
+86,Masjid Salman ITB,2025-01-21 3:20:30,external_ad
+86,Panama Park 825,2025-02-18 4:46:30,homepage
+86,Selasar Sunaryo Art Space,2025-02-20 1:28:30,homepage
+86,Masjid Agung Trans Studio Bandung,2025-03-23 14:41:30,homepage
+86,Jendela Alam,2024-12-01 22:21:30,recommendations
+86,Water Blaster Bukit Candi Golf,2025-04-12 8:22:30,homepage
+87,Gereja Katedral,2025-02-12 17:03:30,external_ad
+87,Museum Sasmita Loka Ahmad Yani,2025-03-15 3:33:30,search
+87,Taman Pelangi Yogyakarta,2024-11-29 6:26:30,external_ad
+87,Museum Macan (Modern and Contemporary Art in Nusantara),2024-12-24 8:40:30,search
+87,Grand Indonesia Mall,2025-01-01 16:10:30,recommendations
+87,Masjid Muhammad Cheng Hoo,2025-03-20 4:52:30,search
+88,Jembatan Pasupati,2025-02-05 20:11:30,homepage
+88,Taman Flora Bratang Surabaya,2024-11-19 10:14:30,recommendations
+88,Masjid Agung Ungaran,2024-11-09 4:18:30,homepage
+88,Panghegar Waterboom Bandung,2024-11-14 2:57:30,recommendations
+89,The Lodge Maribaya,2024-12-23 14:27:30,external_ad
+89,Taman Bungkul,2025-01-01 11:45:30,homepage
+89,Pantai Ngobaran,2025-02-09 13:11:30,recommendations
+89,Roemah Seni Sarasvati,2024-12-22 17:34:30,search
+89,Old City 3D Trick Art Museum,2025-01-16 13:25:30,recommendations
+89,Pantai Jungwok,2024-12-31 17:31:30,search
+89,Klenteng Sanggar Agung,2024-12-30 4:48:30,homepage
+90,Hutan Wisata Tinjomoyo Semarang,2024-12-24 18:50:30,recommendations
+90,Pantai Cipta,2025-03-21 4:53:30,homepage
+90,Air Terjun Semirang,2024-10-31 4:56:30,recommendations
+90,Flower Farm Setiya Aji,2024-10-17 6:49:30,external_ad
+91,Wot Batu,2025-01-03 15:03:30,recommendations
+91,Perpustakaan Nasional,2025-03-09 1:03:30,recommendations
+91,Pantai Ngobaran,2024-10-29 7:52:30,external_ad
+91,Batununggal Indah Club,2025-01-05 2:25:30,recommendations
+91,Watu Mabur Mangunan,2025-01-10 8:29:30,recommendations
+91,Pantai Siung,2025-02-08 8:02:30,homepage
+92,Taman Budaya Yogyakarta,2025-03-16 22:08:30,recommendations
+92,Bukit Bintang,2025-01-05 14:11:30,homepage
+92,Pasar Petak Sembilan,2024-11-25 17:04:30,recommendations
+92,Gereja Katedral Santo Petrus Bandung,2025-03-20 2:05:30,homepage
+92,Desa Wisata Sungai Code Jogja Kota,2024-11-16 11:05:30,recommendations
+92,Mall Thamrin City,2025-03-19 0:07:30,recommendations
+92,Water Blaster Bukit Candi Golf,2025-04-11 4:44:30,recommendations
+93,Taman Kasmaran,2024-12-15 0:32:30,recommendations
+93,Taman Bunga Celosia,2025-03-15 12:45:30,external_ad
+93,Geoforest Watu Payung Turunan,2024-12-27 10:27:30,recommendations
+93,Kiara Artha Park,2024-12-12 13:50:30,homepage
+93,Goa Pindul,2025-04-03 13:07:30,search
+94,Kampung Pelangi,2025-04-01 9:55:30,external_ad
+94,Hutan Wisata Tinjomoyo Semarang,2025-02-09 2:01:30,external_ad
+94,Durian Gardens and Tourism Education Watu Simbar,2025-01-08 15:11:30,search
+94,Water Blaster Bukit Candi Golf,2025-03-09 18:28:30,recommendations
+94,Taman Kasmaran,2024-11-28 9:28:30,recommendations
+95,Monumen Batik Yogyakarta,2024-12-17 15:14:30,recommendations
+95,Bendung Lepen,2024-12-24 8:43:30,homepage
+95,Blue Lagoon Jogja,2025-01-06 20:59:30,recommendations
+96,Panama Park 825,2024-10-30 23:41:30,recommendations
+96,Klenteng Sanggar Agung,2025-01-30 6:17:30,homepage
+96,Masjid Istiqlal,2024-12-23 4:20:30,external_ad
+97,Masjid Pusdai,2024-11-06 6:37:30,recommendations
+97,Desa Wisata Tembi,2025-04-10 3:10:30,homepage
+97,Tugu Pal Putih Jogja,2024-11-12 22:36:30,recommendations
+97,Taman Suropati,2025-03-01 10:37:30,search
+97,Pemandian Air Panas Ciater,2024-11-12 11:40:30,recommendations
+97,Museum De Javasche Bank,2024-11-03 3:58:30,recommendations
+98,Taman Situ Lembang,2025-03-18 20:44:30,recommendations
+98,Grand Maerakaca,2024-10-18 13:41:30,homepage
+98,Pintoe Langit Dahromo,2024-11-19 21:47:30,homepage
+98,Stone Garden Citatah,2024-12-04 7:01:30,recommendations
+98,Taman Bunga Cihideung,2025-02-10 19:54:30,homepage
+98,Sungai Palayangan,2024-10-29 13:19:30,homepage
+98,Museum Satria Mandala,2025-02-14 5:01:30,external_ad
+99,Air Terjun Sri Gethuk,2024-11-25 2:06:30,search
+99,GPIB Immanuel Semarang (Gereja Blenduk),2024-11-28 13:26:30,external_ad
+99,Pantai Nguluran,2025-02-04 14:18:30,external_ad
+99,Taman Pandanaran,2024-12-16 14:59:30,homepage
+99,Tugu Muda Semarang,2025-02-28 21:43:30,homepage
+100,The Great Asia Africa,2025-04-12 3:19:30,external_ad
+100,Brown Canyon,2024-12-13 3:21:30,recommendations
+100,Museum TNI AL Loka Jala Crana,2024-11-29 11:02:30,recommendations
+100,Waterpark Kenjeran Surabaya,2024-11-11 18:53:30,recommendations
+101,Tugu Pal Putih Jogja,2024-12-26 13:04:30,external_ad
+101,Pasar Petak Sembilan,2024-12-02 6:05:30,homepage
+101,Pasar Tanah Abang,2024-12-01 0:35:30,recommendations
+101,Bendung Lepen,2025-02-08 20:58:30,external_ad
+102,Watu Goyang,2025-03-24 15:24:30,search
+102,Tebing Karaton,2025-03-19 13:35:30,external_ad
+103,Masjid Pusdai,2025-01-06 16:28:30,homepage
+103,Pemandian Air Panas Ciater,2024-11-27 7:18:30,homepage
+103,Taman Budaya Yogyakarta,2024-10-27 19:21:30,external_ad
+103,Bentara Budaya Yogyakarta (BBY),2025-01-20 14:51:30,recommendations
+103,Bumi Perkemahan Batu Kuda,2024-11-23 2:01:30,recommendations
+103,Air Terjun Sri Gethuk,2025-04-01 3:35:30,homepage
+103,Pulau Tidung,2025-03-21 16:54:30,homepage
+103,Trans Studio Bandung,2025-02-18 3:20:30,recommendations
+103,Freedom Library,2024-10-16 1:49:30,recommendations
+104,Bukit Bintang Yogyakarta,2024-11-17 7:20:30,recommendations
+104,Situ Patenggang,2025-01-26 20:07:30,homepage
+104,Museum Kesehatan Dr. Adhyatma,2025-03-28 19:12:30,recommendations
+104,Taman Mundu,2025-01-08 11:30:30,recommendations
+104,Monumen Sanapati,2024-12-25 16:13:30,external_ad
+104,Kampung Wisata Taman Sari,2024-11-06 6:31:30,recommendations
+104,Taman Harmoni Keputih,2025-04-07 8:49:30,recommendations
+104,Pemandian Air Panas Ciater,2024-12-06 0:01:30,search
+105,Goa Cerme,2024-10-21 22:05:30,external_ad
+105,Pantai Goa Cemara,2025-01-11 16:22:30,recommendations
+105,Museum Taman Prasasti,2025-03-26 12:37:30,recommendations
+105,Sunrise Point Cukul,2025-01-28 4:12:30,recommendations
+105,Kampoeng Djadhoel Semarang,2025-02-22 1:37:30,recommendations
+105,Taman Pintar Yogyakarta,2025-02-12 19:38:30,recommendations
+105,Pasar Taman Puring,2024-10-23 11:16:30,external_ad
+105,The Escape Hunt,2025-03-11 10:23:30,recommendations
+105,Pelabuhan Marina,2025-03-12 20:59:30,search
+105,Pantai Wediombo,2025-01-11 13:10:30,external_ad
+106,Hutan Pinus Kayon,2025-01-12 15:58:30,external_ad
+106,Pantai Sundak,2024-10-18 13:11:30,recommendations
+106,Jogja Bay Pirates Adventure Waterpark,2024-11-14 5:57:30,external_ad
+106,Taman Kunang-Kunang,2024-12-17 3:15:30,search
+106,Situ Cileunca,2024-12-22 3:18:30,recommendations
+106,Taman Srigunting,2024-11-25 23:24:30,recommendations
+106,Museum Satria Mandala,2024-11-16 2:14:30,external_ad
+107,Taman Prestasi,2025-03-09 8:21:30,recommendations
+107,Taman Lapangan Banteng,2024-12-07 21:59:30,external_ad
+107,Green Village Gedangsari,2025-02-21 16:29:30,homepage
+107,The Great Asia Africa,2025-03-28 7:10:30,external_ad
+107,Taman Agrowisata Cilangkap,2025-01-17 3:01:30,recommendations
+107,Curug Batu Templek,2025-03-26 1:38:30,recommendations
+108,Pesona Nirwana Waterpark & Cottages,2024-11-03 18:01:30,recommendations
+108,Batununggal Indah Club,2024-11-18 4:18:30,recommendations
+108,Taman Flora Bratang Surabaya,2025-04-12 21:17:30,recommendations
+108,Pantai Jogan,2025-02-06 16:56:30,recommendations
+108,Kampung Wisata Rejowinangun,2024-11-30 13:00:30,homepage
+109,Jalan Braga,2024-12-13 19:52:30,external_ad
+109,Rumah Sipitung,2024-12-01 22:37:30,homepage
+109,House of Sampoerna,2025-03-31 9:03:30,recommendations
+109,Taman Lalu Lintas Ade Irma Suryani Nasution,2025-03-14 0:08:30,recommendations
+109,Heha Sky View,2025-01-08 11:26:30,homepage
+110,Sunrise Point Cukul,2024-12-03 6:10:30,search
+110,Desa Wisata Pulesari,2024-12-21 17:21:30,external_ad
+110,Patung Sura dan Buaya,2024-12-15 17:31:30,recommendations
+110,Kebun Bibit Wonorejo,2025-03-09 0:33:30,recommendations
+110,Pantai Kesirat,2025-03-02 4:28:30,homepage
+110,Puncak Kebun Buah Mangunan,2025-03-16 13:02:30,homepage
+110,Curug Malela,2025-01-12 16:48:30,recommendations
+111,Pantai Ngandong,2024-12-26 11:51:30,external_ad
+111,Taman Impian Jaya Ancol,2024-12-22 0:12:30,external_ad
+111,Old City 3D Trick Art Museum,2024-12-19 19:53:30,external_ad
+111,Kawasan Wisata Sosrowijayan,2024-11-12 7:01:30,recommendations
+112,Curug Luhur Waterfall,2025-04-01 0:30:30,homepage
+112,NuArt Sculpture Park,2025-03-07 23:03:31,homepage
+112,Museum Barli,2025-01-18 15:15:31,recommendations
+112,Jendela Alam,2025-01-19 18:34:31,recommendations
+113,Pantai Pok Tunggal,2025-01-07 21:09:31,external_ad
+113,Gunung Lalakon,2025-04-03 6:16:31,homepage
+113,Happyfarm Ciwidey,2025-03-16 12:43:31,homepage
+113,Gunung Papandayan,2024-12-20 1:56:31,recommendations
+113,Sunrise Point Cukul,2024-12-28 23:56:31,recommendations
+113,The Lost World Castle,2025-01-16 16:49:31,recommendations
+113,Museum Wayang,2024-12-03 23:20:31,homepage
+114,Monumen Yogya Kembali,2025-03-12 5:32:31,external_ad
+114,Pintoe Langit Dahromo,2024-11-02 10:18:31,homepage
+114,Kampung Wisata Rejowinangun,2025-02-12 15:13:31,recommendations
+114,Goa Cerme,2025-03-02 18:03:31,recommendations
+114,Pantai Glagah,2024-10-21 17:16:31,homepage
+114,Sumur Gumuling,2025-02-25 4:44:31,search
+115,Old City 3D Trick Art Museum,2025-01-31 2:24:31,homepage
+115,Gunung Papandayan,2025-02-10 10:30:31,homepage
+115,Monumen Sanapati,2024-12-05 20:31:31,recommendations
+115,Goa Pindul,2024-12-05 2:08:31,external_ad
+115,Museum Sepuluh Nopember Kota Surabaya,2025-03-15 6:00:31,recommendations
+115,Taman Badak,2024-11-05 7:17:31,homepage
+115,Taman Legenda Keong Emas,2025-02-18 3:14:31,recommendations
+116,Roemah Seni Sarasvati,2024-12-29 6:07:31,recommendations
+116,Wisata Agro Edukatif Istana Susu Cibugary,2024-12-22 17:29:31,external_ad
+116,Curug Aseupan,2024-11-09 4:23:31,recommendations
+116,Ekowisata Mangrove Wonorejo,2025-01-02 11:43:31,recommendations
+117,Monumen Tugu Pahlawan,2025-03-24 19:39:31,recommendations
+117,Pantai Sedahan,2025-04-09 18:42:31,external_ad
+117,Babakan Siliwangi City Forest Path Bandung,2025-03-22 4:47:31,search
+117,Freedom Library,2025-01-05 2:39:31,homepage
+117,Masjid Muhammad Cheng Hoo,2024-11-25 9:11:31,recommendations
+117,Desa Wisata Rumah Domes/Teletubbies,2025-04-09 1:19:31,external_ad
+118,Masjid Muhammad Cheng Hoo,2025-01-22 22:36:31,recommendations
+118,Sea World,2025-01-06 13:53:31,external_ad
+118,Taman Lalu Lintas Ade Irma Suryani Nasution,2024-12-31 23:17:31,recommendations
+118,Museum Nasional,2024-12-20 13:15:31,recommendations
+118,Candi Ratu Boko,2025-01-17 6:30:31,recommendations
+118,Pantai Sadranan,2024-12-30 1:36:31,homepage
+118,Museum Wayang,2025-02-21 14:45:31,external_ad
+118,Museum Gunung Merapi,2024-11-04 3:30:31,external_ad
+118,Kawasan Punclut,2025-01-14 8:42:31,recommendations
+119,Sam Poo Kong Temple,2024-11-05 3:42:31,recommendations
+119,Museum Satria Mandala,2025-03-08 12:14:31,recommendations
+119,Museum Macan (Modern and Contemporary Art in Nusantara),2024-11-22 17:41:31,recommendations
+119,Taman Keputran,2025-01-13 20:25:31,homepage
+120,Pasar Seni,2025-02-28 4:17:31,external_ad
+120,Umbul Sidomukti,2025-01-12 15:04:31,external_ad
+120,Monumen Palagan Ambarawa,2025-02-27 22:58:31,recommendations
+121,Bukit Bintang,2024-10-17 9:44:31,homepage
+121,Bangsal Pagelaran,2024-11-22 14:04:31,recommendations
+121,Tugu Muda Semarang,2024-11-07 0:23:31,external_ad
+121,Museum Konferensi Asia Afrika,2025-01-17 13:24:31,homepage
+121,Museum Nasional,2024-10-27 4:34:31,external_ad
+121,Blue Lagoon Jogja,2025-02-27 6:29:31,external_ad
+121,Bangsal Pagelaran,2024-10-17 4:00:31,recommendations
+121,Puncak Segoro,2024-12-12 19:17:31,homepage
+121,Pantai Drini,2025-01-15 17:05:31,search
+122,Taman Menteng,2024-12-21 11:56:31,recommendations
+122,Lawang Sewu,2024-12-26 14:45:31,recommendations
+122,Museum Bank Indonesia,2024-12-23 5:48:31,external_ad
+122,Kebun Tanaman Obat Sari Alam,2024-12-05 2:27:31,recommendations
+122,Monumen Bambu Runcing Surabaya,2024-12-29 21:39:31,external_ad
+122,Danau Rawa Pening,2025-04-10 2:29:31,external_ad
+123,GPIB Immanuel Semarang (Gereja Blenduk),2024-11-05 8:28:31,recommendations
+123,Curug Luhur Waterfall,2024-12-10 8:18:31,homepage
+123,Ciputra Waterpark,2024-12-15 1:53:31,homepage
+124,Candi Ijo,2025-02-23 20:07:31,external_ad
+124,Pantai Baron,2024-11-01 16:48:31,recommendations
+124,Gua Maria Kerep Ambarawa,2025-01-10 17:58:31,external_ad
+124,Taman Bungkul,2025-01-09 12:57:31,homepage
+124,Babakan Siliwangi City Forest Path Bandung,2024-12-19 11:24:31,recommendations
+124,Glamping Lakeside Rancabali,2024-10-22 22:19:31,homepage
+124,Desa Wisata Sungai Code Jogja Kota,2025-01-15 22:42:31,external_ad
+124,Taman Ayodya,2025-01-25 15:22:31,recommendations
+125,Goa Cerme,2024-12-19 2:24:31,search
+125,Kebun Binatang Ragunan,2025-01-27 7:10:31,external_ad
+125,Kebun Binatang Ragunan,2025-04-11 13:08:31,external_ad
+125,"Bukit Paralayang, Watugupit",2025-01-22 12:10:31,external_ad
+125,Sendang Geulis Kahuripan,2024-12-16 16:08:31,recommendations
+126,Lembang Park & Zoo,2024-11-23 9:49:31,homepage
+126,Mall Thamrin City,2025-01-15 6:43:31,recommendations
+126,Pemandian Air Panas Ciater,2025-03-01 11:03:31,external_ad
+126,Taman Suropati,2025-03-16 8:16:31,recommendations
+126,Patung Sura dan Buaya,2024-11-26 2:59:31,external_ad
+126,Pantai Sadranan,2025-01-07 14:19:31,recommendations
+126,Goa Rong,2025-02-07 19:06:31,recommendations
+127,Bukit Bintang,2025-03-25 5:29:31,homepage
+127,Museum Geologi Bandung,2025-01-23 10:25:31,external_ad
+127,Galeri Nasional Indonesia,2025-02-28 0:02:31,external_ad
+127,Tugu Pal Putih Jogja,2025-01-09 1:28:31,recommendations
+128,Kawasan Kuliner BSM,2025-03-16 21:18:31,search
+128,Desa Wisata Sungai Code Jogja Kota,2025-02-17 6:51:31,recommendations
+129,Wisata Kampung Krisan Clapar,2025-01-08 16:08:31,external_ad
+129,Monumen Nasional,2024-12-31 19:13:31,external_ad
+130,Museum Sonobudoyo Unit I,2025-01-20 15:28:31,search
+130,Pantai Ngrenehan,2025-02-08 1:24:31,recommendations
+130,Desa Wisata Tembi,2025-02-01 22:29:31,recommendations
+130,Kampung Wisata Taman Sari,2024-12-11 17:33:31,homepage
+131,Taman Sungai Mudal,2024-11-25 6:15:31,external_ad
+131,Gereja Katedral,2024-12-01 19:59:31,search
+131,Wisata Mangrove Tapak,2024-10-28 15:37:31,external_ad
+131,Alun Alun Selatan Yogyakarta,2025-03-23 7:10:31,homepage
+132,Taman Spathodea,2025-02-20 1:52:31,external_ad
+132,Taman Sungai Mudal,2024-11-23 16:25:31,external_ad
+132,Taman Ekspresi Dan Perpustakaan,2025-03-16 20:46:31,recommendations
+132,Masjid Agung Trans Studio Bandung,2025-03-22 12:27:31,homepage
+132,Lava Bantal,2024-12-12 23:10:31,homepage
+133,Taman Flora Bratang Surabaya,2025-01-05 15:33:31,homepage
+133,Hutan Bambu Keputih,2024-11-09 15:20:31,recommendations
+134,Pantai Cipta,2025-04-10 11:18:31,recommendations
+134,Pantai Depok Jogja,2025-01-12 23:31:31,recommendations
+135,Kota Lama Semarang,2025-01-08 23:33:31,external_ad
+135,Watu Lumbung,2024-11-03 20:44:31,homepage
+135,Pasar Tanah Abang,2024-12-05 15:07:31,recommendations
+135,Gereja Tiberias Indonesia Bandung,2025-04-03 18:53:31,recommendations
+136,Goa Rong,2025-01-14 18:47:31,homepage
+136,Obyek Wisata Goa Kreo,2024-11-20 0:06:31,recommendations
+136,Grand Maerakaca,2024-11-15 3:58:31,homepage
+136,Taman Kasmaran,2025-01-31 8:02:31,external_ad
+136,Lawang Sewu,2025-03-01 11:23:31,recommendations
+136,Taman Tabanas,2024-11-10 17:02:31,external_ad
+137,Taman Kupu-Kupu Cihanjuang,2024-11-28 7:29:31,homepage
+137,Museum Pos Indonesia,2025-01-22 6:05:31,recommendations
+137,Caringin Tilu,2025-02-27 12:23:31,recommendations
+137,Taman Film,2025-02-25 16:16:31,homepage
+138,Pantai Pulang Sawal,2024-12-02 18:43:31,recommendations
+138,Seribu Batu Songgo Langit,2025-02-04 9:10:31,external_ad
+138,Pantai Siung,2024-10-22 13:18:31,recommendations
+138,Pantai Timang,2025-02-06 9:21:31,external_ad
+138,Kampung Wisata Dipowinatan,2024-12-16 18:31:31,search
+139,Semarang Contemporary Art Gallery,2025-01-21 2:04:31,search
+139,Masjid Salman ITB,2024-10-31 19:13:31,recommendations
+139,Pasar Baru,2025-01-22 13:28:31,external_ad
+140,Taman Pelangi,2024-10-30 6:35:31,recommendations
+140,Monumen Jalesveva Jayamahe,2025-01-01 23:51:31,recommendations
+140,Balai Kota Surabaya,2024-10-28 4:55:31,homepage
+140,Masjid Nasional Al-Akbar,2024-12-18 19:23:31,external_ad
+140,Taman Mundu,2025-03-31 5:16:31,recommendations
+140,Taman Bungkul,2024-11-21 3:12:31,homepage
+141,Setu Babakan,2025-03-23 8:33:31,recommendations
+141,Curug Anom,2024-12-04 15:14:31,homepage
+141,Panama Park 825,2025-02-28 19:58:31,recommendations
+141,Pasar Petak Sembilan,2025-01-29 6:42:31,external_ad
+141,Pintoe Langit Dahromo,2025-03-29 23:23:31,external_ad
+141,Masjid Al-Imtizaj,2024-11-30 9:16:31,search
+141,Pemandian Air Panas Ciater,2025-04-03 15:31:31,recommendations
+141,Sea World,2025-02-14 6:26:31,recommendations
+142,Monumen Yogya Kembali,2025-01-13 3:16:31,external_ad
+142,Goa Jomblang,2024-10-25 8:25:31,recommendations
+142,Curug Aseupan,2025-04-01 2:45:31,search
+142,Museum Gunung Merapi,2025-04-01 1:06:31,recommendations
+142,Pecinan Glodok,2025-03-21 0:52:31,external_ad
+142,Museum Mpu Tantular,2024-10-28 1:48:31,homepage
+142,Pantai Parangtritis,2025-03-14 6:11:31,search
+142,Kawasan Punclut,2025-02-07 18:08:31,homepage
+143,Curug Cimahi,2024-12-22 1:07:31,homepage
+143,Bukit Gantole Cililin,2024-12-17 3:38:31,external_ad
+143,Kampung Wisata Dipowinatan,2024-12-05 15:45:31,homepage
+143,Taman Balai Kota Bandung,2024-11-05 16:27:31,recommendations
+143,Museum Sonobudoyo Unit I,2025-03-23 1:03:31,recommendations
+143,Pantai Jungwok,2024-10-20 17:25:31,search
+143,Sea World,2024-11-03 4:52:31,recommendations
+143,Candi Ratu Boko,2025-02-22 7:54:31,homepage
+144,Taman Badak,2025-03-24 19:42:31,search
+144,Taman Hutan Raya Ir. H. Juanda,2024-11-23 11:57:31,search
+144,Masjid Al-Imtizaj,2025-03-18 11:23:31,recommendations
+144,"Bukit Paralayang, Watugupit",2024-11-07 10:58:31,homepage
+145,Seribu Batu Songgo Langit,2025-04-02 5:00:31,external_ad
+145,Wisata Lereng Kelir,2024-12-15 22:40:31,recommendations
+145,Bandros City Tour,2025-02-23 22:52:31,recommendations
+145,Semarang Contemporary Art Gallery,2025-03-03 17:12:31,recommendations
+145,Stone Garden Citatah,2024-12-13 9:21:31,recommendations
+146,Bukit Bintang Yogyakarta,2025-03-18 17:17:31,recommendations
+146,Patung Sura dan Buaya,2024-11-04 16:00:31,homepage
+146,Taman Prestasi,2024-12-22 16:09:31,recommendations
+146,Taman Srigunting,2025-03-28 8:23:31,recommendations
+147,Obyek Wisata Goa Kreo,2025-03-12 2:37:31,external_ad
+147,Taman Tabanas,2025-02-14 11:45:31,homepage
+147,Durian Gardens and Tourism Education Watu Simbar,2025-03-07 21:49:31,recommendations
+147,Indonesia Kaya Park,2025-03-26 18:48:31,recommendations
+148,Museum Gunung Merapi,2025-03-28 8:47:31,search
+148,Lava Bantal,2024-12-28 11:34:31,external_ad
+148,Watu Mabur Mangunan,2024-12-22 23:19:31,recommendations
+148,Wisata Alam Mangrove Angke,2024-12-16 17:42:31,external_ad
+148,Pantai Sadranan,2025-03-15 12:03:31,search
+149,Obyek Wisata Goa Kreo,2024-11-26 18:50:31,recommendations
+149,Taman Balai Kota Bandung,2024-10-22 5:02:31,external_ad
+149,Monumen Bambu Runcing Surabaya,2025-02-04 12:42:31,recommendations
+149,Candi Sewu,2024-11-10 8:42:31,homepage
+149,GPIB Immanuel Semarang (Gereja Blenduk),2025-01-26 21:54:31,recommendations
+149,Taman Bungkul,2024-12-02 5:02:31,recommendations
+149,Monumen Nasional,2025-03-25 7:05:31,recommendations
+150,Monumen Yogya Kembali,2024-11-07 14:48:31,homepage
+150,GunungTangkuban perahu,2024-10-17 21:25:31,homepage
+150,Pasar Taman Puring,2025-03-01 5:33:31,homepage
+150,Kampoeng Rawa,2025-01-17 22:04:31,external_ad
+150,Museum Taman Prasasti,2024-10-29 5:04:31,recommendations
+150,Kyotoku Floating Market,2025-01-15 0:49:31,homepage
+150,Cibubur Garden Diary (Cibugary),2025-01-22 16:36:31,external_ad
+150,Ciputra Waterpark,2024-11-16 14:51:31,external_ad
+150,Waduk Jatibarang,2025-03-17 20:33:31,recommendations
+151,Grand Indonesia Mall,2025-01-22 16:30:31,homepage
+151,Monumen Yogya Kembali,2025-03-10 19:49:31,recommendations
+151,Museum Gunung Merapi,2024-11-19 17:45:31,external_ad
+151,Panghegar Waterboom Bandung,2025-02-27 14:58:31,recommendations
+151,Hutan Pinus Asri,2024-10-16 19:40:31,recommendations
+151,Saloka Theme Park,2025-02-05 4:14:31,recommendations
+151,Pantai Pok Tunggal,2025-02-28 13:57:31,external_ad
+151,Observatorium Bosscha,2024-12-02 18:41:31,recommendations
+151,House of Sampoerna,2025-01-25 15:45:31,homepage
+152,Old City 3D Trick Art Museum,2025-03-31 7:54:31,homepage
+152,Gedung Sate,2025-02-21 21:40:31,homepage
+152,Tebing Karaton,2025-03-30 13:03:31,recommendations
+153,Semarang Contemporary Art Gallery,2025-03-23 16:28:31,homepage
+153,Museum Barli,2025-01-06 8:29:31,recommendations
+153,Monumen Perjuangan Rakyat Jawa Barat,2024-12-12 13:10:31,recommendations
+153,Monumen Perjuangan Rakyat Jawa Barat,2024-12-26 21:13:31,external_ad
+153,Taman Air Mancur Menari Kenjeran,2024-12-14 21:36:31,recommendations
+153,Tirto Argo Siwarak,2024-10-29 3:15:31,homepage
+153,Kebun Binatang Ragunan,2024-11-25 21:30:31,recommendations
+153,Taman Air Mancur Menari Kenjeran,2025-01-10 18:29:31,homepage
+153,Jembatan Merah,2024-10-17 1:05:31,external_ad
+154,Gereja Katedral Santo Petrus Bandung,2025-01-11 13:24:31,search
+154,Taman Miniatur Kereta Api,2024-12-22 5:17:31,external_ad
+154,Taman Badak,2025-02-26 14:32:31,homepage
+154,Bukit Bintang,2025-02-12 19:22:31,homepage
+154,Kampung Korea Bandung,2024-11-22 10:37:31,homepage
+154,Gereja Tiberias Indonesia Bandung,2025-01-18 19:48:31,homepage
+155,Taman Barunawati,2025-01-31 13:06:31,external_ad
+155,Gereja Perawan Maria Tak Berdosa Surabaya,2024-12-06 19:09:31,external_ad
+155,Kenjeran Park,2025-04-05 22:10:31,homepage
+155,Monumen Tugu Pahlawan,2024-11-14 7:58:31,search
+155,Taman Ekspresi Dan Perpustakaan,2024-12-25 11:14:31,external_ad
+155,Klenteng Sanggar Agung,2024-10-19 10:58:31,recommendations
+155,Masjid Nasional Al-Akbar,2025-01-01 22:27:31,recommendations
+155,Pantai Ria Kenjeran,2025-01-23 22:42:31,external_ad
+156,Bandros City Tour,2025-02-06 14:30:31,recommendations
+156,Gua Belanda,2025-01-24 6:48:31,search
+156,Pantai Jogan,2024-11-09 5:00:31,recommendations
+157,Pantai Kesirat,2024-11-13 22:09:31,recommendations
+157,Desa Wisata Rumah Domes/Teletubbies,2025-02-02 12:15:31,recommendations
+157,Wisata Kaliurang,2024-10-16 23:05:31,homepage
+157,Candi Ijo,2025-03-28 6:30:31,recommendations
+158,Goa Rancang Kencono,2025-02-13 12:51:31,search
+158,Pantai Ngrawe (Mesra),2025-02-10 16:54:31,search
+158,Atlantis Water Adventure,2025-02-10 12:31:31,external_ad
+158,Museum Sasmita Loka Ahmad Yani,2025-02-18 11:27:31,homepage
+158,Rainbow Garden,2025-01-03 7:37:31,external_ad
+158,Kiara Artha Park,2025-01-29 18:29:31,recommendations
+159,Gedung Agung Yogyakarta,2025-03-22 22:48:31,external_ad
+159,Gedung Sate,2024-11-09 9:30:31,homepage
+159,Taman Suropati,2024-11-09 0:03:31,homepage
+159,Curug Cimahi,2025-02-04 19:11:31,recommendations
+159,Desa Wisata Gamplong,2024-10-25 1:46:31,homepage
+159,Sea World,2024-11-03 15:05:31,homepage
+159,Orchid Forest Cikole,2025-03-05 16:41:31,external_ad
+160,Monumen Kapal Selam,2025-03-31 11:10:31,homepage
+160,Gua Belanda,2025-01-03 5:23:31,search
+160,Hutan Kota Srengseng,2025-03-02 7:04:31,search
+160,Monumen Palagan Ambarawa,2025-01-21 12:15:31,recommendations
+160,Jakarta Planetarium,2024-11-19 4:02:31,recommendations
+160,Monumen Tugu Pahlawan,2024-11-13 22:27:31,search
+161,Ciwangun Indah Camp Official,2024-10-21 16:00:31,search
+161,Peta Park,2024-11-22 22:06:31,recommendations
+161,Museum Gedung Sate,2025-02-01 6:31:31,external_ad
+161,Desa Wisata Kelor,2024-12-19 8:02:31,search
+161,Monumen Kapal Selam,2025-04-11 1:15:31,homepage
+161,Kampung Wisata Dipowinatan,2025-03-23 21:20:31,homepage
+161,Goa Cerme,2025-03-22 6:32:31,homepage
+161,Monumen Jalesveva Jayamahe,2025-02-17 1:31:31,homepage
+162,Cibubur Garden Diary (Cibugary),2025-01-27 20:27:31,recommendations
+162,Kampung Wisata Kadipaten,2024-12-07 15:45:31,recommendations
+162,Flower Farm Setiya Aji,2024-12-12 20:07:31,search
+162,Monumen Nasional,2024-10-16 14:43:31,external_ad
+162,Tugu Muda Semarang,2025-04-06 16:53:31,recommendations
+163,Waduk Jatibarang,2025-02-05 16:46:31,homepage
+163,Candi Gedong Songo,2024-10-27 11:06:31,recommendations
+163,Flower Farm Setiya Aji,2025-02-06 19:17:31,search
+163,Tirto Argo Siwarak,2025-02-22 12:20:31,external_ad
+163,Taman Srigunting,2025-01-13 6:33:31,search
+163,Grand Maerakaca,2025-01-23 15:44:31,homepage
+164,De Mata Museum Jogja,2025-03-29 18:06:31,homepage
+164,Bangsal Pagelaran,2024-11-30 10:01:31,recommendations
+164,Desa Wisata Gamplong,2024-11-28 17:09:31,homepage
+164,Kampung Wisata Rejowinangun,2024-11-17 19:49:31,recommendations
+164,Pantai Timang,2024-11-27 9:37:31,recommendations
+165,Taman Lapangan Banteng,2024-11-16 5:23:31,external_ad
+165,Semarang Contemporary Art Gallery,2025-03-26 23:08:31,recommendations
+165,Desa Wisata Pulesari,2025-03-18 23:29:31,recommendations
+165,Pantai Pulang Sawal,2025-03-23 19:48:31,homepage
+166,Mountain View Golf Club,2025-03-21 21:30:31,homepage
+166,Kampung Korea Bandung,2025-01-30 21:44:31,homepage
+166,Pulau Bidadari,2025-01-09 22:07:31,homepage
+166,The Lost World Castle,2024-10-17 3:22:31,external_ad
+167,Kota Lama Semarang,2024-11-14 1:51:31,external_ad
+167,Semarang Chinatown,2024-12-10 21:07:31,homepage
+167,Wisata Mangrove Tapak,2025-04-01 18:43:31,homepage
+167,Kampoeng Djadhoel Semarang,2024-11-08 0:13:31,recommendations
+167,Kampoeng Rawa,2024-10-26 18:24:31,search
+167,Hutan Wisata Tinjomoyo Semarang,2025-01-08 0:59:31,recommendations
+168,Taman Hutan Tebet,2024-10-25 7:25:31,recommendations
+168,Gereja Perawan Maria Tak Berdosa Surabaya,2025-03-31 17:00:31,search
+168,Taman Menteng,2024-12-29 12:43:31,recommendations
+168,Pulau Bidadari,2025-02-01 16:27:31,recommendations
+168,Jembatan Kota Intan,2024-12-07 11:34:31,external_ad
+168,Museum Pendidikan Nasional,2024-11-15 13:54:31,recommendations
+168,Galeri Indonesia Kaya,2024-10-24 19:20:31,homepage
+168,Taman Bungkul,2025-02-15 9:27:31,recommendations
+169,Hutan Pinus Kayon,2025-03-26 13:03:31,recommendations
+169,Tugu Proklamasi,2025-01-25 13:19:31,recommendations
+170,Pantai Siung,2025-03-14 1:01:31,external_ad
+170,Seribu Batu Songgo Langit,2025-02-15 6:30:31,recommendations
+170,Kenjeran Park,2025-01-18 11:54:31,search
+170,Watu Gunung Ungaran,2024-11-21 1:18:31,recommendations
+171,Museum Perangko,2025-01-16 4:41:31,recommendations
+171,Kampoeng Rawa,2025-01-12 0:08:31,external_ad
+171,Keraton Surabaya,2025-01-18 21:41:31,homepage
+171,Museum Sasmita Loka Ahmad Yani,2025-02-23 6:28:31,homepage
+171,Kawasan Malioboro,2024-11-25 3:46:31,recommendations
+171,Museum Sonobudoyo Unit I,2025-02-26 22:34:31,homepage
+171,Goa Cerme,2024-11-03 1:55:31,recommendations
+171,Bumi Perkemahan Cibubur,2024-12-04 3:46:31,homepage
+171,Jakarta Aquarium dan Safari,2025-02-05 12:49:31,external_ad
+172,Selasar Sunaryo Art Space,2024-11-26 9:55:31,homepage
+172,Museum Sri Baduga,2024-11-07 10:22:31,recommendations
+172,Masjid Agung Ungaran,2025-04-01 14:36:31,homepage
+172,Observatorium Bosscha,2025-03-05 9:07:31,homepage
+172,Museum Sonobudoyo Unit I,2025-03-18 8:48:31,search
+172,Monumen Palagan Ambarawa,2025-01-02 8:06:31,recommendations
+173,Taman Ismail Marzuki,2025-01-13 16:01:31,recommendations
+173,Goa Rong,2025-02-25 14:17:31,recommendations
+173,Tugu Pal Putih Jogja,2025-02-04 23:27:31,search
+173,Candi Ijo,2025-02-03 1:07:31,recommendations
+174,Sudut Pandang Bandung,2025-04-03 15:43:31,recommendations
+174,Observatorium Bosscha,2024-12-12 17:42:31,recommendations
+174,Kawasan Punclut,2025-04-03 0:01:31,recommendations
+174,House of Sampoerna,2024-11-21 20:20:31,homepage
+174,Semarang Chinatown,2024-10-30 0:32:31,recommendations
+174,Pasar Seni,2024-12-28 10:51:31,homepage
+174,Situs Warungboto,2025-03-07 1:24:31,recommendations
+174,Gumuk Pasir Parangkusumo,2025-03-10 3:49:31,homepage
+175,Kampung Batu Malakasari,2025-01-23 9:06:31,external_ad
+175,Museum Tekstil,2025-02-01 20:41:31,recommendations
+175,Taman Buah Surabaya,2025-01-05 16:23:31,external_ad
+175,House of Sampoerna,2024-11-17 0:13:31,homepage
+175,Kampung Wisata Dipowinatan,2025-04-03 1:11:31,search
+175,Plaza Indonesia,2025-01-11 13:30:31,homepage
+175,Pantai Jungwok,2025-04-09 22:39:31,recommendations
+175,Jogja Bay Pirates Adventure Waterpark,2025-02-16 23:13:31,recommendations
+175,Panama Park 825,2025-03-06 18:17:31,homepage
+176,Pantai Pulang Sawal,2024-10-21 20:05:31,recommendations
+176,Jakarta Aquarium dan Safari,2024-12-31 21:28:31,search
+176,Museum Kebangkitan Nasional,2024-12-03 22:50:31,recommendations
+176,Taman Ayodya,2024-11-29 22:40:31,recommendations
+176,Keraton Surabaya,2024-10-19 3:00:31,recommendations
+177,Museum Pos Indonesia,2024-11-10 2:04:31,recommendations
+177,Plaza Indonesia,2025-01-10 6:47:31,homepage
+177,Jalan Braga,2025-01-22 6:55:31,homepage
+177,The Lodge Maribaya,2024-11-01 12:13:31,homepage
+177,Taman Suropati,2025-03-15 13:53:31,recommendations
+178,Sea World,2024-12-17 5:59:31,search
+178,Perkebunan Teh Malabar,2025-01-24 2:07:31,homepage
+178,Wisata Kraton Jogja,2025-01-27 15:28:31,recommendations
+179,Pecinan Glodok,2024-10-21 8:44:31,recommendations
+179,Taman Lansia,2025-04-05 3:23:31,search
+179,Waduk Jatibarang,2025-01-01 23:51:31,recommendations
+179,Jakarta Aquarium dan Safari,2025-03-30 7:37:31,recommendations
+180,Pecinan Glodok,2024-12-02 1:55:31,external_ad
+180,Situ Patenggang,2024-12-25 14:39:31,homepage
+180,Museum Basoeki Abdullah,2025-04-05 3:58:31,external_ad
+180,Pantai Pok Tunggal,2025-02-28 3:52:31,search
+180,Desa Wisata Rumah Domes/Teletubbies,2024-11-06 9:28:31,external_ad
+180,Kota Mini,2025-01-08 22:20:31,external_ad
+180,Pulau Pelangi,2025-01-15 5:33:31,recommendations
+181,Istana Negara Republik Indonesia,2024-12-23 14:08:31,recommendations
+181,Pantai Congot,2025-04-05 21:07:31,external_ad
+182,Pasar Kebon Empring Bintaran,2025-01-28 10:12:31,recommendations
+182,NuArt Sculpture Park,2024-11-04 20:33:31,recommendations
+182,Masjid Salman ITB,2025-02-19 2:04:31,homepage
+182,Taman Lapangan Banteng,2025-04-01 11:42:31,recommendations
+182,Blue Lagoon Jogja,2025-01-08 10:36:31,external_ad
+182,Pantai Ria Kenjeran,2024-12-20 5:38:31,external_ad
+182,Museum Perangko,2025-03-23 19:23:31,external_ad
+183,Air Mancur Menari,2024-11-27 22:57:31,external_ad
+183,Bukit Bintang Yogyakarta,2024-10-22 22:34:31,external_ad
+183,Monumen Batik Yogyakarta,2024-11-05 10:49:31,homepage
+183,Monumen Sanapati,2025-02-24 3:19:31,recommendations
+184,Taman Ismail Marzuki,2024-11-27 1:01:31,recommendations
+184,Museum Sumpah Pemuda,2024-11-06 14:20:31,homepage
+184,Kampung Wisata Sosro Menduran,2025-02-28 11:19:31,recommendations
+184,Taman Barunawati,2025-02-16 12:07:31,search
+184,Pantai Timang,2025-02-06 14:16:31,homepage
+184,Museum TNI AL Loka Jala Crana,2025-04-10 17:28:31,recommendations
+184,Tafso Barn,2025-02-07 5:26:31,homepage
+184,Gereja Katedral Santo Petrus Bandung,2024-10-17 4:37:31,homepage
+185,Pantai Sundak,2024-10-28 9:56:31,recommendations
+185,Pantai Wediombo,2024-12-21 12:42:31,search
+185,Kebun Teh Nglinggo,2024-12-26 5:34:31,homepage
+185,Pantai Siung,2025-02-11 15:06:31,search
+185,Dunia Fantasi,2025-02-02 1:42:31,external_ad
+185,Upside Down World Bandung,2025-01-05 16:29:31,homepage
+185,Freedom Library,2025-02-26 3:40:31,external_ad
+185,Bukit Moko,2025-02-04 0:13:31,external_ad
+186,Obyek Wisata Goa Kreo,2024-10-28 23:41:31,recommendations
+186,Gua Maria Kerep Ambarawa,2025-01-16 16:17:31,recommendations
+186,Umbul Sidomukti,2024-12-18 9:51:31,search
+186,La Kana Chapel,2025-02-19 4:34:31,search
+187,Goa Cerme,2025-01-31 19:51:31,homepage
+187,Pantai Nguluran,2024-11-11 15:48:31,external_ad
+187,Pantai Ngrawe (Mesra),2024-11-05 9:45:31,homepage
+187,Pantai Depok Jogja,2024-12-22 16:32:31,external_ad
+187,Puncak Pinus Becici,2024-11-17 4:37:31,homepage
+188,Bukit Wisata Pulepayung,2025-02-25 13:06:31,search
+188,Alun Alun Selatan Yogyakarta,2024-12-08 9:54:31,recommendations
+188,Pulau Pelangi,2024-10-19 18:20:31,homepage
+188,Kiara Artha Park,2024-11-19 7:39:31,search
+188,Klenteng Jin De Yuan,2024-11-05 21:27:31,homepage
+188,Observatorium Bosscha,2025-01-22 22:28:31,homepage
+188,De Mata Museum Jogja,2024-12-24 1:59:31,homepage
+188,Batununggal Indah Club,2025-02-17 10:28:31,homepage
+189,Freedom Library,2025-02-24 23:48:31,recommendations
+189,Jogja Exotarium,2024-11-19 14:46:31,recommendations
+190,Taman Sejarah Bandung,2024-11-10 3:30:31,homepage
+190,Kawah Rengganis Cibuni,2025-03-09 17:49:31,external_ad
+190,Taman Budaya Yogyakarta,2024-12-22 5:16:31,recommendations
+190,Ekowisata Mangrove Wonorejo,2024-12-09 11:46:31,recommendations
+190,Pantai Sanglen,2025-02-04 19:27:31,external_ad
+190,Pantai Pulang Sawal,2024-11-04 2:26:31,recommendations
+191,Pantai Nglambor,2025-03-19 3:42:31,recommendations
+191,Pelabuhan Marina,2025-03-14 12:27:31,search
+191,Jalan Braga,2024-10-19 11:38:31,recommendations
+191,Curug Batu Templek,2025-01-25 10:03:31,recommendations
+192,Galeri Nasional Indonesia,2024-12-10 9:51:31,external_ad
+192,Pantai Timang,2024-11-21 0:30:31,search
+192,Skyrink - Mall Taman Anggrek,2025-03-25 0:06:31,recommendations
+192,Tebing Karaton,2025-02-17 1:17:31,external_ad
+193,Galaxy Waterpark Jogja,2025-03-30 6:06:31,recommendations
+193,Museum Mpu Tantular,2024-12-10 13:20:31,homepage
+193,Desa Wisata Gamplong,2025-04-11 4:51:31,search
+193,Candi Ratu Boko,2025-02-02 1:20:31,external_ad
+193,Hutan Pinus Pengger,2024-10-26 15:59:31,homepage
+193,Museum Nike Ardilla,2024-11-14 9:46:31,recommendations
+193,Cibubur Garden Diary (Cibugary),2025-03-31 10:15:31,recommendations
+193,Bukit Lintang Sewu,2025-02-26 16:35:31,recommendations
+194,Pantai Kesirat,2024-10-30 10:31:31,recommendations
+194,Pintoe Langit Dahromo,2025-01-08 8:18:31,recommendations
+194,Kawasan Punclut,2025-03-30 16:52:31,recommendations
+194,Farm House Susu Lembang,2024-12-10 4:28:31,homepage
+194,Lawang Sewu,2024-12-03 10:29:31,recommendations
+194,Benteng Pendem,2024-11-30 18:16:31,homepage
+194,Tebing Breksi,2025-02-09 20:26:31,recommendations
+194,Grand Maerakaca,2025-03-14 17:10:31,search
+194,Kampoeng Kopi Banaran,2025-01-20 21:02:31,homepage
+195,Wisata Agro Edukatif Istana Susu Cibugary,2024-12-29 4:42:31,recommendations
+195,Museum Tekstil,2024-11-13 17:10:31,recommendations
+195,Goa Rancang Kencono,2025-02-17 6:42:31,external_ad
+195,Situ Cileunca,2024-10-22 22:48:31,recommendations
+195,Taman Kunang-Kunang,2025-02-16 8:29:31,homepage
+195,Batununggal Indah Club,2025-04-06 15:16:31,homepage
+195,Kebun Binatang Ragunan,2025-02-12 16:22:31,homepage
+195,Museum Layang-layang,2025-03-01 5:44:31,homepage
+196,Batununggal Indah Club,2025-03-19 1:29:31,external_ad
+196,Kebun Teh Nglinggo,2025-02-07 15:31:31,external_ad
+196,Puncak Pinus Becici,2025-01-01 14:48:31,recommendations
+196,Museum Layang-layang,2024-10-27 16:37:31,recommendations
+196,Museum Sonobudoyo Unit I,2024-12-01 20:20:31,recommendations
+197,Museum Ullen Sentalu,2025-01-28 19:50:31,recommendations
+197,Hutan Pinus Kayon,2025-03-06 11:35:31,search
+197,Bukit Bintang Yogyakarta,2025-02-04 5:57:31,recommendations
+197,Patung Sura dan Buaya,2025-02-20 1:58:31,recommendations
+198,Museum Sonobudoyo Unit I,2024-11-18 12:14:31,homepage
+198,Taman Flora Bratang Surabaya,2024-12-24 2:23:31,search
+199,Museum Fatahillah,2024-10-28 23:53:31,recommendations
+199,Kampung Wisata Kadipaten,2025-02-22 0:17:31,homepage
+199,Pantai Jogan,2025-01-06 11:34:31,recommendations
+199,Curug Batu Templek,2024-11-01 19:06:31,homepage
+200,Pantai Pulang Sawal,2024-11-15 17:39:31,recommendations
+200,De Mata Museum Jogja,2025-03-19 17:22:31,homepage
+200,Tebing Karaton,2024-12-14 2:06:31,external_ad
+200,Curug Malela,2024-10-20 4:58:31,recommendations
+200,Museum Geologi Bandung,2024-10-22 17:29:31,recommendations
+200,Pantai Ngobaran,2024-12-30 8:10:31,recommendations
+200,Peta Park,2025-03-09 17:25:31,homepage
+201,Museum Sepuluh Nopember Kota Surabaya,2024-11-22 10:04:31,recommendations
+201,SnowBay Waterpark,2025-03-24 19:30:31,recommendations
+201,Gumuk Pasir Parangkusumo,2024-11-16 15:49:31,homepage
+201,Hutan Bambu Keputih,2024-11-21 17:34:31,external_ad
+201,Grand Maerakaca,2024-12-21 4:28:31,homepage
+201,Curug Batu Templek,2025-03-28 20:34:31,search
+201,Taman Situ Lembang,2024-12-25 5:58:31,search
+202,Bangsal Pagelaran,2024-10-24 0:12:31,search
+202,Waterpark Kenjeran Surabaya,2024-12-14 14:27:31,recommendations
+202,Pantai Sedahan,2025-02-19 20:08:31,homepage
+203,Gereja Perawan Maria Tak Berdosa Surabaya,2024-10-24 14:11:31,recommendations
+203,Taman Budaya Yogyakarta,2025-03-30 14:25:31,external_ad
+203,Taman Barunawati,2025-01-10 4:13:31,recommendations
+204,Pemandian Air Panas Ciater,2025-04-12 20:35:31,recommendations
+204,Amazing Art World,2024-12-17 15:46:31,homepage
+204,Pantai Jogan,2024-10-30 12:26:31,recommendations
+204,Tebing Karaton,2025-03-27 17:22:31,recommendations
+204,Dusun Bambu,2025-01-23 19:58:31,homepage
+204,Puncak Segoro,2025-01-06 18:58:31,recommendations
+205,Taman Miniatur Kereta Api,2025-01-08 2:26:31,homepage
+205,Masjid Al-Imtizaj,2025-03-01 8:13:31,search
+205,Wisata Batu Kuda,2025-02-02 22:19:31,external_ad
+206,Taman Kunang-Kunang,2025-03-16 16:53:31,homepage
+206,Monumen Bambu Runcing Surabaya,2025-02-20 14:25:31,homepage
+206,Taman Hiburan Rakyat,2025-01-23 18:07:31,recommendations
+207,Jembatan Kota Intan,2025-03-19 12:08:31,external_ad
+207,Museum Mandala Wangsit Siliwangi,2025-04-07 17:47:31,recommendations
+207,Goa Pindul,2025-03-25 6:56:31,homepage
+207,Kiara Artha Park,2025-01-15 12:58:31,external_ad
+207,Curug Luhur Waterfall,2025-01-15 6:00:31,homepage
+207,Masjid Daarut Tauhiid Bandung,2024-10-27 17:59:31,recommendations
+207,Curug Cimahi,2024-11-02 13:14:31,recommendations
+207,Saung Angklung Mang Udjo,2024-12-28 14:07:31,recommendations
+208,"Bukit Paralayang, Watugupit",2024-12-19 9:07:31,external_ad
+208,Pantai Baron,2024-10-21 19:28:31,search
+208,Bangsal Pagelaran,2025-02-20 17:19:31,external_ad
+208,Pantai Pulang Sawal,2024-11-02 15:51:31,external_ad
+208,Pantai Nglambor,2024-11-27 19:52:31,recommendations
+208,Studio Alam Gamplong,2024-12-16 14:42:31,homepage
+209,Museum Benteng Vredeburg Yogyakarta,2024-10-23 8:27:31,recommendations
+209,Taman Sejarah Bandung,2024-10-29 22:13:31,recommendations
+209,Goa Pindul,2024-11-12 0:17:31,homepage
+209,Museum Taman Prasasti,2024-12-29 7:05:31,external_ad
+209,Taman Ekspresi Dan Perpustakaan,2025-02-15 6:30:31,recommendations
+209,Babakan Siliwangi City Forest Path Bandung,2024-10-18 23:20:31,recommendations
+210,Masjid Raya Bandung,2025-03-17 0:26:31,recommendations
+210,Taman Suropati,2025-01-09 11:56:31,recommendations
+210,NuArt Sculpture Park,2025-03-29 3:03:31,homepage
+211,Museum Barli,2024-12-29 15:47:31,recommendations
+211,Rainbow Garden,2025-01-06 2:53:31,recommendations
+211,Blue Lagoon Jogja,2025-04-02 2:07:31,search
+211,Bumi Perkemahan Batu Kuda,2024-10-17 7:45:31,recommendations
+211,Desa Wisata Pulesari,2024-10-21 10:38:31,external_ad
+211,Pantai Pok Tunggal,2024-12-22 17:01:31,homepage
+211,Pelabuhan Marina,2024-12-09 9:36:31,recommendations
+212,Pasar Seni,2024-10-20 12:29:31,external_ad
+212,Museum Fatahillah,2024-11-14 8:28:31,external_ad
+212,Istana Negara Republik Indonesia,2024-11-29 14:32:31,recommendations
+212,Tektona Waterpark,2024-11-27 20:26:31,homepage
+212,Museum Perangko,2024-11-18 8:13:31,external_ad
+212,Alun-alun Utara Keraton Yogyakarta,2025-01-24 4:38:31,recommendations
+212,Museum Gedung Sate,2025-02-10 2:43:31,recommendations
+213,Pantai Jungwok,2025-01-24 10:16:31,search
+213,Kyotoku Floating Market,2024-12-25 17:11:31,external_ad
+213,Situs Warungboto,2025-01-30 7:42:31,external_ad
+213,Museum Konferensi Asia Afrika,2024-12-15 18:50:31,external_ad
+214,Hutan Wisata Tinjomoyo Semarang,2025-01-15 5:09:31,recommendations
+214,Wisata Eling Bening,2024-12-09 14:34:31,homepage
+214,Brown Canyon,2025-01-31 15:52:31,external_ad
+214,Goa Rong,2025-03-24 6:46:31,recommendations
+214,Kampoeng Djadhoel Semarang,2024-11-17 7:01:31,homepage
+214,Benteng Pendem,2025-02-10 21:09:31,homepage
+214,Hutan Wisata Tinjomoyo Semarang,2025-01-10 11:28:31,homepage
+214,Gua Maria Kerep Ambarawa,2025-02-13 21:02:31,recommendations
+214,Taman Pandanaran,2024-11-28 8:19:31,external_ad
+215,Desa Wisata Tembi,2025-04-06 1:19:31,recommendations
+215,Pantai Kesirat,2025-01-13 23:02:31,search
+215,Monumen Sanapati,2024-11-20 18:36:31,external_ad
+215,Pantai Ngobaran,2024-11-28 23:42:31,search
+215,Pantai Baron,2024-10-17 10:13:31,recommendations
+215,Pantai Ngandong,2024-11-26 13:13:31,homepage
+216,Water Park Bandung Indah,2025-03-16 20:07:31,recommendations
+216,Pantai Pok Tunggal,2025-02-28 11:36:31,homepage
+216,Museum Wayang,2024-12-29 13:19:31,search
+216,Pecinan Glodok,2025-02-06 9:47:31,homepage
+216,Bukit Jamur,2025-03-26 4:20:31,recommendations
+216,Museum Benteng Vredeburg Yogyakarta,2025-04-01 5:23:31,recommendations
+216,The Great Asia Africa,2024-11-12 18:23:31,homepage
+217,Kawah Putih,2025-03-07 21:34:31,external_ad
+217,Orchid Forest Cikole,2025-03-03 7:56:31,homepage
+217,"Bukit Paralayang, Watugupit",2024-12-15 3:17:31,recommendations
+218,Tirto Argo Siwarak,2025-02-07 11:20:31,recommendations
+218,Flower Farm Setiya Aji,2025-04-09 17:07:31,recommendations
+218,Obyek Wisata Goa Kreo,2024-12-01 14:32:31,homepage
+218,Sam Poo Kong Temple,2025-02-15 1:45:31,recommendations
+218,Wisata Lereng Kelir,2024-11-01 3:05:31,search
+218,Candi Gedong Songo,2025-02-28 11:56:31,external_ad
+218,Taman Kasmaran,2024-12-13 19:07:31,external_ad
+219,Kota Lama Semarang,2025-01-24 3:29:31,recommendations
+219,Monumen Nasional,2024-12-29 17:35:31,homepage
+219,Masjid Nasional Al-Akbar,2025-02-21 18:38:31,external_ad
+219,Pecinan Glodok,2025-04-08 0:32:31,recommendations
+219,Wisata Kaliurang,2024-10-27 21:16:31,external_ad
+219,Rainbow Garden,2024-12-10 18:12:31,recommendations
+220,Kawah Rengganis Cibuni,2025-04-10 16:12:31,recommendations
+220,Air Terjun Semirang,2025-02-17 16:54:32,recommendations
+220,Bukit Lintang Sewu,2025-03-17 7:00:32,recommendations
+220,Obyek Wisata Goa Kreo,2024-12-10 16:53:32,search
+220,Bunker Kaliadem Merapi,2024-12-20 21:21:32,external_ad
+221,Pantai Sanglen,2025-01-09 19:22:32,recommendations
+221,Taman Jomblo,2025-03-07 11:50:32,recommendations
+221,Monumen Tugu Pahlawan,2024-11-15 13:15:32,search
+221,Taman Lapangan Banteng,2025-02-20 16:55:32,homepage
+221,Wisata Kraton Jogja,2024-12-08 20:57:32,recommendations
+222,Goa Rong,2024-10-20 14:07:32,external_ad
+222,Kampung Wisata Dipowinatan,2025-02-11 1:20:32,homepage
+222,Taman Buah Surabaya,2025-02-13 8:00:32,external_ad
+222,Museum Sasmita Loka Ahmad Yani,2024-11-09 5:12:32,recommendations
+223,Taman Srigunting,2024-12-23 8:18:32,recommendations
+223,Kampung Batu Malakasari,2024-11-23 18:19:32,homepage
+223,The World Landmarks - Merapi Park Yogyakarta,2025-01-23 7:00:32,external_ad
+223,Air Mancur Menari,2025-03-02 10:25:32,recommendations
+223,Museum Satria Mandala,2024-12-31 5:17:32,homepage
+224,Museum Ullen Sentalu,2024-10-26 23:19:32,recommendations
+224,Tirto Argo Siwarak,2024-12-09 9:42:32,homepage
+224,Embung Tambakboyo,2025-01-10 2:27:32,external_ad
+224,Grand Maerakaca,2024-10-24 4:14:32,homepage
+224,Pantai Parangtritis,2025-02-11 20:40:32,homepage
+224,Brown Canyon,2025-04-07 21:30:32,external_ad
+224,Candi Ratu Boko,2024-12-25 6:51:32,recommendations
+224,Curug Tilu Leuwi Opat,2024-10-28 18:28:32,recommendations
+225,Taman Lapangan Banteng,2024-12-15 11:22:32,recommendations
+225,Indonesia Kaya Park,2025-01-18 7:57:32,recommendations
+226,Surabaya Museum (Gedung Siola),2024-10-18 9:57:32,external_ad
+226,Bumi Perkemahan Batu Kuda,2025-03-13 19:45:32,recommendations
+226,Waduk Jatibarang,2025-02-28 6:41:32,recommendations
+227,Ledok Sambi,2024-12-06 11:31:32,search
+227,Museum Mandala Wangsit Siliwangi,2025-01-27 11:30:32,external_ad
+227,Masjid Salman ITB,2025-02-13 22:09:32,external_ad
+227,Sindu Kusuma Edupark (SKE),2025-02-01 9:45:32,recommendations
+227,Museum Seni Rupa dan Kramik,2024-12-03 18:43:32,homepage
+227,Air Terjun Semirang,2025-04-03 2:06:32,external_ad
+227,Museum Geologi Bandung,2024-10-19 10:11:32,recommendations
+228,Watu Goyang,2025-03-05 2:11:32,recommendations
+228,Pasar Seni,2024-11-16 11:47:32,recommendations
+229,Desa Wisata Kelor,2025-02-10 8:06:32,recommendations
+229,Gedung Sate,2025-03-21 1:12:32,recommendations
+229,Jendela Alam,2024-11-04 7:43:32,external_ad
+229,NuArt Sculpture Park,2025-02-11 5:18:32,recommendations
+229,Pantai Baron,2024-10-31 4:46:32,homepage
+229,Alun Alun Selatan Yogyakarta,2024-12-05 4:45:32,external_ad
+229,Candi Borobudur,2024-11-09 7:06:32,recommendations
+229,Curug Tilu Leuwi Opat,2025-01-14 12:36:32,homepage
+230,Pantai Krakal,2024-11-06 7:32:32,recommendations
+230,Pantai Sepanjang,2025-02-05 10:14:32,recommendations
+231,Taman Miniatur Kereta Api,2025-02-07 23:06:32,external_ad
+231,Patung Buddha Empat Rupa,2025-01-08 22:56:32,external_ad
+231,Museum Mandala Wangsit Siliwangi,2024-11-24 17:43:32,homepage
+232,Sungai Palayangan,2025-01-21 7:22:32,recommendations
+232,Taman Tabanas,2025-02-12 10:36:32,recommendations
+232,Dusun Bambu,2025-03-23 14:10:32,search
+232,Masjid Agung Ungaran,2025-03-17 12:59:32,external_ad
+232,Stone Garden Citatah,2024-12-24 0:36:32,recommendations
+232,Pantai Pulang Sawal,2025-01-10 3:41:32,external_ad
+232,Atlantis Water Adventure,2024-12-18 19:54:32,external_ad
+232,Taman Hutan Tebet,2024-12-07 15:31:32,recommendations
+232,Teras Cikapundung BBWS,2025-03-03 18:51:32,external_ad
+233,Taman Lalu Lintas Ade Irma Suryani Nasution,2025-03-07 2:20:32,external_ad
+233,Bumi Perkemahan Batu Kuda,2024-12-31 18:19:32,recommendations
+233,Wisata Alam Wana Wisata Penggaron,2024-10-22 22:51:32,recommendations
+233,Museum Nasional,2025-04-06 11:55:32,homepage
+233,Perpustakaan Nasional,2025-04-05 21:38:32,external_ad
+233,Gereja Tiberias Indonesia Bandung,2025-02-03 18:24:32,homepage
+234,Museum Benteng Vredeburg Yogyakarta,2024-11-24 22:41:32,external_ad
+234,Kebun Tanaman Obat Sari Alam,2025-02-26 18:20:32,external_ad
+234,Kampung Batik Gedong Semarang,2024-11-25 16:30:32,search
+234,Taman Prestasi,2024-12-10 15:48:32,recommendations
+234,Museum Pendidikan Nasional,2025-03-24 23:08:32,recommendations
+234,Monumen Jalesveva Jayamahe,2025-01-07 6:52:32,homepage
+234,Kawasan Malioboro,2024-12-03 23:41:32,external_ad
+235,Taman Situ Lembang,2024-11-03 17:32:32,search
+235,Taman Film,2024-12-16 0:21:32,homepage
+236,Wisata Lereng Kelir,2025-02-12 4:21:32,recommendations
+236,Obyek Wisata Goa Kreo,2025-02-16 22:31:32,recommendations
+236,Hutan Mangrove Kulon Progo,2025-01-24 16:59:32,external_ad
+236,Tugu Muda Semarang,2024-12-29 8:59:32,homepage
+236,Kawasan Wisata Sosrowijayan,2024-10-28 2:40:32,recommendations
+236,Monumen Bandung Lautan Api,2024-10-17 7:28:32,recommendations
+236,Dusun Bambu,2024-12-22 3:43:32,external_ad
+236,Pantai Nguluran,2025-03-20 14:04:32,homepage
+237,Grand Maerakaca,2024-10-16 21:03:32,homepage
+237,Balai Kota Surabaya,2024-11-19 7:03:32,search
+237,Pantai Wediombo,2024-12-11 11:09:32,recommendations
+237,Pantai Sedahan,2024-12-29 11:34:32,external_ad
+237,Taman Hutan Raya Ir. H. Juanda,2025-02-28 13:36:32,homepage
+238,Green Village Gedangsari,2025-04-02 6:23:32,external_ad
+238,Kawasan Malioboro,2024-10-22 18:16:32,search
+238,Pantai Nguluran,2025-03-14 20:01:32,homepage
+238,Pantai Krakal,2025-04-12 4:57:32,recommendations
+238,Taman Pelangi Yogyakarta,2025-04-08 19:09:32,recommendations
+239,Monumen Jalesveva Jayamahe,2024-11-21 4:16:32,recommendations
+239,Pintoe Langit Dahromo,2024-11-29 7:22:32,homepage
+239,The Escape Hunt,2024-12-23 7:53:32,external_ad
+239,Masjid Agung Ungaran,2025-04-07 5:58:32,homepage
+240,Skyrink - Mall Taman Anggrek,2025-01-08 17:14:32,search
+240,Kebun Tanaman Obat Sari Alam,2024-12-14 16:42:32,homepage
+240,Masjid Agung Trans Studio Bandung,2025-03-17 0:32:32,external_ad
+240,Jembatan Pasupati,2024-10-27 18:46:32,recommendations
+240,Monumen Sanapati,2025-03-23 12:03:32,recommendations
+240,Wisata Kuliner Pecenongan,2025-03-24 23:56:32,external_ad
+240,Masjid Istiqlal,2025-01-20 21:06:32,recommendations
+241,Pantai Samas,2025-01-17 19:01:32,recommendations
+241,Pantai Ngobaran,2024-10-18 19:14:32,homepage
+242,Pasar Petak Sembilan,2024-11-22 7:53:32,homepage
+242,Pantai Goa Cemara,2024-11-03 19:41:32,homepage
+242,Wisata Kuliner Pecenongan,2025-04-01 22:50:32,external_ad
+242,Taman Pelangi,2024-11-18 16:43:32,homepage
+242,Pantai Jungwok,2025-02-23 10:12:32,homepage
+242,Taman Ismail Marzuki,2025-02-05 3:04:32,external_ad
+243,Pantai Sadranan,2025-01-26 14:19:32,homepage
+243,Pulau Tidung,2025-01-03 6:38:32,homepage
+244,Happyfarm Ciwidey,2025-02-10 20:50:32,search
+244,NuArt Sculpture Park,2025-01-22 8:37:32,search
+244,Museum Nike Ardilla,2024-12-28 17:14:32,recommendations
+244,Puncak Segoro,2025-02-08 2:13:32,homepage
+244,Blue Lagoon Jogja,2025-02-15 6:40:32,recommendations
+244,Taman Begonia,2025-01-11 21:19:32,search
+245,Klenteng Jin De Yuan,2025-02-14 22:13:32,homepage
+245,Kampung Korea Bandung,2024-11-05 17:42:32,homepage
+245,Masjid Agung Trans Studio Bandung,2025-03-14 2:06:32,homepage
+246,Taman Tabanas,2025-01-16 9:25:32,recommendations
+246,Pantai Kesirat,2025-02-13 14:57:32,homepage
+246,Surabaya North Quay,2025-02-14 4:19:32,external_ad
+246,Rainbow Garden,2025-04-02 8:27:32,external_ad
+247,Galeri Indonesia Kaya,2025-01-05 3:30:32,external_ad
+247,Museum Sasmita Loka Ahmad Yani,2025-01-24 2:35:32,recommendations
+247,Tugu Pal Putih Jogja,2024-10-31 6:45:32,homepage
+247,Museum Wayang,2024-10-16 13:41:32,external_ad
+247,Bumi Perkemahan Batu Kuda,2025-01-12 9:34:32,recommendations
+247,Masjid Muhammad Cheng Hoo,2025-03-19 0:43:32,recommendations
+247,Alun Alun Selatan Yogyakarta,2024-11-01 1:58:32,recommendations
+248,Masjid Daarut Tauhiid Bandung,2025-03-03 19:39:32,homepage
+248,Pantai Ancol,2024-11-25 14:21:32,homepage
+248,Taman Budaya Jawa Barat,2024-11-18 13:38:32,homepage
+248,Mall Thamrin City,2025-02-20 9:52:32,recommendations
+248,Gunung Manglayang,2024-12-31 21:02:32,recommendations
+248,Taman Cattleya,2025-01-03 21:32:32,external_ad
+248,Watu Goyang,2025-02-19 7:11:32,external_ad
+248,Museum Sonobudoyo Unit I,2024-12-15 2:41:32,homepage
+249,The Lost World Castle,2024-12-19 16:24:32,recommendations
+249,Pasar Beringharjo,2025-01-15 20:42:32,external_ad
+249,The Great Asia Africa,2025-02-25 8:35:32,homepage
+249,Hutan Pinus Asri,2025-03-02 18:46:32,search
+250,Margasatwa Muara Angke,2024-11-21 19:35:32,homepage
+250,Museum Fatahillah,2025-02-12 20:23:32,homepage
+250,Indonesia Kaya Park,2024-10-25 12:40:32,recommendations
+250,Bukit Moko,2025-02-25 15:57:32,homepage
+250,Panama Park 825,2025-03-11 17:55:32,recommendations
+250,Curug Dago,2024-11-15 18:57:32,external_ad
+250,Taman Legenda Keong Emas,2025-04-06 6:25:32,recommendations
+250,Nol Kilometer Jl.Malioboro,2025-03-03 19:51:32,homepage
+251,Tugu Muda Semarang,2024-10-28 18:27:32,external_ad
+251,Taman Pandanaran,2024-11-28 6:07:32,external_ad
+251,Pantai Marina,2024-11-07 5:09:32,recommendations
+252,Curug Aseupan,2025-04-02 20:11:32,external_ad
+252,Geoforest Watu Payung Turunan,2024-10-25 19:21:32,recommendations
+252,Kampung Wisata Dipowinatan,2024-10-25 3:20:32,recommendations
+253,Panama Park 825,2025-01-11 22:34:32,homepage
+253,Selasar Sunaryo Art Space,2025-02-17 22:57:32,recommendations
+253,Air Mancur Menari,2025-01-06 10:06:32,external_ad
+253,Galeri Indonesia Kaya,2025-03-26 18:36:32,external_ad
+253,Bukit Jamur,2024-12-11 13:09:32,homepage
+253,Pantai Ngobaran,2025-02-07 4:02:32,recommendations
+253,Taman Ayodya,2024-11-08 11:19:32,homepage
+253,Watu Lumbung,2025-03-19 21:44:32,homepage
+254,Taman Ekspresi Dan Perpustakaan,2025-03-05 7:21:32,external_ad
+254,Dunia Fantasi,2025-01-12 14:06:32,homepage
+254,Pantai Sedahan,2025-04-10 13:41:32,homepage
+254,Taman Srigunting,2025-01-30 15:29:32,recommendations
+254,Kota Mini,2024-10-26 11:25:32,recommendations
+254,GPIB Immanuel Semarang (Gereja Blenduk),2024-12-17 18:06:32,homepage
+255,Taman Agrowisata Cilangkap,2025-01-31 12:52:32,search
+255,Museum De Javasche Bank,2025-04-03 0:47:32,homepage
+255,Taman Sejarah Bandung,2025-03-02 13:52:32,homepage
+255,Curug Luhur Waterfall,2025-02-03 13:14:32,recommendations
+255,Hutan Pinus Asri,2024-12-03 17:43:32,homepage
+255,Pantai Ancol,2024-12-15 3:27:32,recommendations
+256,La Kana Chapel,2024-12-26 19:10:32,homepage
+256,Taman Lapangan Banteng,2024-10-24 15:14:32,recommendations
+256,Candi Sewu,2024-11-24 20:23:32,recommendations
+256,Cibubur Garden Diary (Cibugary),2024-11-07 5:54:32,external_ad
+256,Taman Harmoni Keputih,2025-03-18 0:22:32,homepage
+256,Pelabuhan Marina,2025-01-21 7:40:32,homepage
+256,Pasar Petak Sembilan,2025-03-18 12:47:32,external_ad
+256,Kampung Wisata Rejowinangun,2025-03-12 1:46:32,recommendations
+256,Pantai Sanglen,2024-11-02 0:13:32,recommendations
+257,Gua Belanda,2025-03-19 9:06:32,recommendations
+257,Masjid Kapal Semarang,2024-12-18 13:55:32,recommendations
+258,Gedung Sate,2025-02-25 15:31:32,recommendations
+258,Bandros City Tour,2025-01-24 20:13:32,search
+258,Sunrise Point Cukul,2024-10-27 20:04:32,recommendations
+258,Taman Bunga Cihideung,2024-12-12 7:23:32,recommendations
+258,Taman Miniatur Kereta Api,2025-01-11 3:24:32,recommendations
+258,Kampung Batu Malakasari,2025-02-07 14:06:32,recommendations
+258,Farm House Susu Lembang,2025-02-25 6:12:32,recommendations
+258,Sendang Geulis Kahuripan,2025-03-09 14:05:32,homepage
+258,Taman Film,2025-03-20 0:14:32,homepage
+258,Chingu Cafe Little Seoul,2024-12-31 12:50:32,homepage
+259,Museum Kesehatan Dr. Adhyatma,2025-03-20 12:35:32,recommendations
+259,Kebun Bibit Wonorejo,2025-03-29 22:10:32,recommendations
+259,Museum Kesehatan Dr. Adhyatma,2025-03-01 0:08:32,homepage
+259,Surabaya Museum (Gedung Siola),2024-11-03 3:54:32,homepage
+259,Monumen Tugu Pahlawan,2024-12-22 1:29:32,recommendations
+259,Taman Buah Surabaya,2024-12-02 0:10:32,homepage
+260,Situ Cileunca,2025-04-08 16:44:32,homepage
+260,Candi Ijo,2025-03-27 14:43:32,recommendations
+260,Saung Angklung Mang Udjo,2024-12-20 11:07:32,external_ad
+260,Museum Gunung Merapi,2024-11-05 14:57:32,homepage
+260,Gua Belanda,2024-10-25 18:33:32,recommendations
+260,Museum Satria Mandala,2025-04-11 15:28:32,external_ad
+261,Goa Jomblang,2025-03-19 8:33:32,recommendations
+261,Candi Ijo,2025-03-17 22:03:32,homepage
+261,Pintoe Langit Dahromo,2025-01-12 6:13:32,recommendations
+261,Candi Donotirto,2024-11-01 0:16:32,external_ad
+261,Kawasan Malioboro,2024-11-24 7:36:32,recommendations
+262,Wot Batu,2024-12-29 11:16:32,external_ad
+262,Pasar Tanah Abang,2024-11-30 18:19:32,external_ad
+262,Glamping Lakeside Rancabali,2025-01-06 22:02:32,recommendations
+262,Monumen Kapal Selam,2025-04-08 22:17:32,recommendations
+262,Gedung Sate,2025-02-17 19:31:32,external_ad
+262,Alive Museum Ancol,2025-04-09 0:01:32,homepage
+262,Obyek Wisata Goa Kreo,2025-03-03 5:34:32,recommendations
+263,Gunung Lalakon,2025-01-29 0:17:32,search
+263,Pasar Beringharjo,2024-10-17 8:47:32,homepage
+263,Curug Cilengkrang,2024-10-27 13:37:32,external_ad
+264,Farm House Susu Lembang,2024-11-20 15:59:32,homepage
+264,Gereja Tiberias Indonesia Bandung,2025-04-03 14:05:32,search
+264,Jembatan Merah,2025-02-17 12:56:32,search
+264,Masjid Agung Ungaran,2025-02-12 2:04:32,external_ad
+264,Pulau Tidung,2025-01-09 2:44:32,search
+264,Lawangwangi Creative Space,2024-11-13 1:20:32,search
+264,Glamping Lakeside Rancabali,2024-12-04 8:04:32,recommendations
+264,Museum De Javasche Bank,2025-03-11 7:47:32,recommendations
+264,Wisata Batu Kuda,2024-10-28 12:06:32,external_ad
+264,Danau Rawa Pening,2025-01-13 11:03:32,recommendations
+265,Pantai Goa Cemara,2024-12-26 7:16:32,external_ad
+265,Jembatan Biru Ambarawa,2024-10-26 16:15:32,recommendations
+265,Pulau Bidadari,2025-02-01 11:26:32,recommendations
+265,Museum Sasmita Loka Ahmad Yani,2025-02-11 5:30:32,search
+265,Gunung Papandayan,2025-01-05 1:02:32,recommendations
+265,Surabaya North Quay,2025-02-28 10:20:32,external_ad
+265,Mall Thamrin City,2025-03-11 2:17:32,recommendations
+266,Hutan Kota Srengseng,2025-02-03 9:28:32,homepage
+266,Taman Balai Kota Bandung,2024-11-13 19:11:32,homepage
+266,Museum Sonobudoyo Unit I,2024-12-25 15:20:32,recommendations
+266,Pantai Wediombo,2025-04-06 3:49:32,recommendations
+267,Pantai Marina,2025-02-02 7:13:32,external_ad
+267,Kampung Batik Gedong Semarang,2025-02-07 10:03:32,homepage
+267,La Kana Chapel,2025-02-03 17:15:32,recommendations
+267,Waduk Jatibarang,2025-01-05 8:00:32,search
+267,Umbul Sidomukti,2025-03-04 15:50:32,external_ad
+267,Gua Maria Kerep Ambarawa,2024-12-19 6:50:32,homepage
+268,Candi Sewu,2025-01-19 6:04:32,recommendations
+268,Bendung Lepen,2024-11-18 5:30:32,recommendations
+268,Pantai Congot,2025-02-24 14:27:32,recommendations
+268,Desa Wisata Tembi,2024-12-16 4:55:32,homepage
+269,Museum Geologi Bandung,2025-01-17 16:27:32,homepage
+269,Curug Bugbrug,2025-03-01 22:07:32,external_ad
+269,Desa Wisata Lembah Kalipancur,2025-01-04 11:52:32,recommendations
+269,Kampung Wisata Kadipaten,2025-01-20 8:00:32,search
+269,Tugu Proklamasi,2025-03-13 5:32:32,external_ad
+269,Taman Prestasi,2025-02-27 4:43:32,homepage
+270,Studio Alam Gamplong,2025-03-10 15:29:32,recommendations
+270,Kebun Tanaman Obat Sari Alam,2025-03-05 12:05:32,external_ad
+271,Taman Cattleya,2024-11-12 11:41:32,external_ad
+271,Indonesia Kaya Park,2025-04-01 21:41:32,external_ad
+271,Jembatan Pasupati,2024-12-02 16:32:32,external_ad
+271,Pantai Watu Kodok,2024-10-26 15:40:32,recommendations
+271,Taman Vanda,2025-04-07 0:22:32,external_ad
+271,Kampoeng Rawa,2025-01-11 12:02:32,homepage
+271,Pantai Watu Kodok,2025-03-29 10:28:32,recommendations
+271,Istana Negara Republik Indonesia,2024-11-27 19:25:32,recommendations
+271,Pelabuhan Marina,2025-01-02 7:28:32,external_ad
+272,Heha Sky View,2025-02-06 6:04:32,recommendations
+272,Taman Air Mancur Menari Kenjeran,2025-02-12 11:09:32,homepage
+272,Museum Nasional,2025-02-22 16:10:32,search
+273,GPIB Immanuel Semarang (Gereja Blenduk),2025-01-13 15:45:32,recommendations
+273,Wisata Agro Edukatif Istana Susu Cibugary,2024-12-16 10:00:32,recommendations
+273,Bentara Budaya Yogyakarta (BBY),2024-12-29 18:16:32,recommendations
+273,Jurang Tembelan Kanigoro,2025-02-22 18:33:32,external_ad
+273,Curug Cipanas,2025-03-27 1:39:32,homepage
+273,Taman Pandanaran,2025-03-30 0:00:32,recommendations
+273,Tugu Muda Semarang,2024-11-17 13:29:32,homepage
+273,Taman Bunga Celosia,2025-01-09 15:55:32,recommendations
+274,Pantai Marina,2025-03-08 18:18:32,recommendations
+274,Kampung Batu Malakasari,2025-02-03 7:38:32,search
+274,Gembira Loka Zoo,2025-02-22 15:06:32,homepage
+274,Taman Ismail Marzuki,2024-12-30 5:15:32,homepage
+274,Bukit Bintang Yogyakarta,2024-10-21 6:14:32,recommendations
+274,Museum Bank Indonesia,2024-12-27 16:26:32,search
+274,Taman Bunga Cihideung,2025-02-24 21:59:32,recommendations
+274,Benteng Pendem,2025-01-01 22:02:32,search
+275,GunungTangkuban perahu,2024-10-27 9:05:32,homepage
+275,The Great Asia Africa,2025-01-14 8:50:32,homepage
+275,Curug Batu Templek,2025-01-10 2:23:32,external_ad
+275,Museum Macan (Modern and Contemporary Art in Nusantara),2025-03-28 1:16:32,recommendations
+275,Heha Sky View,2025-01-11 3:28:32,homepage
+275,Tugu Muda Semarang,2024-12-26 13:43:32,search
+275,Situ Patenggang,2024-10-19 16:37:32,recommendations
+276,Pantai Indrayanti,2024-11-30 0:01:32,search
+276,Situs Warungboto,2025-03-16 4:28:32,recommendations
+276,Kampung Batik Gedong Semarang,2024-12-24 5:59:32,search
+276,Monumen Tugu Pahlawan,2024-10-23 8:07:32,homepage
+277,Bunker Kaliadem Merapi,2024-11-08 3:32:32,homepage
+277,Ekowisata Mangrove Wonorejo,2025-02-28 22:02:32,homepage
+277,Orchid Forest Cikole,2025-03-01 7:36:32,recommendations
+277,Pantai Drini,2025-03-21 12:40:32,external_ad
+277,Jogja Bay Pirates Adventure Waterpark,2025-01-05 12:28:32,search
+277,Taman Mundu,2024-11-06 17:32:32,homepage
+278,Skyrink - Mall Taman Anggrek,2024-11-02 1:46:32,external_ad
+278,Galeri Nasional Indonesia,2024-11-07 5:27:32,recommendations
+278,Kawasan Malioboro,2024-11-25 12:11:32,recommendations
+278,Kawasan Punclut,2024-10-18 23:02:32,recommendations
+278,Patung Buddha Empat Rupa,2025-03-28 10:54:32,homepage
+279,Jalan Braga,2024-12-03 23:21:32,homepage
+279,Lawangwangi Creative Space,2025-03-09 18:36:32,recommendations
+280,Taman Keputran,2024-12-20 11:20:32,external_ad
+280,Rumah Batik,2025-01-12 19:34:32,homepage
+280,Monumen Tugu Pahlawan,2024-12-29 20:30:32,recommendations
+280,Museum Kesehatan Dr. Adhyatma,2025-01-29 20:01:32,recommendations
+280,Balai Kota Surabaya,2024-11-17 10:49:32,recommendations
+280,Patung Sura dan Buaya,2025-02-13 15:10:32,search
+280,Taman Harmoni Keputih,2025-02-13 4:58:32,homepage
+280,Taman Harmoni Keputih,2025-02-03 9:18:32,recommendations
+281,Gunung Manglayang,2025-01-08 5:50:32,homepage
+281,Taman Sungai Mudal,2025-03-14 12:38:32,external_ad
+281,Taman Ismail Marzuki,2024-12-21 18:11:32,recommendations
+281,Food Junction Grand Pakuwon,2024-12-12 0:54:32,homepage
+281,Taman Ismail Marzuki,2025-04-07 4:27:32,search
+281,De Mata Museum Jogja,2025-02-19 1:50:32,search
+281,Candi Ratu Boko,2024-12-08 16:00:32,recommendations
+282,Watu Mabur Mangunan,2024-12-07 16:02:32,homepage
+282,Air Terjun Sri Gethuk,2024-11-19 13:20:32,homepage
+282,Pantai Sundak,2025-01-11 12:08:32,homepage
+282,Museum Benteng Vredeburg Yogyakarta,2024-11-27 16:40:32,search
+282,Bukit Lintang Sewu,2025-01-04 1:49:32,external_ad
+282,Candi Donotirto,2025-03-20 10:15:32,recommendations
+282,Wisata Alam Kalibiru,2025-02-09 3:25:32,recommendations
+282,Studio Alam Gamplong,2025-01-09 1:42:32,homepage
+283,Taman Bunga Cihideung,2024-11-02 5:56:32,homepage
+283,Masjid Nasional Al-Akbar,2024-12-12 15:08:32,recommendations
+283,Museum Konferensi Asia Afrika,2024-12-12 16:03:32,homepage
+283,Taman Keputran,2024-10-23 20:50:32,homepage
+283,Pantai Timang,2024-11-30 12:32:32,recommendations
+284,Kampoeng Djadhoel Semarang,2025-03-02 17:39:32,homepage
+284,Taman Situ Lembang,2024-11-27 3:31:32,homepage
+284,Kebun Binatang Ragunan,2025-02-24 13:41:32,homepage
+284,Puncak Kebun Buah Mangunan,2025-03-21 5:00:32,search
+285,Curug Bugbrug,2025-01-07 21:57:32,recommendations
+285,Gereja Katedral,2024-10-16 1:08:32,search
+286,Taman Lalu Lintas Ade Irma Suryani Nasution,2025-03-11 2:19:32,recommendations
+286,Gunung Papandayan,2025-04-07 19:11:32,recommendations
+286,Curug Aseupan,2025-02-25 1:38:32,recommendations
+286,Jalan Braga,2024-12-07 8:55:32,recommendations
+286,Panghegar Waterboom Bandung,2025-02-03 22:03:32,external_ad
+286,Museum Layang-layang,2024-12-13 2:46:32,external_ad
+286,Kebun Teh Nglinggo,2025-04-06 4:17:32,recommendations
+286,Water Blaster Bukit Candi Golf,2024-11-29 23:35:32,homepage
+286,Puncak Kebun Buah Mangunan,2024-12-06 0:26:32,homepage
+287,Museum Satria Mandala,2025-02-18 9:05:32,homepage
+287,Blue Lagoon Jogja,2025-02-09 10:15:32,recommendations
+288,Masjid Agung Ungaran,2024-12-05 12:20:32,recommendations
+288,Kampoeng Rawa,2025-01-29 10:37:32,external_ad
+288,Air Terjun Kali Pancur,2025-03-05 15:32:32,recommendations
+288,Sam Poo Kong Temple,2024-12-19 16:44:32,recommendations
+288,Wisata Eling Bening,2024-10-18 16:13:32,external_ad
+288,Waduk Jatibarang,2024-12-26 9:05:32,recommendations
+288,Wisata Lereng Kelir,2024-12-27 13:04:32,recommendations
+288,Obyek Wisata Goa Kreo,2024-11-21 18:39:32,search
+289,"Bukit Paralayang, Watugupit",2025-02-17 22:36:32,external_ad
+289,Kampung Wisata Dipowinatan,2024-12-19 14:58:32,recommendations
+289,Bukit Bintang Yogyakarta,2025-03-18 18:20:32,homepage
+289,Pantai Indrayanti,2024-12-07 1:53:32,external_ad
+289,Candi Ratu Boko,2025-03-23 21:19:32,recommendations
+289,Blue Lagoon Jogja,2024-11-28 11:33:32,external_ad
+289,Pantai Congot,2025-03-07 8:11:32,recommendations
+290,Candi Prambanan,2025-04-05 8:16:32,homepage
+290,Bukit Wisata Pulepayung,2025-02-05 21:21:32,recommendations
+290,Kampung Pelangi,2025-03-14 1:40:32,external_ad
+290,Wisata Mangrove Tapak,2024-11-30 21:20:32,recommendations
+290,Hutan Kota Srengseng,2024-12-31 20:49:32,homepage
+290,Wisata Kaliurang,2025-01-05 15:53:32,external_ad
+290,GunungTangkuban perahu,2025-02-04 15:19:32,homepage
+290,Pantai Indrayanti,2025-04-11 23:56:32,homepage
+291,Kebun Tanaman Obat Sari Alam,2025-02-03 20:15:32,homepage
+291,Tebing Karaton,2025-03-16 8:59:32,external_ad
+291,Air Mancur Menari,2025-03-29 19:00:32,recommendations
+291,Heha Sky View,2024-12-27 21:18:32,search
+291,Wisata Eling Bening,2025-03-11 12:27:32,recommendations
+292,Tugu Muda Semarang,2025-04-04 8:27:32,homepage
+292,Air Terjun Semirang,2025-03-30 23:00:32,recommendations
+292,Masjid Kapal Semarang,2025-01-03 16:43:32,homepage
+292,Water Blaster Bukit Candi Golf,2024-11-18 18:42:32,external_ad
+292,Kampoeng Rawa,2024-11-22 10:29:32,homepage
+292,Old City 3D Trick Art Museum,2024-11-27 17:31:32,recommendations
+292,Taman Srigunting,2025-03-10 19:58:32,homepage
+292,Benteng Pendem,2025-02-15 12:39:32,external_ad
+293,Embung Tambakboyo,2025-04-02 14:42:32,homepage
+293,Stone Garden Citatah,2025-03-24 11:54:32,homepage
+293,De Mata Museum Jogja,2025-01-08 14:49:32,homepage
+293,Istana Negara Republik Indonesia,2025-03-02 3:11:32,external_ad
+293,Sindu Kusuma Edupark (SKE),2025-02-12 12:42:32,recommendations
+293,GPIB Immanuel Semarang (Gereja Blenduk),2025-01-09 20:50:32,recommendations
+293,Puncak Segoro,2024-12-12 23:04:32,recommendations
+293,Jalan Braga,2025-01-06 18:32:32,homepage
+294,Atlantis Water Adventure,2024-10-23 4:04:32,recommendations
+294,Pantai Depok Jogja,2025-03-05 21:59:32,external_ad
+294,Taman Flora Bratang Surabaya,2024-12-19 19:27:32,homepage
+294,Sam Poo Kong Temple,2024-12-28 6:34:32,external_ad
+294,Monumen Batik Yogyakarta,2025-03-29 23:18:32,recommendations
+294,Gereja Perawan Maria Tak Berdosa Surabaya,2024-12-14 15:12:32,recommendations
+294,Margasatwa Muara Angke,2024-11-06 10:37:32,search
+295,Taman Sungai Mudal,2024-11-05 17:51:32,homepage
+295,Pantai Pulang Sawal,2025-02-08 6:31:32,external_ad
+295,Plaza Indonesia,2025-03-14 15:37:32,homepage
+295,Farm House Susu Lembang,2024-12-14 13:19:32,recommendations
+296,Lawang Sewu,2025-01-22 21:08:32,search
+296,Orchid Forest Cikole,2025-02-03 12:54:32,homepage
+296,Museum Mandala Wangsit Siliwangi,2024-11-26 20:45:32,search
+296,Pasar Beringharjo,2025-02-12 18:54:32,search
+297,Kawasan Malioboro,2025-03-23 6:54:32,homepage
+297,Babakan Siliwangi City Forest Path Bandung,2025-04-07 17:13:32,search
+297,Saloka Theme Park,2025-01-18 2:00:32,homepage
+297,Umbul Sidomukti,2024-12-13 0:37:32,homepage
+297,Kebun Tanaman Obat Sari Alam,2024-11-22 12:07:32,external_ad
+297,Obyek Wisata Goa Kreo,2024-12-05 4:48:32,recommendations
+297,Pecinan Glodok,2025-03-09 9:51:32,external_ad
+297,Wisata Kampung Krisan Clapar,2024-12-19 2:02:32,external_ad
+297,Kyotoku Floating Market,2024-12-13 20:05:32,recommendations
+298,Perkebunan Teh Malabar,2025-01-04 1:14:32,search
+298,Hutan Pinus Pengger,2025-02-22 6:10:32,search
+298,Pantai Patihan,2025-01-30 0:51:32,homepage
+298,Alun Alun Selatan Yogyakarta,2024-10-17 15:51:32,recommendations
+298,Pantai Congot,2024-11-19 5:30:32,external_ad
+298,Pantai Jogan,2025-03-16 4:14:32,external_ad
+298,Pantai Marina,2024-11-06 18:29:32,homepage
+298,Museum Nike Ardilla,2025-02-17 6:48:32,recommendations
+298,Taman Balai Kota Bandung,2024-11-26 6:08:32,recommendations
+299,Masjid Raya Bandung,2025-03-23 12:27:32,recommendations
+299,Ciwangun Indah Camp Official,2025-04-09 23:51:32,search
+299,Taman Pelangi,2025-03-24 4:12:32,external_ad
+299,Kawasan Punclut,2024-11-28 8:29:32,recommendations
+299,Taman Sungai Mudal,2025-03-24 18:41:32,external_ad
+299,Pemandian Air Panas Cimanggu,2025-03-12 2:54:32,homepage
+299,Wisata Eling Bening,2024-11-18 12:46:32,homepage
+299,Chingu Cafe Little Seoul,2024-12-10 7:53:32,search
+300,Dunia Fantasi,2025-02-06 6:41:32,external_ad
+300,Jembatan Biru Ambarawa,2024-11-17 19:00:32,search
+300,Roemah Seni Sarasvati,2024-11-21 5:27:32,external_ad

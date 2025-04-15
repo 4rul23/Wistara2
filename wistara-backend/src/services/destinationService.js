@@ -67,5 +67,46 @@ export const destinationService = {
         }
       }
     });
+  },
+
+  updateDestinationRating: async (destinationId) => {
+    try {
+      // Hitung rata-rata rating dari semua komentar
+      const comments = await prisma.comment.findMany({
+        where: {
+          destinationId: destinationId
+        },
+        select: {
+          rating: true
+        }
+      });
+
+      // Jika tidak ada komentar, atur rating ke null atau 0
+      if (comments.length === 0) {
+        await prisma.destination.update({
+          where: { id: destinationId },
+          data: { rating: 0 }
+        });
+        return { rating: 0 };
+      }
+
+      // Hitung rata-rata
+      const totalRating = comments.reduce((sum, comment) => sum + comment.rating, 0);
+      const averageRating = totalRating / comments.length;
+
+      // Update rating di destinasi
+      await prisma.destination.update({
+        where: { id: destinationId },
+        data: { rating: averageRating }
+      });
+
+      return { rating: averageRating };
+    } catch (error) {
+      console.error('Error updating destination rating:', error);
+      throw new Error('Failed to update destination rating');
+    }
   }
 };
+
+// Ekspor fungsi terpisah sebagai alias untuk backward compatibility
+export const updateDestinationRating = destinationService.updateDestinationRating;

@@ -81,6 +81,10 @@ export default function ExplorePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Tambahkan state untuk pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 20;
+
   useEffect(() => {
     const fetchDestinations = async () => {
       try {
@@ -444,104 +448,146 @@ export default function ExplorePage() {
         ) : error ? (
           <p>Error: {error}</p>
         ) : (
-          filteredDestinations.length > 0 ? (
-            <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              {filteredDestinations.map((destination, index) => (
+          <>
+            {filteredDestinations.length > 0 ? (
+              <>
                 <motion.div
-                  key={destination.id}
-                  variants={cardVariants}
-                  custom={index}
-                  whileHover={{ y: -8, scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 100, damping: 15 }}
-                  className="group relative bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-teal-400/30 transition-colors duration-300"
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
+                  variants={containerVariants}
+                  initial="hidden"
+                  animate="visible"
                 >
-                  <Link href={`/explore/${destination.id}`}>
-                  <div className="aspect-[4/3] relative overflow-hidden">
-                    <Image
-                      src={destination.image}
-                      alt={destination.name}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-70"></div>
-
-                    {/* Location Badge */}
-                    <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-sm rounded-full py-1 px-3 flex items-center space-x-1">
-                      <FiMapPin className="text-teal-400 text-xs" />
-                      <span className={`${inter.className} text-xs text-white/90`}>{destination.location}</span>
-                    </div>
-
-                    {/* Actions */}
-                    <div className="absolute top-3 right-3 flex space-x-2">
-                      <motion.button
-                        onClick={(e) => handleLike(e, destination.id)}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${liked[destination.id] ? 'bg-rose-500/30 text-rose-400' : 'bg-black/40 text-white/70 hover:text-white'}`}
+                  {filteredDestinations
+                    .slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE)
+                    .map((destination, index) => (
+                      // Card code remains the same
+                      <motion.div
+                        key={destination.id}
+                        variants={cardVariants}
+                        custom={index}
+                        whileHover={{ y: -8, scale: 1.02 }}
+                        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+                        className="group relative bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-teal-400/30 transition-colors duration-300"
                       >
-                        <FiHeart className={`text-sm ${liked[destination.id] ? 'fill-rose-400' : ''}`} />
-                      </motion.button>
+                        <Link href={`/explore/${destination.id}`}>
+                        <div className="aspect-[4/3] relative overflow-hidden">
+                          <Image
+                            src={destination.image}
+                            alt={destination.name}
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-70"></div>
 
-                      <motion.button
-                        onClick={(e) => handleSave(e, destination.id)}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${saved[destination.id] ? 'bg-teal-500/30 text-teal-300' : 'bg-black/40 text-white/70 hover:text-white'}`}
-                      >
-                        <FiBookmark className={`text-sm ${saved[destination.id] ? 'fill-teal-400' : ''}`} />
-                      </motion.button>
-                    </div>
-                  </div>
-                  </Link>
-                  <motion.div className="p-4">
-                    <Link href={`/explore/${destination.id}`}>
-                      <h3 className={`${spaceGrotesk.className} text-lg font-semibold mb-2 group-hover:text-teal-300 transition-colors`}>
-                        {destination.name}
-                      </h3>
-                    </Link>
+                          {/* Location Badge */}
+                          <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-sm rounded-full py-1 px-3 flex items-center space-x-1">
+                            <FiMapPin className="text-teal-400 text-xs" />
+                            <span className={`${inter.className} text-xs text-white/90`}>{destination.location}</span>
+                          </div>
 
-                    <p className={`${inter.className} text-sm text-white/70 line-clamp-2 mb-3`}>
-                      {destination.description}
-                    </p>
+                          {/* Actions */}
+                          <div className="absolute top-3 right-3 flex space-x-2">
+                            <motion.button
+                              onClick={(e) => handleLike(e, destination.id)}
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                              className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${liked[destination.id] ? 'bg-rose-500/30 text-rose-400' : 'bg-black/40 text-white/70 hover:text-white'}`}
+                            >
+                              <FiHeart className={`text-sm ${liked[destination.id] ? 'fill-rose-400' : ''}`} />
+                            </motion.button>
 
-                    {/* Rating and Stats */}
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center space-x-1">
-                        {/* Star rating */}
-                        <div className="flex">
-                          {[...Array(5)].map((_, i) => (
-                            <span key={i} className={`text-xs ${i < Math.floor(destination.rating) ? 'text-teal-400' : 'text-white/20'}`}>★</span>
-                          ))}
+                            <motion.button
+                              onClick={(e) => handleSave(e, destination.id)}
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                              className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${saved[destination.id] ? 'bg-teal-500/30 text-teal-300' : 'bg-black/40 text-white/70 hover:text-white'}`}
+                            >
+                              <FiBookmark className={`text-sm ${saved[destination.id] ? 'fill-teal-400' : ''}`} />
+                            </motion.button>
+                          </div>
                         </div>
-                        <span className={`${inter.className} text-xs text-white/80`}>{destination.rating}</span>
-                      </div>
+                        </Link>
+                        <motion.div className="p-4">
+                          <Link href={`/explore/${destination.id}`}>
+                            <h3 className={`${spaceGrotesk.className} text-lg font-semibold mb-2 group-hover:text-teal-300 transition-colors`}>
+                              {destination.name}
+                            </h3>
+                          </Link>
 
-                      <div className={`${inter.className} text-xs text-white/60 flex items-center`}>
-                        <FiHeart className="mr-1 text-rose-400/70" />
-                        {destination.likes.toLocaleString()}
-                      </div>
-                    </div>
-                  </motion.div>
+                          <p className={`${inter.className} text-sm text-white/70 line-clamp-2 mb-3`}>
+                            {destination.description}
+                          </p>
+
+                          {/* Rating and Stats */}
+                          <div className="flex justify-between items-center">
+                            <div className="flex items-center space-x-1">
+                              {/* Star rating */}
+                              <div className="flex">
+                                {[...Array(5)].map((_, i) => (
+                                  <span key={i} className={`text-xs ${i < Math.floor(destination.rating) ? 'text-teal-400' : 'text-white/20'}`}>★</span>
+                                ))}
+                              </div>
+                              <span className={`${inter.className} text-xs text-white/80`}>{destination.rating}</span>
+                            </div>
+
+                            <div className={`${inter.className} text-xs text-white/60 flex items-center`}>
+                              <FiHeart className="mr-1 text-rose-400/70" />
+                              {destination.likes.toLocaleString()}
+                            </div>
+                          </div>
+                        </motion.div>
+                      </motion.div>
+                    ))}
                 </motion.div>
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              className="text-center py-20"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
-              <h3 className={`${spaceGrotesk.className} text-xl mb-2`}>No destinations found</h3>
-              <p className={`${inter.className} text-white/60`}>Try adjusting your search or filters</p>
-            </motion.div>
-          )
+
+                {/* Pagination Controls */}
+                {filteredDestinations.length > ITEMS_PER_PAGE && (
+                  <div className="mt-12 flex items-center justify-center gap-6">
+                    <motion.button
+                      onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                      disabled={currentPage === 1}
+                      className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      aria-label="Previous page"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </motion.button>
+
+                    <span className={`${inter.className} text-lg text-white/70`}>
+                      {currentPage} / {Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE)}
+                    </span>
+
+                    <motion.button
+                      onClick={() => setCurrentPage(prev => Math.min(prev + 1, Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE)))}
+                      disabled={currentPage >= Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE)}
+                      className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      aria-label="Next page"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </motion.button>
+                  </div>
+                )}
+              </>
+            ) : (
+              <motion.div
+                className="text-center py-20"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                <h3 className={`${spaceGrotesk.className} text-xl mb-2`}>No destinations found</h3>
+                <p className={`${inter.className} text-white/60`}>Try adjusting your search or filters</p>
+              </motion.div>
+            )}
+          </>
         )}
       </main>
 

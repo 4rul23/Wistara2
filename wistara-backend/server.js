@@ -10,6 +10,7 @@ import pgSession from 'connect-pg-simple';
 import prisma from './prisma/client.js';
 import authRoutes from './src/routes/authRoutes.js';
 import destinationRoutes from './src/routes/destinationRoutes.js';
+import commentRoutes from './src/routes/commentRoutes.js';
 
 dotenv.config();
 
@@ -28,7 +29,7 @@ const PgSession = pgSession(session);
 
 // CORS HARUS DIKONFIGURASI SEBELUM MIDDLEWARE LAIN
 app.use(cors({
-  origin: 'http://localhost:3000', // URL frontend Next.js
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // URL frontend Next.js
   credentials: true, // PENTING! Ini mengizinkan credentials (cookies) dikirim
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -76,6 +77,9 @@ app.get('/api/test-cors', (req, res) => {
 app.use('/api/auth', authRoutes);
 
 app.use('/api/destinations', destinationRoutes);
+
+app.use('/api/comments', commentRoutes); // PENTING: Tambahkan baris ini!
+
 // Welcome route
 app.get('/', (req, res) => {
   res.json({

@@ -124,13 +124,13 @@ const AuthModal = ({ onClose }: { onClose: () => void }) => {
 export default function DestinationDetailPage() {
   const params = useParams();
   const destinationId = params.id as string;
-  const { user, isAuthenticated } = useAuth();
+  const {  isAuthenticated } = useAuth();
   const isLoggedIn = isAuthenticated; // untuk kompatibilitas dengan kode lainnya
   const { isVisited, addVisitedDestination, removeVisitedDestination } = useVisited();
   const hasVisited = isVisited(destinationId);
   const { isFavorite, addFavoriteDestination, removeFavoriteDestination } = useFavorite();
   const isFavorited = isFavorite(destinationId);
-
+  const [allDestinations, setAllDestinations] = useState<Destination[]>([]);
   const [destination, setDestination] = useState<Destination | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -190,32 +190,28 @@ export default function DestinationDetailPage() {
 
   // Fetch destination data
   useEffect(() => {
-    const fetchDestination = async () => {
+    const fetchData = async () => {
       try {
         setLoading(true);
+
+        // Fetch current destination
         const data = await getDestinationById(destinationId);
         setDestination(data);
+
+        // Also fetch all destinations
+        const { getAllDestinations } = await import("@/lib/api-client");
+        const allData = await getAllDestinations();
+        setAllDestinations(allData);
       } catch (err) {
         console.error('Error fetching destination:', err);
         setError('Failed to load destination details');
-
-        // Fallback ke data statis jika API gagal
-        import("../../data/destinations").then((module) => {
-          const allDestinations = [...module.featuredDestinations, ...module.moreDestinations];
-          const staticData = allDestinations.find(d => d.id === destinationId);
-          if (staticData) {
-            setDestination(staticData);
-          } else {
-            setError('Destination not found');
-          }
-        });
       } finally {
         setLoading(false);
       }
     };
 
     if (destinationId) {
-      fetchDestination();
+      fetchData();
     }
   }, [destinationId]);
 
@@ -238,7 +234,6 @@ export default function DestinationDetailPage() {
     }
   }, [destination, isClient]);
 
-  // Save likes and bookmarks to localStorage when they change
   useEffect(() => {
     if (!destination || !isClient || !isLoggedIn) return;
 
@@ -297,7 +292,7 @@ export default function DestinationDetailPage() {
     return (
       <div className={`${quicksand.className} bg-[#0a0a0a] min-h-screen text-white flex flex-col items-center justify-center p-6`}>
         <h1 className={`${spaceGrotesk.className} text-3xl mb-4`}>Destination not found</h1>
-        <p className={`${inter.className} text-white/70 mb-8`}>We couldn't find the destination you're looking for.</p>
+        <p className={`${inter.className} text-white/70 mb-8`}>We couldn&rsquo;t find the destination you&rsquo;re looking for.</p>
         <Link href="/explore">
           <motion.button
             whileHover={{ scale: 1.05 }}
