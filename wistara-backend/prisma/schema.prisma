@@ -62,23 +62,53 @@ model Session {
 
 // Model untuk komentar
 model Comment {
-  id              Int       @id @default(autoincrement())
-  text            String    @db.Text
-  rating          Float
-  date            DateTime  @default(now())
+  id                  Int        @id @default(autoincrement())
+  text                String     @db.Text
+  rating              Float
 
-  // Relasi dengan user dan destinasi
-  userId          Int
-  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId              Int
+  user                User       @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  destinationId   String
-  // Optional: Jika Anda juga menyimpan destinasi dalam database
-  // destination    Destination @relation(fields: [destinationId], references: [id])
+  destinationId       String
+  destination         Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  destinationName     String?
 
-  createdAt       DateTime  @default(now()) @map("created_at")
-  updatedAt       DateTime  @updatedAt @map("updated_at")
+  date                DateTime   @default(now())
+  createdAt           DateTime   @default(now()) @map("created_at")
+  updatedAt           DateTime   @updatedAt @map("updated_at")
 
   @@map("comments")
   @@index([userId])
   @@index([destinationId])
+}
+
+model Destination {
+  id                  String    @id
+  name                String
+  description         String    @db.Text
+  location            String
+  region              String
+  category            String
+  image               String
+  likes               Int       @default(0)
+  rating              Float     @default(0)
+  bestTimeToVisit     String?
+  entranceFee         String?
+  activities          String[]
+  coordinates         Json?     // {latitude, longitude}
+  difficulty          String?
+  culturalSignificance String?   @db.Text
+  transportation      String[]
+  localCuisine        String[]  @default([])
+
+  accommodations      Json?     // Format: {budget: string, midRange: string, luxury}
+  nearbyAttractions   String[]
+
+  // Relasi dengan komentar
+  comments            Comment[]
+
+  createdAt           DateTime  @default(now()) @map("created_at")
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+
+  @@map("destinations")
 }

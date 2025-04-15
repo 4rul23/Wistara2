@@ -13,9 +13,9 @@ import { useRouter } from 'next/router';
 import {
   Destination,
   categories as categoryData,
-  regions as regionData,
-  allDestinations
+  regions as regionData
 } from "@/app/data/destinations";
+import { getAllDestinations, getDestinationsByRegion } from "@/lib/api-client";
 
 // Import navbar component
 import Navbar from "@/app/components/Navbar";
@@ -55,17 +55,15 @@ export default function ExplorePage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [activeRegion, setActiveRegion] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredDestinations, setFilteredDestinations] = useState(allDestinations);
-  const [showRegionDropdown, setShowRegionDropdown] = useState(false);
   const [liked, setLiked] = useState<{[key: string]: boolean}>({});
   const [saved, setSaved] = useState<{[key: string]: boolean}>({});
 
-  // Tambahkan state untuk auth modal
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [authAction, setAuthAction] = useState<'favorite'|'save'|null>(null);
   const [pendingDestination, setPendingDestination] = useState<string|null>(null);
 
-  // Refs and animations
+  const [showRegionDropdown, setShowRegionDropdown] = useState(false);
+
   const searchRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
   const headerOpacity = useTransform(scrollY, [0, 150], [1, 0.85]);
@@ -78,28 +76,54 @@ export default function ExplorePage() {
   const smoothMouseX = useSpring(mouseX, springConfig);
   const smoothMouseY = useSpring(mouseY, springConfig);
 
+  const [destinations, setDestinations] = useState<Destination[]>([]);
+  const [filteredDestinations, setFilteredDestinations] = useState<Destination[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
   useEffect(() => {
-    let results = allDestinations;
+    const fetchDestinations = async () => {
+      try {
+        setLoading(true);
+        const data = await getAllDestinations();
+        setDestinations(data);
+        setFilteredDestinations(data);
+      } catch (err) {
+        console.error('Error fetching destinations:', err);
+        setError('Failed to load destinations');
 
-    if (activeRegion !== "all") {
-      results = results.filter(item => item.region === activeRegion);
+        // Fallback ke data statis jika API gagal
+        import("../data/destinations").then((module) => {
+          const staticData = [...module.featuredDestinations, ...module.moreDestinations];
+          setDestinations(staticData);
+          setFilteredDestinations(staticData);
+        });
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDestinations();
+  }, []);
+
+  // Handler untuk filter berdasarkan region
+  const handleRegionChange = async (region: string) => {
+    try {
+      setLoading(true);
+      if (region === 'all') {
+        const data = await getAllDestinations();
+        setFilteredDestinations(data);
+      } else {
+        const data = await getDestinationsByRegion(region);
+        setFilteredDestinations(data);
+      }
+    } catch (err) {
+      console.error('Error filtering by region:', err);
+      setError('Failed to filter destinations');
+    } finally {
+      setLoading(false);
     }
-
-    if (activeCategory !== "All") {
-      results = results.filter(item => item.category === activeCategory);
-    }
-
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      results = results.filter(
-        item => item.name.toLowerCase().includes(query) ||
-               item.description.toLowerCase().includes(query) ||
-               item.location.toLowerCase().includes(query)
-      );
-    }
-
-    setFilteredDestinations(results);
-  }, [activeCategory, activeRegion, searchQuery]);
+  };
 
   // Track mouse position for parallax effects
   useEffect(() => {
@@ -343,6 +367,7 @@ export default function ExplorePage() {
                         onClick={() => {
                           setActiveRegion(region.value);
                           setShowRegionDropdown(false);
+                          handleRegionChange(region.value);
                         }}
                         className={`flex items-center w-full text-left px-4 py-2 ${inter.className} text-sm transition-colors hover:bg-white/5 ${activeRegion === region.value ? 'text-teal-400' : 'text-white/80'}`}
                         whileHover={{ x: 4 }}
@@ -414,103 +439,109 @@ export default function ExplorePage() {
           </h2>
         </motion.div>
 
-        {filteredDestinations.length > 0 ? (
-          <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {filteredDestinations.map((destination, index) => (
-              <motion.div
-                key={destination.id}
-                variants={cardVariants}
-                custom={index}
-                whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 100, damping: 15 }}
-                className="group relative bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-teal-400/30 transition-colors duration-300"
-              >
-                <Link href={`/explore/${destination.id}`}>
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src={destination.image}
-                    alt={destination.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-70"></div>
-
-                  {/* Location Badge */}
-                  <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-sm rounded-full py-1 px-3 flex items-center space-x-1">
-                    <FiMapPin className="text-teal-400 text-xs" />
-                    <span className={`${inter.className} text-xs text-white/90`}>{destination.location}</span>
-                  </div>
-
-                  {/* Actions */}
-                  <div className="absolute top-3 right-3 flex space-x-2">
-                    <motion.button
-                      onClick={(e) => handleLike(e, destination.id)}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${liked[destination.id] ? 'bg-rose-500/30 text-rose-400' : 'bg-black/40 text-white/70 hover:text-white'}`}
-                    >
-                      <FiHeart className={`text-sm ${liked[destination.id] ? 'fill-rose-400' : ''}`} />
-                    </motion.button>
-
-                    <motion.button
-                      onClick={(e) => handleSave(e, destination.id)}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${saved[destination.id] ? 'bg-teal-500/30 text-teal-300' : 'bg-black/40 text-white/70 hover:text-white'}`}
-                    >
-                      <FiBookmark className={`text-sm ${saved[destination.id] ? 'fill-teal-400' : ''}`} />
-                    </motion.button>
-                  </div>
-                </div>
-                </Link>
-                <motion.div className="p-4">
-                  <Link href={`/explore/${destination.id}`}>
-                    <h3 className={`${spaceGrotesk.className} text-lg font-semibold mb-2 group-hover:text-teal-300 transition-colors`}>
-                      {destination.name}
-                    </h3>
-                  </Link>
-
-                  <p className={`${inter.className} text-sm text-white/70 line-clamp-2 mb-3`}>
-                    {destination.description}
-                  </p>
-
-                  {/* Rating and Stats */}
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center space-x-1">
-                      {/* Star rating */}
-                      <div className="flex">
-                        {[...Array(5)].map((_, i) => (
-                          <span key={i} className={`text-xs ${i < Math.floor(destination.rating) ? 'text-teal-400' : 'text-white/20'}`}>★</span>
-                        ))}
-                      </div>
-                      <span className={`${inter.className} text-xs text-white/80`}>{destination.rating}</span>
-                    </div>
-
-                    <div className={`${inter.className} text-xs text-white/60 flex items-center`}>
-                      <FiHeart className="mr-1 text-rose-400/70" />
-                      {destination.likes.toLocaleString()}
-                    </div>
-                  </div>
-                </motion.div>
-              </motion.div>
-            ))}
-          </motion.div>
+        {loading ? (
+          <p>Loading destinations...</p>
+        ) : error ? (
+          <p>Error: {error}</p>
         ) : (
-          <motion.div
-            className="text-center py-20"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            <h3 className={`${spaceGrotesk.className} text-xl mb-2`}>No destinations found</h3>
-            <p className={`${inter.className} text-white/60`}>Try adjusting your search or filters</p>
-          </motion.div>
+          filteredDestinations.length > 0 ? (
+            <motion.div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              {filteredDestinations.map((destination, index) => (
+                <motion.div
+                  key={destination.id}
+                  variants={cardVariants}
+                  custom={index}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 100, damping: 15 }}
+                  className="group relative bg-white/5 rounded-xl overflow-hidden border border-white/10 hover:border-teal-400/30 transition-colors duration-300"
+                >
+                  <Link href={`/explore/${destination.id}`}>
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <Image
+                      src={destination.image}
+                      alt={destination.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-70"></div>
+
+                    {/* Location Badge */}
+                    <div className="absolute top-3 left-3 bg-black/40 backdrop-blur-sm rounded-full py-1 px-3 flex items-center space-x-1">
+                      <FiMapPin className="text-teal-400 text-xs" />
+                      <span className={`${inter.className} text-xs text-white/90`}>{destination.location}</span>
+                    </div>
+
+                    {/* Actions */}
+                    <div className="absolute top-3 right-3 flex space-x-2">
+                      <motion.button
+                        onClick={(e) => handleLike(e, destination.id)}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${liked[destination.id] ? 'bg-rose-500/30 text-rose-400' : 'bg-black/40 text-white/70 hover:text-white'}`}
+                      >
+                        <FiHeart className={`text-sm ${liked[destination.id] ? 'fill-rose-400' : ''}`} />
+                      </motion.button>
+
+                      <motion.button
+                        onClick={(e) => handleSave(e, destination.id)}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className={`h-8 w-8 flex items-center justify-center rounded-full backdrop-blur-sm transition-colors ${saved[destination.id] ? 'bg-teal-500/30 text-teal-300' : 'bg-black/40 text-white/70 hover:text-white'}`}
+                      >
+                        <FiBookmark className={`text-sm ${saved[destination.id] ? 'fill-teal-400' : ''}`} />
+                      </motion.button>
+                    </div>
+                  </div>
+                  </Link>
+                  <motion.div className="p-4">
+                    <Link href={`/explore/${destination.id}`}>
+                      <h3 className={`${spaceGrotesk.className} text-lg font-semibold mb-2 group-hover:text-teal-300 transition-colors`}>
+                        {destination.name}
+                      </h3>
+                    </Link>
+
+                    <p className={`${inter.className} text-sm text-white/70 line-clamp-2 mb-3`}>
+                      {destination.description}
+                    </p>
+
+                    {/* Rating and Stats */}
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center space-x-1">
+                        {/* Star rating */}
+                        <div className="flex">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i} className={`text-xs ${i < Math.floor(destination.rating) ? 'text-teal-400' : 'text-white/20'}`}>★</span>
+                          ))}
+                        </div>
+                        <span className={`${inter.className} text-xs text-white/80`}>{destination.rating}</span>
+                      </div>
+
+                      <div className={`${inter.className} text-xs text-white/60 flex items-center`}>
+                        <FiHeart className="mr-1 text-rose-400/70" />
+                        {destination.likes.toLocaleString()}
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              ))}
+            </motion.div>
+          ) : (
+            <motion.div
+              className="text-center py-20"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <h3 className={`${spaceGrotesk.className} text-xl mb-2`}>No destinations found</h3>
+              <p className={`${inter.className} text-white/60`}>Try adjusting your search or filters</p>
+            </motion.div>
+          )
         )}
       </main>
 

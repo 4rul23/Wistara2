@@ -8,7 +8,8 @@ import { motion, useScroll, useTransform, useSpring, useMotionValue, AnimatePres
 import { Quicksand, Inter, Space_Grotesk } from "next/font/google";
 import { FiArrowLeft, FiMapPin, FiHeart, FiBookmark, FiShare2, FiCamera, FiInfo,
    FiDollarSign, FiClock, FiStar, FiChevronRight, FiExternalLink, FiAlertCircle } from "react-icons/fi";
-import { allDestinations, Destination } from "../../data/destinations";
+import { Destination } from "@/app/data/destinations"; // tetap impor interface
+import { getDestinationById } from "@/lib/api-client";
 import { useAuth } from '@/app/context/AuthContext';
 import UserComments from './components/Comment';
 import { useVisited } from '@/app/context/VisitedContext';
@@ -120,8 +121,7 @@ const AuthModal = ({ onClose }: { onClose: () => void }) => {
   );
 };
 
-export default function DestinationPage() {
-
+export default function DestinationDetailPage() {
   const params = useParams();
   const destinationId = params.id as string;
   const { user, isAuthenticated } = useAuth();
@@ -132,7 +132,8 @@ export default function DestinationPage() {
   const isFavorited = isFavorite(destinationId);
 
   const [destination, setDestination] = useState<Destination | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [isLiked, setIsLiked] = useState(false);
   const [isSaved, setIsSaved] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -189,24 +190,33 @@ export default function DestinationPage() {
 
   // Fetch destination data
   useEffect(() => {
-    const fetchDestination = () => {
-      setIsLoading(true);
+    const fetchDestination = async () => {
       try {
-        const found = allDestinations.find(dest => dest.id === destinationId);
-        if (found) {
-          setDestination(found);
-          // Simulate a slight loading delay for smoother transitions
-          setTimeout(() => setIsLoading(false), 300);
-        } else {
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.error("Error fetching destination:", error);
-        setIsLoading(false);
+        setLoading(true);
+        const data = await getDestinationById(destinationId);
+        setDestination(data);
+      } catch (err) {
+        console.error('Error fetching destination:', err);
+        setError('Failed to load destination details');
+
+        // Fallback ke data statis jika API gagal
+        import("../../data/destinations").then((module) => {
+          const allDestinations = [...module.featuredDestinations, ...module.moreDestinations];
+          const staticData = allDestinations.find(d => d.id === destinationId);
+          if (staticData) {
+            setDestination(staticData);
+          } else {
+            setError('Destination not found');
+          }
+        });
+      } finally {
+        setLoading(false);
       }
     };
 
-    fetchDestination();
+    if (destinationId) {
+      fetchDestination();
+    }
   }, [destinationId]);
 
   // Load user's likes and saves from localStorage for demo purposes
@@ -252,7 +262,7 @@ export default function DestinationPage() {
     }
   }, [isLiked, isSaved, destination, isClient, isLoggedIn]);
 
-  if (isLoading) {
+  if (loading) {
     return (
       <div className={`${quicksand.className} bg-[#0a0a0a] min-h-screen flex items-center justify-center`}>
         <motion.div
@@ -260,6 +270,25 @@ export default function DestinationPage() {
           animate={{ rotate: 360 }}
           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
         />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className={`${quicksand.className} bg-[#0a0a0a] min-h-screen text-white flex flex-col items-center justify-center p-6`}>
+        <h1 className={`${spaceGrotesk.className} text-3xl mb-4`}>Error</h1>
+        <p className={`${inter.className} text-white/70 mb-8`}>{error}</p>
+        <Link href="/explore">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex items-center space-x-2 bg-teal-500/20 hover:bg-teal-500/30 px-6 py-3 rounded-lg"
+          >
+            <FiArrowLeft />
+            <span>Back to explore</span>
+          </motion.button>
+        </Link>
       </div>
     );
   }

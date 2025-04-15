@@ -1868,7 +1868,7 @@ export const featuredDestinations: Destination[] = [
             ],
             "coordinates": {
               "latitude": -6.8486423,
-              "longitude": 107.624 // Estimated longitude
+              "longitude": 107.624 
             },
             "transportation": [
               "Private vehicle or chartered car",
@@ -1890,7 +1890,7 @@ export const featuredDestinations: Destination[] = [
             "id": "orchid-forest-cikole",
             "name": "Orchid Forest Cikole",
             "description": "A tourist destination in Lembang set within a pine forest, featuring a large collection of orchids, a wooden suspension bridge (Wood Bridge), outdoor activities, and cafes.",
-            "location": "Bandung", 
+            "location": "Bandung",
             "region": "Jawa Barat",
             "category": "Taman Hiburan",
             "image": "/images/bandung/orchid-forest-cikole.jpg",
@@ -1930,193 +1930,7 @@ export const featuredDestinations: Destination[] = [
 
       ]
 
-
-export const moreDestinations: Destination[] = [
-    {
-        id: "wakatobi",
-        name: "Wakatobi Islands",
-        description: "A remote archipelago known for its pristine coral reefs and marine biodiversity, perfect for diving enthusiasts. The name is an acronym from the four main islands: Wangi-wangi, Kaledupa, Tomia, and Binongko.",
-        location: "Southeast Sulawesi",
-        region: "Southeast Sulawesi", // Updated
-        category: "Islands",
-        image: "/images/wakatobi.jpg",
-        likes: 2187,
-        rating: 4.7,
-        bestTimeToVisit: "March to December",
-        entranceFee: "IDR 150,000 (Marine Park fee)",
-        activities: [
-            "Diving and snorkeling",
-            "Beach relaxation",
-            "Island hopping",
-            "Traditional fishing village tours",
-            "Bajo sea gypsy cultural experiences",
-            "Marine conservation activities"
-        ],
-        coordinates: {
-            latitude: -5.3268,
-            longitude: 123.5945
-        },
-        transportation: [
-            "Flight to Wangi-Wangi from Makassar or Kendari",
-            "Chartered boats between islands",
-            "Local wooden boat (sampan) rental",
-            "Resort transfer boats"
-        ],
-        accommodations: {
-            budget: "IDR 250,000-400,000 per night in homestays",
-            midRange: "IDR 600,000-1,500,000 per night",
-            luxury: "IDR 3,000,000-10,000,000 per night for Wakatobi Resort"
-        },
-        nearbyAttractions: [
-            "Hoga Island",
-            "Bajo stilt villages",
-            "Coral gardens",
-            "Kapota mangrove forest",
-            "Traditional shipbuilding in Binongko"
-        ]
-    },
-    {
-        id: "prambanan",
-        name: "Prambanan Temple",
-        description: "A 9th-century Hindu temple compound dedicated to the Trimurti, expressing the endless cycle of reincarnation. The massive complex features intricate stone carvings depicting the epic tale of Ramayana.",
-        location: "Yogyakarta, Java",
-        region: "Yogyakarta", // Updated
-        category: "Temples",
-        image: "/images/prambanan.jpg",
-        likes: 3864,
-        rating: 4.7,
-        bestTimeToVisit: "May to September",
-        entranceFee: "IDR 350,000 for foreigners, IDR 50,000 for locals",
-        activities: [
-            "Temple exploration",
-            "Ramayana Ballet performances (evening)",
-            "Sunset viewing",
-            "Archaeological tours",
-            "Cultural photography",
-            "Full moon tours (special events)"
-        ],
-        coordinates: {
-            latitude: -7.7520,
-            longitude: 110.4913
-        },
-        culturalSignificance: "A UNESCO World Heritage site showcasing Indonesia's Hindu history and one of the largest Hindu temples in Southeast Asia with distinctive tall and pointed architecture.",
-        transportation: [
-            "Private car or taxi from Yogyakarta (30 minutes)",
-            "Public bus from Yogyakarta",
-            "TransJogja bus service",
-            "Combined tours with Borobudur"
-        ],
-        accommodations: {
-            budget: "IDR 150,000-300,000 per night in Yogyakarta",
-            midRange: "IDR 400,000-800,000 per night",
-            luxury: "IDR 1,000,000-3,000,000+ per night in luxury hotels"
-        },
-        nearbyAttractions: [
-            "Borobudur Temple",
-            "Ratu Boko Palace",
-            "Yogyakarta Sultan's Palace",
-            "Sewu Temple",
-            "Kalasan Temple"
-        ]
-    },
-    {
-        id: "lombok",
-        name: "Lombok Island",
-        description: "Known for beautiful beaches, the mighty Mount Rinjani volcano, and indigenous Sasak culture. Less developed than neighboring Bali, Lombok offers pristine natural beauty with a distinct cultural identity.",
-        location: "West Nusa Tenggara",
-        region: "West Nusa Tenggara", // Updated
-        category: "Islands",
-        image: "/images/lombok.jpg",
-        likes: 4092,
-        rating: 4.8,
-        bestTimeToVisit: "May to October",
-        entranceFee: "Free (beaches), IDR 150,000 (Rinjani National Park)",
-        activities: [
-            "Beach lounging and surfing",
-            "Mount Rinjani trekking",
-            "Gili Islands day trips",
-            "Sasak village cultural tours",
-            "Waterfall exploration",
-            "Surfing at Desert Point or Kuta beaches"
-        ],
-        coordinates: {
-            latitude: -8.6500,
-            longitude: 116.3200
-        },
-        difficulty: "Hard (for Rinjani trekking)",
-        culturalSignificance: "Home to the Sasak people with their unique traditions, weaving crafts, and traditional villages where ancient ways of life continue.",
-        localCuisine: [
-            "Ayam Taliwang (spicy grilled chicken)",
-            "Plecing Kangkung (water spinach salad)",
-            "Beberuk Terong (eggplant dish)",
-            "Sate Rembiga (spiced meat satay)"
-        ],
-        transportation: [
-            "Flights to Lombok International Airport",
-            "Fast boats from Bali",
-            "Local car or motorbike rental",
-            "Cidomo (horse-drawn cart) in villages"
-        ],
-        accommodations: {
-            budget: "IDR 150,000-350,000 per night",
-            midRange: "IDR 500,000-1,500,000 per night",
-            luxury: "IDR 2,000,000-10,000,000+ per night for beach resorts"
-        },
-        nearbyAttractions: [
-            "Gili Islands (Trawangan, Air, Meno)",
-            "Mount Rinjani",
-            "Kuta and Tanjung Aan beaches",
-            "Sendang Gile and Tiu Kelep waterfalls",
-            "Sade Sasak Village"
-        ]
-    },
-    {
-        id: "derawan",
-        name: "Derawan Islands",
-        description: "A tropical paradise with white sandy beaches, crystal clear waters and diverse marine life including rare turtles. The archipelago comprises 31 islands, offering world-class diving and unique wildlife encounters.",
-        location: "East Kalimantan",
-        region: "East Kalimantan",
-        category: "Islands",
-        image: "/images/derawan.jpg",
-        likes: 1958,
-        rating: 4.6,
-        bestTimeToVisit: "March to October",
-        entranceFee: "IDR 50,000 per island for foreigners, IDR 20,000 for locals",
-        activities: [
-            "Swimming with stingless jellyfish in Kakaban",
-            "Turtle watching and conservation",
-            "Diving and snorkeling",
-            "Island hopping",
-            "Whale shark spotting (seasonal)",
-            "Sunbathing on pristine beaches"
-        ],
-        coordinates: {
-            latitude: 2.2870,
-            longitude: 118.7001
-        },
-        transportation: [
-            "Flight to Berau, then car to Tanjung Batu (3 hours)",
-            "Speedboat from Tanjung Batu harbor to Derawan",
-            "Wooden boats between islands",
-            "Resort transfer services"
-        ],
-        accommodations: {
-            budget: "IDR 200,000-350,000 per night in simple guesthouses",
-            midRange: "IDR 500,000-1,000,000 per night",
-            luxury: "IDR 1,500,000-4,000,000 per night for dive resorts"
-        },
-        nearbyAttractions: [
-            "Kakaban Lake (jellyfish lake)",
-            "Maratua Island",
-            "Sangalaki Island (turtle sanctuary)",
-            "Nabucco Island",
-            "Biduk-biduk Waterfall"
-        ]
-    }
-];
-
-
-export const allDestinations = [...featuredDestinations, ...moreDestinations];
+export const allDestinations = [...featuredDestinations,];
 
 export function getAllDestinations(): Destination[] {
     return allDestinations;

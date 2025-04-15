@@ -9,8 +9,8 @@ import session from 'express-session';
 import pgSession from 'connect-pg-simple';
 import prisma from './prisma/client.js';
 import authRoutes from './src/routes/authRoutes.js';
+import destinationRoutes from './src/routes/destinationRoutes.js';
 
-// Initialize environment variables
 dotenv.config();
 
 // ES modules specific setup for __dirname equivalent
@@ -75,6 +75,7 @@ app.get('/api/test-cors', (req, res) => {
 // Routes
 app.use('/api/auth', authRoutes);
 
+app.use('/api/destinations', destinationRoutes);
 // Welcome route
 app.get('/', (req, res) => {
   res.json({

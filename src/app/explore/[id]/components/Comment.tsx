@@ -32,23 +32,33 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
   // Number of comments per page
   const COMMENTS_PER_PAGE = 3;
 
-  // Load comments on first render
+  // Fetch komentar dari API
   useEffect(() => {
     if (!destinationId) return;
 
-    // Check if we have predefined comments for this destination
-    let destinationComments = getCommentsByDestinationId(destinationId);
+    const fetchComments = async () => {
+      try {
+        const response = await fetch(`/api/comments/destination/${destinationId}`);
+        if (!response.ok) throw new Error('Failed to fetch comments');
 
-    // If no comments found, generate some
-    if (destinationComments.length === 0) {
-      destinationComments = generateCommentsForDestination(destinationId, destinationName);
-    }
+        const data = await response.json();
+        setComments(data.comments);
+      } catch (error) {
+        console.error('Error fetching comments:', error);
+        // Fallback ke mock data jika API gagal
+        const mockComments = getCommentsByDestinationId(destinationId);
+        setComments(mockComments.length > 0
+          ? mockComments
+          : generateCommentsForDestination(destinationId, destinationName)
+        );
+      }
+    };
 
-    setComments(destinationComments);
+    fetchComments();
   }, [destinationId, destinationName]);
 
   // Handle submitting a new comment
-  const handleSubmitComment = () => {
+  const handleSubmitComment = async () => {
     if (!isLoggedIn) {
       setShowAuthModal(true);
       return;
@@ -56,23 +66,34 @@ const UserComments = ({ destinationId, destinationName }: UserCommentsProps) => 
 
     if (!user || !newComment.trim()) return;
 
-    // Add new comment
-    const commentData = {
-      destinationId,
-      userId: user.id,
-      text: newComment,
-      rating: newRating,
-    };
+    try {
+      const response = await fetch('/api/comments', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          destinationId,
+          text: newComment,
+          rating: newRating
+        })
+      });
 
-    const newCommentObj = addComment(commentData);
+      if (!response.ok) throw new Error('Failed to submit comment');
 
-    // Update local state
-    setComments(prevComments => [newCommentObj, ...prevComments]);
+      const data = await response.json();
 
-    // Reset form and go to first page to show the new comment
-    setNewComment("");
-    setNewRating(5);
-    setCurrentPage(1);
+      // Update local state
+      setComments(prevComments => [data.comment, ...prevComments]);
+
+      // Reset form
+      setNewComment("");
+      setNewRating(5);
+      setCurrentPage(1);
+    } catch (error) {
+      console.error('Error submitting comment:', error);
+      alert('Failed to submit comment. Please try again.');
+    }
   };
 
   // Calculate pagination info
